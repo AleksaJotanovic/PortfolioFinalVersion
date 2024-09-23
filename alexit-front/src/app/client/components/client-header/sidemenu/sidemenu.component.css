@@ -1,0 +1,259 @@
+.sidemenu {
+    position: fixed;
+    height: 100dvh;
+    width: 400px;
+    max-width: 100vw;
+    background-color: var(--main-white);
+    border: 1px solid var(--border-grey);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 4;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.sidemenu-header {
+    border-bottom: 1px solid var(--border-grey);
+}
+
+.sidemenu-header>span:first-child {
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+    line-height: 100%;
+    border-right: 1px solid var(--border-grey);
+}
+
+.sidemenu-header>span:last-child {
+    display: none;
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+    line-height: 100%;
+    border-left: 1px solid var(--border-grey);
+}
+
+.sidemenu-header>span:last-child.products-sidemenu-active {
+    display: flex;
+}
+
+.sidemenu-header>span>i {
+    font-size: 1.5rem;
+    color: var(--dark-light);
+}
+
+.sidemenu-container {
+    flex: 1;
+    gap: 1rem;
+    overflow-y: auto;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.sidemenu-container>ul>li {
+    padding: 1.5rem;
+    gap: 0.8rem;
+    border-bottom: 1px solid var(--border-grey);
+}
+
+.sidemenu-container>ul>li>a {
+    letter-spacing: 4px;
+    color: var(--dark-light);
+    font-weight: 300;
+    transition: color 0.2s ease-in-out;
+    font-size: 1rem;
+}
+
+.sidemenu-container>ul>li>a:hover {
+    color: var(--night-black);
+}
+
+.sidemenu-container>ul>li>i {
+    font-size: 0.8rem;
+    color: var(--dark-light);
+}
+
+.sidemenu-container>ul>li:first-child {
+    background-color: var(--main-black);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.sidemenu-container>ul>li:first-child:hover {
+    background-color: var(--night-black);
+}
+
+.sidemenu-container>ul>li:first-child:hover>a {
+    color: var(--main-white);
+}
+
+.sidemenu-container>ul>li:first-child>a {
+    color: var(--border-grey);
+    font-size: 0.9rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.sidemenu-container>ul>li:first-child>i {
+    color: var(--main-white);
+}
+
+.sidemenu-footer {
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    background-color: var(--main-white);
+}
+
+.sidemenu-footer>div {
+    padding: 0.7rem 0.6rem;
+    background-color: var(--yellow-light);
+    gap: 1.5rem;
+}
+
+.sidemenu-footer>ul>li {
+    padding: 0.7rem 0.6rem;
+    gap: 0.6rem;
+    color: var(--dark-medium);
+    border-top: 1px solid var(--border-grey);
+}
+
+.sidemenu-footer>ul>li>a {
+    color: var(--dark-medium);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.sidemenu-footer>div>a {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: var(--dark-medium);
+    font-weight: 400;
+}
+
+.products-sidemenu {
+    position: absolute;
+    inset: 0;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    background-color: var(--main-white);
+    overflow-y: auto;
+}
+
+.products-sidemenu.products-sidemenu-active {
+    transform: translateX(0px);
+}
+
+.products-sidemenu>ul>li {
+    border-bottom: 1px solid var(--border-grey);
+    gap: 0.7rem;
+}
+
+.products-sidemenu>ul>li>button.subcategories-active>i {
+    transform: rotate(90deg);
+}
+
+.products-sidemenu>ul>li>button {
+    cursor: pointer;
+    background-color: var(--main-black);
+    border: none;
+    letter-spacing: 3px;
+    color: var(--main-white);
+    font-weight: 300;
+    transition: color 0.2s ease-in-out;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.products-sidemenu>ul>li>a:hover {
+    color: var(--night-black);
+}
+
+.products-sidemenu>ul>li>button>i {
+    pointer-events: none;
+    font-size: 0.85rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.subcategories-container {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: all 0.2s ease-in-out;
+}
+
+.subcategories-container.mobile-subcategories-active {
+    grid-template-rows: 1fr;
+}
+
+.subcategories-container>div {
+    overflow: hidden;
+}
+
+.subcategories-container>div>ul>li {
+    border-bottom: 1px solid var(--border-grey);
+    position: relative;
+}
+
+
+.subcategories-container>div>ul>li:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background-color: var(--yellow-light);
+
+}
+
+.subcategories-container>div>ul>li:hover>a {
+    color: var(--night-black);
+}
+
+.subcategories-container>div>ul>li>a {
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    color: var(--dark-light);
+    font-weight: 300;
+    padding: 1rem 1.5rem;
+    flex: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================= RESPONSIVE DESIGN ============================= */
+@media only screen and (width < 1024px) {
+
+    /* -------------- SIDEMENU -------------- */
+    .sidemenu.sidemenu-active {
+        transform: translateX(0px);
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    /* --------------- SIDEMENU --------------- */
+    .sidemenu-footer {
+        display: flex;
+    }
+}

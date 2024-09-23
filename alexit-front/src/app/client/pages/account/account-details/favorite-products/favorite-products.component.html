@@ -1,0 +1,38 @@
+<div class="user-account-routing column-start-stretch">
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Availability</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (product of products; track $index) {
+            <tr>
+                <td>
+                    <div class="row-start-center gap-1_5">
+                        <picture><img [src]="product.images[0]"></picture>
+                        <span class="column-start-stretch gap-0_5">
+                            <h1>{{product.name}}</h1>
+                            <h2>{{getCategoryName(product.category_id)}}</h2>
+                        </span>
+                    </div>
+                </td>
+                <td><span id="price">{{$.money(product.price.sale)}}</span></td>
+                <td>
+                    @if (product.inStock > 0) {
+                    <span id="inStock">IN STOCK</span>
+                    }@else if (product.inStock === 0) {
+                    <span id="outOfStock">OUT OF STOCK</span>
+                    }
+                </td>
+                <td>
+                    <button type="button">Add To Cart</button>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

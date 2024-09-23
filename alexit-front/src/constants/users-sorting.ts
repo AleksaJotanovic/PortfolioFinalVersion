@@ -1,0 +1,1 @@
+export const usersSortingTriggers = { EMAIL: "email", FIRSTNAME: "firstname", LASTNAME: "lastname" }

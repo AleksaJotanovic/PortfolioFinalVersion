@@ -1,0 +1,94 @@
+<div class="user-account-routing column-start-stretch">
+    <div class="edit-account column-start-stretch gap-3" id="accountEditor">
+        <form class="customer-basic" [formGroup]="userForm" (ngSubmit)="saveUserChanges()">
+            <div class="column-start-stretch gap-1">
+                <h1 class="row-start-center gap-0_7"><span class="row-center-center"><i
+                            class="fa-thin fa-address-book"></i></span>
+                    CONTACT INFO</h1>
+                <div class="column-start-stretch gap-1_5">
+                    <div class="column-center-stretch">
+                        <label for="firstname">Firstname</label>
+                        <input type="text" id="firstname" formControlName="firstname"
+                            placeholder="Enter your firstname">
+                    </div>
+                    <div class="column-center-stretch">
+                        <label for="lastname">Lastname</label>
+                        <input type="text" id="lastname" formControlName="lastname" placeholder="Enter your lastname">
+                    </div>
+                    <div class="column-center-stretch">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" formControlName="email" placeholder="Enter your email">
+                    </div>
+                </div>
+            </div>
+            <div class="column-start-stretch gap-1">
+                <h1 class="row-start-center gap-0_7"><span class="row-center-center"><i
+                            class="fa-thin fa-truck-fast"></i></span>
+                    SHIPPING ADDRESS</h1>
+                <div class="column-start-stretch gap-1_5" formGroupName="shippingAddress">
+                    <div class="column-center-stretch">
+                        <label for="phoneNum">Phone number</label>
+                        <input type="text" id="phoneNum" formControlName="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="double-input">
+                        <div class="column-center-stretch flex-full">
+                            <label for="country">Country</label>
+                            <input type="text" id="country" formControlName="country" placeholder="Enter your country">
+                        </div>
+                        <div class="column-center-stretch flex-full">
+                            <label for="city">City</label>
+                            <input type="text" id="city" formControlName="city" placeholder="Enter your city">
+                        </div>
+                    </div>
+                    <div class="double-input">
+                        <div class="column-center-stretch flex-full">
+                            <label for="street">Street</label>
+                            <input type="text" id="street" formControlName="street" placeholder="Enter your street">
+                        </div>
+                        <div class="column-center-stretch flex-full">
+                            <label for="zipCode">ZIP code</label>
+                            <input type="text" id="zipCode" formControlName="zip" placeholder="Enter a zip code">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Save Changes</button>
+        </form>
+        <div class="change-password column-start-stretch gap-1">
+            <h1 class="row-start-center gap-0_7"><span class="row-center-center"><i class="fa-thin fa-key"></i></span>
+                CHANGE
+                PASSWORD</h1>
+            <form class="column-start-stretch gap-1_5" [formGroup]="passwordForm" (ngSubmit)="savePassword()">
+                <div class="column-center-stretch relative">
+                    <label for="currentPwd">Current</label>
+                    <input type="password" id="currentPwd" formControlName="currentPassword"
+                        placeholder="Type your current password" (input)="checkCurrentPassword()">
+                    @if (!passwordMatching) {
+                    <span class="input-error">First, input your current password!</span>
+                    }
+                </div>
+                <div class="column-center-stretch relative">
+                    <label for="newPwd">New</label>
+                    <input type="password" id="newPwd" formControlName="newPassword"
+                        placeholder="Type your new password">
+                    @if (!newPasswordValue) {
+                    <span class="input-error">Please input password</span>
+                    }
+                    @if (newPasswordControl?.invalid) {
+                    <span class="input-error">{{getNewPasswordError()}}</span>
+                    }
+                </div>
+                <div class="column-center-stretch relative">
+                    <label for="confirmPwd">Confirm</label>
+                    <input type="password" id="confirmPwd" formControlName="confirmPassword"
+                        placeholder="Congfirm your new password">
+                    @if (confirmPasswordControl?.invalid) {
+                    <span class="input-error">Password do not match!</span>
+                    }
+                </div>
+                <button type="submit" [ngClass]="disableButton() ? 'btn-disabled' : ''"
+                    [disabled]="disableButton()">Save Password</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,114 @@
+.chart-header>h1 {
+    font-size: 0.9rem;
+    font-size: 600;
+    letter-spacing: 1px;
+    color: var(--dark-text);
+    line-height: 100%;
+    margin-right: auto;
+}
+
+.chart-header>select {
+    background-color: #ffffff;
+    appearance: none;
+    outline: none;
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #5f6d8b;
+    border-radius: 8px;
+    transition: outline 0.2s ease-in-out;
+    line-height: 100%;
+    padding-inline: 0.2rem 1.1rem;
+}
+
+.chart-header>select:focus {
+    outline-color: var(--light-blue);
+    outline-width: 1px;
+}
+
+.chart-header>i {
+    pointer-events: none;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.1rem;
+    font-size: 0.7rem;
+    color: #5f6d8b;
+}
+
+.chart-colors>span>i {
+    font-size: 0.6rem;
+}
+
+.chart-colors>span:first-child>i {
+    color: #4D4DFF;
+}
+
+.chart-colors>span:last-child>i {
+    color: #ffee58;
+}
+
+.chart-colors>span>p {
+    font-size: 0.7rem;
+    line-height: 100%;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+.donut-chart {
+    height: 100%;
+    width: 100%;
+}
+
+.donut {
+    position: absolute;
+    background: conic-gradient(#3358ff 68%, rgba(142, 174, 255, 0.2) 0%);
+    width: 85%;
+    max-width: 365px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    inset: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donut::after {
+    content: "";
+    background-color: #ffffff;
+    border-radius: 50%;
+    height: 65%;
+    width: 65%;
+}
+
+.donut>h1 {
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 100%;
+    color: var(--dark-blue);
+}
+
+
+
+
+@media only screen and (max-width: 1366px) {
+    .donut {
+        width: 95%;
+    }
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .donut {
+        width: 100%;
+    }
+
+}

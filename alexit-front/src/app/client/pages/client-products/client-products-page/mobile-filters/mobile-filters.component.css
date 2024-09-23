@@ -1,0 +1,103 @@
+.mobile-products-filter {
+    position: fixed;
+    height: 100dvh;
+    width: 270px;
+    max-width: 100vw;
+    background-color: var(--main-white);
+    border: 1px solid var(--border-grey);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+    gap: 1rem;
+}
+
+.mobile-products-filter.mobile-products-filter-active {
+    transform: translateX(0px);
+}
+
+.mobile-products-filter>div:last-child {
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.mobile-filter-exit {
+    padding-left: 1rem;
+    border-bottom: 1px solid var(--border-grey);
+}
+
+.mobile-filter-exit>h1 {
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: var(--main-black);
+    letter-spacing: 4px;
+}
+
+.mobile-filter-exit>h1>i {
+    font-size: 1.125rem;
+}
+
+.mobile-filter-exit>span {
+    padding: 1.5rem;
+    aspect-ratio: 1;
+    border-left: 1px solid var(--border-grey);
+    color: var(--dark-light);
+    cursor: pointer;
+}
+
+
+.mobile-filter-container {
+    border-bottom: 2px solid var(--main-black);
+}
+
+.mobile-filter-header>h1 {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: var(--main-black);
+}
+
+.mobile-filter-header>i {
+    font-size: 0.7rem;
+    line-height: 100%;
+    color: var(--dark-medium);
+}
+
+.mobile-filter-collapse {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-in-out;
+    padding-block: 0.5rem;
+}
+
+.filter-collapse.filter-active {
+    grid-template-rows: 1fr;
+}
+
+.mobile-filter-collapse.mobile-filter-collapse-active {
+    grid-template-rows: 1fr;
+}
+
+.mobile-filter-collapse>ul {
+    overflow: hidden;
+}
+
+.mobile-filter-collapse>ul>li {
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+    color: var(--dark-medium);
+    padding-block: 0.5rem;
+    font-weight: 300;
+}
+
+input[type="range"] {
+    accent-color: var(--yellow-light);
+}
+
+input[type="checkbox"] {
+    width: 0.7rem;
+    height: 0.7rem;
+    accent-color: var(--yellow-light);
+}

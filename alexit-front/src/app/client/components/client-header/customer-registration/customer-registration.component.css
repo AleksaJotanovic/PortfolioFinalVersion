@@ -1,0 +1,143 @@
+.modal-main input {
+    flex: 1;
+    padding-block: 0.8rem;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--main-black);
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+}
+
+.modal-main label {
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.modal-main label::after {
+    content: "*";
+    color: #ff0000;
+    padding-left: 3px;
+}
+
+.modal-main>form {
+    gap: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+}
+
+.modal-main>form.form-active {
+    display: flex;
+}
+
+.modal-main>form button {
+    position: relative;
+    background-color: var(--main-black);
+    padding-block: 0.8rem;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    color: var(--button-prev-color);
+    border: none;
+    outline: none;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.modal-main>form button:hover {
+    background-color: var(--night-black);
+    color: var(--main-white);
+}
+
+.modal-main>form button:disabled {
+    background-color: var(--disabled-button);
+    pointer-events: none;
+}
+
+.modal-main>form button>small {
+    width: 100%;
+    top: -20px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    color: #ea3030;
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.form-group {
+    gap: 1rem;
+}
+
+.form-group>div {
+    flex: 1;
+}
+
+.user-name,
+.user-password,
+.country-city,
+.street-zipcode {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.terms-conds {
+    text-align: center;
+    text-wrap: pretty;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    color: var(--dark-medium);
+}
+
+.terms-conds strong {
+    color: var(--yellow-light);
+}
+
+.modal-destroyer {
+    cursor: pointer;
+    position: absolute;
+    transform: rotate(45deg);
+    color: #a3a9c2;
+    font-size: 1.125rem;
+    top: -67px;
+    right: -29px;
+    font-weight: 200;
+}
+
+
+.email-error {
+    position: absolute;
+    bottom: -14px;
+    font-size: 0.65rem;
+    color: #ea3030;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 475px) {
+
+    .user-name,
+    .user-password,
+    .country-city,
+    .street-zipcode {
+        flex-direction: column;
+    }
+
+}

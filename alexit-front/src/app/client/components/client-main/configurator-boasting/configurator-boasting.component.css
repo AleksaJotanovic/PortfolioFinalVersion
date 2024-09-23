@@ -1,0 +1,170 @@
+.configurator-boasting {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 420px;
+    overflow: hidden;
+    height: fit-content;
+}
+
+.configurator-boasting>div {
+    background-color: var(--main-black);
+    padding: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.config-boast-text {
+    gap: 1rem;
+}
+
+.configurator-boasting>div::before {
+    content: "";
+    position: absolute;
+    height: 140%;
+    width: 20rem;
+    background-color: var(--main-black);
+    inset: 0 0 0 65%;
+    margin: auto;
+    transform: rotate(18deg);
+    z-index: -1;
+    border-right: 1px solid var(--yellow-light);
+}
+
+.config-boast-text>h1 {
+    color: var(--main-white);
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-size: clamp(1.2rem, 4vw, 2.3rem);
+    text-wrap: balance;
+    line-height: 100%;
+}
+
+.config-boast-text>p {
+    letter-spacing: 2px;
+    color: var(--main-white);
+    line-height: 1.7;
+    font-weight: 200;
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+}
+
+.configurator-boasting>div>button {
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    border: none;
+    color: var(--main-white);
+    align-self: stretch;
+    background-color: var(--yellow-light);
+    padding: 0.8rem;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.configurator-boasting>div>button:hover {
+    background-color: var(--yellow-dark);
+}
+
+.configurator-boasting>picture {
+    height: 420px;
+    width: 100%;
+}
+
+.configurator-boasting>picture>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1430px) {
+    .configurator-boasting {
+        padding-inline: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .configurator-boasting>div::before {
+        width: 17rem;
+    }
+}
+
+@media only screen and (width < 1024px) {
+    .configurator-boasting {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 330px);
+    }
+
+    .configurator-boasting>div {
+        grid-row: 2 / 3;
+        border-top: 1px solid var(--yellow-light);
+    }
+
+    .configurator-boasting>div::before {
+        display: none;
+    }
+
+    .configurator-boasting>picture {
+        height: 330px;
+        grid-row: 1 / 2;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .configurator-boasting {
+        padding-inline: 1rem;
+    }
+
+    .configurator-boasting {
+        grid-template-rows: 330px 370px;
+    }
+
+    .configurator-boasting>div {
+        height: 370px;
+        padding: 2rem;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .configurator-boasting {
+        grid-template-rows: 330px 1fr;
+        overflow: visible;
+    }
+
+    .configurator-boasting>div {
+        height: fit-content;
+        gap: 3rem;
+    }
+
+    .configurator-boasting>div>h1 {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .cosmic-carousel-title>h1 {
+        text-align: center;
+        font-weight: 300;
+        font-size: 8vw
+    }
+
+    .cosmic-carousel-title>div {
+        display: none;
+    }
+}

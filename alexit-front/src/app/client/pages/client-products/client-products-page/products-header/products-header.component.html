@@ -1,0 +1,38 @@
+<div class="products-header column-center-stretch">
+
+    <div class="breadcrumbs row-start-stretch">
+        <ul class="row-start-stretch">
+            <li class="lineheight-fit row-center-center">
+                <a routerLink="" class="lineheight-fit">Home</a>
+                <i class="fa-light fa-chevron-right"></i>
+            </li>
+            <li class="lineheight-fit row-center-center">
+                <a class="lineheight-fit">Peripherials & devices</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="products-title">
+        <h1 class="lineheight-fit">Peripherials & devices</h1>
+        <div class="sorter">
+            <div class="products-sorting relative flex-full" (click)="onMobileFiltersActive.emit()">
+                <h1 class="lineheight-fit row-start-center gap-0_5">
+                    <i class="fa-light fa-list"></i> Filters
+                </h1>
+                <button type="button">
+                    <i class="fa-solid fa-caret-down"></i>
+                </button>
+            </div>
+            <div class="selectmenu row-center-center relative flex-full">
+                <button type="button" class="row-center-center"><i class="fa-solid fa-caret-down"></i></button>
+                <select (change)="emitOnSorting($event.target)" [(ngModel)]="initialSorterValue">
+                    <option [value]="sorterValues.DATE_DESCENDING" selected>Sort by date (Descending)</option>
+                    <option [value]="sorterValues.DATE_ASCENDING">Sort by date (Ascending)</option>
+                    <option [value]="sorterValues.PRICE_DESCENDING">Sort by price (Descending)</option>
+                    <option [value]="sorterValues.PRICE_ASCENDING">Sort by price (Ascending)</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+</div>

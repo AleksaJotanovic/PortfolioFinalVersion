@@ -1,0 +1,67 @@
+.user-address h4 {
+    font-size: 0.8rem;
+    color: var(--dark-text);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.user-address strong {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--dark-text);
+}
+
+.invoice-btns>button {
+    flex: 1;
+}
+
+
+.invoice-btns>button:first-child {
+    background-color: #ffce2c;
+}
+
+.invoice-btns>button:last-child {
+    background-color: #7F00FF;
+}
+
+.invoice-btns>button:first-child:hover {
+    background-color: #daac17;
+}
+
+.invoice-btns>button:last-child:hover {
+    background-color: #6f20bf;
+}
+
+.invoice-btns>button:last-child:disabled {
+    background-color: rgba(128, 0, 255, 0.5);
+    box-shadow: none;
+    pointer-events: none;
+}
+
+.invoice-btns>button {
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 0.8rem;
+    gap: 0.5rem;
+    border-radius: var(--border-radius-main);
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+
+
+.invoice-btns>button>h5 {
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.invoice-btns>button>i {
+    font-size: 0.95rem;
+}

@@ -1,0 +1,40 @@
+<main class="column-center-stretch">
+    @if (offer) {
+    <section class="offer-section column-center-stretch">
+        <div class="breadcrumbs row-start-center">
+            <ul class="row-center-center">
+                <li class="lineheight-fit row-center-center">
+                    <a href="../../../index.html" class="lineheight-fit">Home</a>
+                    <i class="fa-light fa-chevron-right"></i>
+                </li>
+                <li class="lineheight-fit row-center-center">
+                    <a href="../offers.html" class="lineheight-fit">Offers</a>
+                    <i class="fa-light fa-chevron-right"></i>
+                </li>
+                <li class="lineheight-fit row-center-center">
+                    <a href="offer.html">{{offer.title}}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="offer-header column-center-stretch">
+            <h1>Reduced price of HONOR 200 5G and HONOR 200 Pro 5G phones</h1>
+            <div class="row-spacebetween-center">
+                <h2 class="lineheight-fit"><small class="lineheight-fit">Offer published on: <strong
+                            class="lineheight-fit">{{$.dateFormatNormal(offer.date.created)}}</strong></small></h2>
+                <h2 class="lineheight-fit"><small class="lineheight-fit">Offer expires on: <strong
+                            class="lineheight-fit">{{$.dateFormatNormal(offer.date.expires)}}</strong></small></h2>
+            </div>
+        </div>
+        <picture><img [src]="offer.featuredImage"></picture>
+        <p class="offer-text">{{offer.text}}</p>
+    </section>
+    <section class="products-included column-center-stretch">
+        <h1>Products included in this offer</h1>
+        <div class="products-list">
+            @for (product of products; track $index) {
+            <product-card [product]="product" />
+            }
+        </div>
+    </section>
+    }
+</main>

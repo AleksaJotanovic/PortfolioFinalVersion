@@ -1,0 +1,8 @@
+main {
+    height: fit-content;
+    width: var(--default-website-width);
+    max-width: 100%;
+    margin: auto;
+    gap: 4rem;
+    background-color: var(--main-white);
+}

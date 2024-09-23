@@ -1,0 +1,147 @@
+.product-card {
+    scroll-snap-align: start;
+    height: fit-content;
+    background: #ffffff;
+    border: 1px solid var(--border-grey);
+    position: relative;
+}
+
+.product-card>picture {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem 0.5rem 2.2rem 0.5rem;
+}
+
+.product-card>picture>img {
+    max-width: 100%;
+}
+
+.product-content {
+    width: 100%;
+    border-top: 1px solid var(--border-grey);
+}
+
+.prod-title {
+    width: 100%;
+    height: 40px;
+    padding-inline: 7px;
+}
+
+.prod-title>h1 {
+    cursor: pointer;
+    font-size: 0.85rem;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 2px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.in-stock {
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    gap: 0.5rem;
+    border-block: 1px solid var(--border-grey);
+}
+
+.in-stock>.red {
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: #cc3b33;
+}
+
+.in-stock>.green {
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: #2ab62a;
+}
+
+.in-stock>h5 {
+    font-weight: 300;
+    line-height: 100%;
+    font-size: 0.7rem;
+}
+
+.prod-price {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    gap: 0.5rem;
+}
+
+.prod-price>span {
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.prod-price>small {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: #cc3b33;
+}
+
+.product-card>button {
+    cursor: pointer;
+    padding-block: 0.55rem;
+    width: 100%;
+    background-color: var(--main-black);
+    color: var(--main-white);
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    font-weight: 300;
+    border: none;
+}
+
+.product-content>button {
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    letter-spacing: 2px;
+    background-color: var(--yellow-light);
+    border: none;
+    transform: translateY(-50%);
+    font-size: 0.75rem;
+    color: var(--main-white);
+    font-weight: 300;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.product-content>button:hover {
+    background-color: var(--yellow-dark);
+}
+
+.favorite {
+    width: 100%;
+    padding: 0.5rem 0.3rem;
+}
+
+.favorite>span:first-child {
+    font-size: 1rem;
+    padding: 1rem;
+    color: var(--dark-medium);
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.favorite>span:first-child:hover {
+    font-size: 1rem;
+    padding: 1rem;
+    color: var(--night-black);
+}
+
+.offer-sticker {
+    position: absolute;
+    background-color: var(--yellow-light);
+    color: var(--main-white);
+    padding: 0.6rem;
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+    top: 4%;
+    left: 0;
+    font-weight: 300;
+}

@@ -1,0 +1,94 @@
+/* .add-user-body {
+    border: 1px solid blue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 2rem;
+    width: 100%;
+}
+
+.add-user-body .form-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.add-user-body form {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.aleksin-input {
+    border: 1px solid blue;
+} */
+
+
+
+
+main {
+    scrollbar-width: thin;
+    scrollbar-color: var(--light-blue) transparent;
+    grid-column: 2 / 3;
+    padding: 0 1rem 1rem 1rem;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.goback-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goback-title h6 {
+    font-size: 0.7rem;
+    line-height: 100%;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--light-blue);
+}
+
+.goback-title h1 {
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    line-height: 100%;
+}
+
+.inline-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inline-group h6 {
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+    color: var(--bad-color);
+    position: absolute;
+    bottom: -0.85rem;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+
+@media only screen and (max-width: 667px) {
+    .inline-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .goback-title>button>h5 {
+        display: none;
+    }
+
+    .goback-title>div:first-child>span {
+        display: none;
+    }
+}

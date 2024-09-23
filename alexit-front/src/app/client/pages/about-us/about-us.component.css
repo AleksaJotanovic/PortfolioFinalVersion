@@ -1,0 +1,629 @@
+main {
+    height: fit-content;
+    width: var(--default-website-width);
+    max-width: 100%;
+    margin: auto;
+    gap: 3.5rem;
+    background-color: var(--main-white);
+}
+
+
+.featured-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    padding-block: 1rem;
+    height: 560px;
+}
+
+.featured-section>div:first-child {
+    background-image: url('../../../../assets/images/about-us/store974_gaming_accessories_qatar.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--dark-light);
+    background-blend-mode: multiply;
+    gap: 2rem;
+    width: 100%;
+}
+
+.title-sticker {
+    gap: 2.5rem;
+}
+
+.title-sticker>h1 {
+    background-color: var(--yellow-light);
+    color: var(--main-white);
+    padding: 1.5rem;
+    font-size: clamp(1.3rem, 1.8vw, 1.8rem);
+    font-weight: 200;
+    letter-spacing: 4px;
+}
+
+.featured-section>div:first-child>p {
+    color: var(--main-white);
+    width: min(80ch, 100%);
+    padding-inline: 1.5rem;
+    font-size: clamp(13px, 1vw, 0.9rem);
+    font-weight: 200;
+    line-height: 1.7;
+    letter-spacing: 2px;
+}
+
+.featured-section>div:last-child {
+    text-align: start;
+    padding: 1rem 1.5rem;
+    gap: 1.5rem;
+    border: 1px solid var(--border-grey);
+    width: 100%;
+}
+
+.featured-section>div:last-child>h1 {
+    font-weight: 200;
+    font-size: clamp(2.5rem, 3.5vw, 4rem);
+    letter-spacing: 4px;
+    position: relative;
+    color: var(--main-black);
+}
+
+.featured-section>div:last-child>h2 {
+    font-weight: 200;
+    font-size: clamp(22px, 2vw, 2rem);
+    letter-spacing: 3px;
+    color: var(--dark-medium);
+}
+
+.featured-section>div:last-child>p {
+    font-weight: 200;
+    font-size: clamp(13px, 1vw, 0.9rem);
+    line-height: 1.7;
+    color: var(--dark-light);
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------
+---------------------- GROWING COMMUNITY SECTION ------------------------
+------------------------------------------------------------------------- */
+
+.growing-community {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.growing-community>div {
+    widows: 100%;
+    height: fit-content;
+    border: 1px solid var(--border-grey);
+    padding: 5rem;
+    gap: 2.5rem;
+    background-image: url('../../../../assets/images/about-us/growing-community.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--dark-light);
+    background-blend-mode: multiply;
+}
+
+.growing-community>div>h1 {
+    font-size: clamp(2.4rem, 4vw, 4rem);
+    font-weight: 100;
+    letter-spacing: 4px;
+    color: var(--main-white);
+}
+
+.growing-community>div>p {
+    font-size: clamp(13px, 1vw, 0.9rem);
+    font-weight: 200;
+    line-height: 2;
+    letter-spacing: 2px;
+    color: var(--main-white);
+}
+
+.growing-community>div>span {
+    height: 1.5px;
+    width: 70%;
+    background-color: var(--yellow-light);
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------
+--------------------------- OUR MISSION ------------------------------------
+--------------------------------------------------------------------------- */
+.our-mission {
+    width: 100%;
+    height: auto;
+    gap: 3rem;
+}
+
+.our-mission>div {
+    gap: 1rem;
+}
+
+.our-mission h1 {
+    font-weight: 200;
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    letter-spacing: 5px;
+    position: relative;
+    color: var(--main-black);
+    position: relative;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-grey);
+    width: 100%;
+    text-align: start;
+}
+
+.our-mission p {
+    font-size: clamp(13px, 1vw, 0.9rem);
+    color: var(--dark-light);
+    letter-spacing: 2px;
+    line-height: 1.7;
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------
+--------------------------------- PRODUCT RANGE ------------------------------------
+------------------------------------------------------------------------------------- */
+.product-range {
+    width: 100%;
+    height: auto;
+    gap: 2rem;
+}
+
+.product-range>h1 {
+    position: relative;
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    font-weight: 200;
+    letter-spacing: 5px;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-grey);
+}
+
+.product-range-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.product-range-container>div {
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    border: 1px solid var(--border-grey);
+}
+
+.product-range-container>div>h1 {
+    font-weight: 300;
+    color: var(--main-black);
+    font-size: clamp(0.945rem, 1.3vw, 1.3rem);
+    letter-spacing: 4px;
+}
+
+.product-range-container>div>p {
+    font-weight: 200;
+    font-size: clamp(12px, 1vw, 0.9rem);
+    color: var(--dark-light);
+    line-height: 1.7;
+    letter-spacing: 2px;
+}
+
+.product-range-container>div>span {
+    height: 2px;
+    width: min(85px, 30%);
+    background-color: var(--yellow-light);
+}
+
+.product-range-container>div>img {
+    width: 100px;
+    height: 100px;
+}
+
+.product-range-container>div>a {
+    font-size: 0.9rem;
+    color: var(--yellow-light);
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--yellow-light);
+    margin-top: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------
+----------------------------- WHY YS --------------------------------
+--------------------------------------------------------------------- */
+.why-us {
+    gap: 1.5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.quality {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-rows: 350px;
+    overflow: hidden;
+}
+
+.quality>div:first-child {
+    background-color: var(--main-black);
+    color: var(--main-white);
+    position: relative;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.quality>div:first-child>h1 {
+    font-weight: 200;
+    letter-spacing: 4px;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    z-index: 1;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--yellow-light);
+}
+
+.quality>div:first-child>p {
+    z-index: 1;
+    font-weight: 200;
+    font-size: clamp(12px, 1vw, 0.9rem);
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
+
+.quality>div:first-child::after {
+    content: "";
+    position: absolute;
+    background-color: var(--main-black);
+    border-right: 1px solid var(--yellow-light);
+    inset: 0;
+    width: 200px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: -40px;
+    margin-top: -100px;
+    transform: rotate(15deg);
+}
+
+.quality>div:last-child {
+    background-image: url('../../../../assets/images/about-us/quality.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--dark-light);
+    background-blend-mode: multiply;
+}
+
+
+
+
+
+.low-prices {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 350px;
+    overflow: hidden;
+}
+
+.low-prices>div:last-child {
+    background-color: var(--main-black);
+    color: var(--main-white);
+    position: relative;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.low-prices>div:last-child>h1 {
+    font-weight: 200;
+    letter-spacing: 4px;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    z-index: 2;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--yellow-light);
+}
+
+.low-prices>div:last-child>p {
+    z-index: 2;
+    font-weight: 200;
+    font-size: clamp(12px, 1vw, 0.9rem);
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
+
+.low-prices>div:last-child::after {
+    content: "";
+    position: absolute;
+    background-color: var(--main-black);
+    border-left: 1px solid var(--yellow-light);
+    inset: 0;
+    width: 200px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: -40px;
+    margin-top: -100px;
+    transform: rotate(-15deg);
+}
+
+.low-prices>div:first-child {
+    background-image: url('../../../../assets/images/about-us/cost.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--dark-light);
+    background-blend-mode: multiply;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------
+------------------------------ GET IN TOUCH -----------------------------------
+-------------------------------------------------------------------------------- */
+.get-intouch {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.get-intouch>div:first-child {
+    gap: 1.5rem;
+}
+
+.get-intouch>div:first-child>h1 {
+    font-weight: 200;
+    font-size: clamp(1.8rem, 4vw, 4rem);
+    color: var(--main-black);
+    letter-spacing: 5px;
+}
+
+.get-intouch>div:first-child>p {
+    font-weight: 200;
+    font-size: clamp(12px, 1vw, 0.9rem);
+    color: var(--dark-light);
+    line-height: 1.8;
+    letter-spacing: 2px;
+}
+
+.get-intouch>div:first-child>ul {
+    width: 100%;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.get-intouch>div:first-child>ul>li {
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.get-intouch>div:first-child>ul>li>a {
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: var(--yellow-dark);
+    font-size: 1rem;
+}
+
+.get-intouch>div:last-child {
+    background-image: url('../../../../assets/images/about-us/customer-support.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================ RESPONSIVE DESIGN ================================ */
+@media only screen and (max-width: 1430px) {
+    .featured-section {
+        padding-inline: 2rem;
+    }
+
+    .growing-community {
+        padding-inline: 2rem;
+    }
+
+    .our-mission {
+        padding-inline: 2rem;
+    }
+
+    .product-range {
+        padding-inline: 2rem;
+    }
+
+    .why-us {
+        padding-inline: 2rem;
+    }
+
+    .get-intouch {
+        padding-inline: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .get-intouch>div:first-child>ul>li {
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
+}
+
+@media only screen and (width < 1024px) {
+    .featured-section {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .featured-section>div:first-child {
+        padding-block: 4rem;
+        gap: 3rem;
+    }
+
+    .featured-section>div:last-child {
+        padding: 3rem;
+    }
+
+    .title-sticker>h1 {
+        font-size: clamp(1.3rem, 2.7vw, 1.8rem);
+    }
+
+    .featured-section>div:first-child>p {
+        font-size: clamp(13px, 2vw, 0.9rem);
+    }
+
+    .featured-section>div:last-child>h1 {
+        font-size: clamp(2.5rem, 6vw, 4rem);
+    }
+
+    .featured-section>div:last-child>h2 {
+        font-size: clamp(20px, 2vw, 2rem);
+    }
+
+    .featured-section>div:last-child>p {
+        font-size: clamp(13px, 2vw, 0.9rem);
+    }
+
+    .product-range-container {
+        grid-template-columns: 100%;
+    }
+
+    .product-range>h1 {
+        font-size: clamp(1.3rem, 3.5vw, 2.5rem);
+    }
+
+    .product-range-container>div>h1 {
+        font-size: clamp(0.945rem, 2.3vw, 1.3rem);
+    }
+
+    .product-range-container>div>p {
+        font-size: clamp(12px, 2vw, 0.9rem);
+    }
+
+    .why-us {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quality {
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px fit-content;
+    }
+
+    .quality>div:first-child {
+        grid-row: 2 / 3;
+        border-top: 1px solid var(--yellow-light);
+    }
+
+    .quality>div:first-child::after {
+        display: none;
+    }
+
+    .low-prices {
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px fit-content;
+    }
+
+    .low-prices>div:last-child {
+        border-top: 1px solid var(--yellow-light);
+    }
+
+    .low-prices>div:last-child::after {
+        display: none;
+    }
+
+    .get-intouch {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .featured-section {
+        padding-inline: 1rem;
+    }
+
+    .growing-community {
+        padding-inline: 1rem;
+    }
+
+    .growing-community>div {
+        padding: 3.6rem;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .growing-community>div {
+        padding: 3rem;
+    }
+
+    .why-us {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (width >=1024px) and (min-height: 625px) and (max-height: 750px) {
+    .featured-section {
+        height: calc(100dvh - 177.2px);
+    }
+}

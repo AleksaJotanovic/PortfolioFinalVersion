@@ -1,0 +1,371 @@
+[{
+  "_id": "85eff3f7-c601-4535-9ace-001eff5c66ce",
+  "number": "1936",
+  "user": {
+    "firstname": "Phil",
+    "lastname": "Anselmo",
+    "email": "aleksachampion14@gmail.com",
+    "phone": "0658891631",
+    "country": "Republic of Serbia",
+    "city": "Novi Sad",
+    "street": "Krajiska 14",
+    "zip": "21410",
+    "note": "Please be carefull with my package"
+  },
+  "courier_id": "fe1c8ce2-2bb9-4012-89e2-03e1a3f25f86",
+  "pcBuild": false,
+  "pcBuildName": "",
+  "status": "Pending",
+  "paymentMethod": {
+    "creditCard": false,
+    "cashOnDelivery": true
+  },
+  "paid": true,
+  "items": [
+    {
+      "product_id": "c6166234-80a8-4f16-a357-71646cf2f700",
+      "image": "http://localhost:3000/products/1721144417338-749203254.png",
+      "name": "MSI GeForce RTX 4070 VENTUS",
+      "price": 83242,
+      "quantity": 1,
+      "weight": 0.9
+    },
+    {
+      "product_id": "87e1ecf5-bf08-4494-ac99-397d0e25ca54",
+      "image": "http://localhost:3000/products/1721229688196-842856018.webp",
+      "name": "Kingston KF568C34BBEAK2-32",
+      "price": 23010,
+      "quantity": 1,
+      "weight": 0.4
+    }
+  ],
+  "weight": 1.3,
+  "subtotal": 106252,
+  "shippingCost": 420,
+  "grandTotal": 106672,
+  "creationTime": "Thu Jul 18 2024 17:24:39 GMT+0200 (Central European Summer Time)",
+  "accountingSent": true,
+  "saleGenerated": true
+},
+{
+  "_id": "23462d0d-e792-4747-b8f4-5de7d15ca395",
+  "number": "1762",
+  "user": {
+    "firstname": "Phil",
+    "lastname": "Anselmo",
+    "email": "aleksachampion14@gmail.com",
+    "phone": "0658891631",
+    "country": "Republic of Serbia",
+    "city": "Novi Sad",
+    "street": "Krajiska 14",
+    "zip": "21410",
+    "note": "I will kill my self these days."
+  },
+  "courier_id": "1b7b55b7-fdf3-40ae-b144-9b94dbc7ef25",
+  "pcBuild": false,
+  "pcBuildName": "",
+  "status": "Pending",
+  "paymentMethod": {
+    "creditCard": false,
+    "cashOnDelivery": true
+  },
+  "paid": true,
+  "items": [
+    {
+      "product_id": "6e3c2a77-9776-4d7a-83dd-2000a99a04ee",
+      "image": "http://localhost:3000/products/1721144224067-411300775.png",
+      "name": "Asus ROG Ryujin II 360",
+      "price": 29250,
+      "quantity": 2,
+      "weight": 5.2
+    },
+    {
+      "product_id": "a8a11a20-acc0-4f49-89a5-3a7b8a75057f",
+      "image": "http://localhost:3000/products/1721144034336-181731300.png",
+      "name": "CPU Cooler NZXT Kraken Z73 RGB RL-KRZ73-RW",
+      "price": 24383,
+      "quantity": 2,
+      "weight": 3.4
+    },
+    {
+      "product_id": "c0c729e2-60b9-4b20-b5d3-2eaf8c64031e",
+      "image": "http://localhost:3000/products/1720875452573-45304883.webp",
+      "name": " Intel i9-14900KS ",
+      "price": 50169,
+      "quantity": 1,
+      "weight": 0.6
+    }
+  ],
+  "weight": 9.2,
+  "subtotal": 157435,
+  "shippingCost": 951,
+  "grandTotal": 158386,
+  "creationTime": "Thu Jul 18 2024 18:38:30 GMT+0200 (Central European Summer Time)",
+  "accountingSent": true,
+  "saleGenerated": true
+},
+{
+  "_id": "5a671b98-ae5c-4f82-8229-c58c1ff88824",
+  "number": "1804",
+  "user": {
+    "firstname": "Kurt",
+    "lastname": "Vonnegut",
+    "email": "alexthecoder01@gmail.com",
+    "phone": "0264790982",
+    "country": "USA",
+    "city": "Indianapolis, Indiana",
+    "street": "1st Lady Boulevard 839",
+    "zip": "74098",
+    "note": "Please be careful with my package, those are a very important things to me, thank you!"
+  },
+  "courier_id": "fe1c8ce2-2bb9-4012-89e2-03e1a3f25f86",
+  "pcBuild": false,
+  "pcBuildName": "",
+  "status": "Pending",
+  "paid": true,
+  "items": [
+    {
+      "product_id": "67667eaf-5d5b-4ad9-b582-b085e4f544ae",
+      "image": "http://localhost:3000/products/1721382812540-277983930.png",
+      "name": "MSI MEG X670E ACE",
+      "price": 105066,
+      "quantity": 2,
+      "weight": 4
+    },
+    {
+      "product_id": "0a15a62c-b1fa-4d24-b608-317b8703aad3",
+      "image": "http://localhost:3000/products/1721383756537-324699038.png",
+      "name": "AMD Ryzen 7 8700F",
+      "price": 24537,
+      "quantity": 3,
+      "weight": 0.6000000000000001
+    }
+  ],
+  "weight": 4.6,
+  "subtotal": 283743,
+  "shippingCost": 550,
+  "grandTotal": 284293,
+  "creationTime": "Tue Jul 30 2024 15:24:14 GMT+0200 (Central European Summer Time)",
+  "accountingSent": true,
+  "saleGenerated": true
+},
+{
+  "_id": "b41c35e9-0d28-4b96-9a02-718752ac3933",
+  "number": "1040",
+  "user": {
+    "firstname": "Phil",
+    "lastname": "Anselmo",
+    "email": "aleksachampion14@gmail.com",
+    "phone": "0658891631",
+    "country": "Republic of Serbia",
+    "city": "Novi Sad",
+    "street": "Krajiska 14",
+    "zip": "21410",
+    "note": "Note that shit."
+  },
+  "courier_id": "fe1c8ce2-2bb9-4012-89e2-03e1a3f25f86",
+  "pcBuild": false,
+  "pcBuildName": "",
+  "status": "placed",
+  "paid": false,
+  "items": [
+    {
+      "product_id": "0a15a62c-b1fa-4d24-b608-317b8703aad3",
+      "image": "http://localhost:3000/products/1721383756537-324699038.png",
+      "name": "AMD Ryzen 7 8700F",
+      "price": 24537,
+      "quantity": 3,
+      "weight": 0.6000000000000001
+    },
+    {
+      "product_id": "e00c3667-a297-4afe-8851-1573c8a1ab51",
+      "image": "http://localhost:3000/products/1721384711020-901336123.webp",
+      "name": "AMD Ryzen 9 3900XT",
+      "price": 45782,
+      "quantity": 2,
+      "weight": 0.2
+    }
+  ],
+  "weight": 0.8,
+  "subtotal": 165175,
+  "shippingCost": 420,
+  "grandTotal": 165595,
+  "creationTime": "Tue Aug 27 2024 14:30:58 GMT+0200 (Central European Summer Time)",
+  "accountingSent": false,
+  "saleGenerated": true
+},
+{
+  "_id": "6e2668b3-6d7b-4fcf-bdd7-605dbf195f3c",
+  "number": "1684",
+  "user": {
+    "firstname": "Phil",
+    "lastname": "Anselmo",
+    "email": "aleksachampion14@gmail.com",
+    "phone": "0658891631",
+    "country": "Republic of Serbia",
+    "city": "Novi Sad",
+    "street": "Krajiska 14",
+    "zip": "21410",
+    "note": "Please be careful with my components, they are really important to me. Thanks! :)"
+  },
+  "courier_id": "1b7b55b7-fdf3-40ae-b144-9b94dbc7ef25",
+  "pcBuild": false,
+  "pcBuildName": "",
+  "status": "picked",
+  "paid": false,
+  "items": [
+    {
+      "product_id": "dacc56a8-c3b8-48d0-a437-6742cb3a1917",
+      "image": "http://localhost:3000/products/1721386082247-736919148.png",
+      "name": "Asus GeForce ROG-STRIX-RTX4070TIS",
+      "price": 131243,
+      "quantity": 1,
+      "weight": 1.7
+    },
+    {
+      "product_id": "45edf04c-ac6d-46b5-851d-1904f261ec06",
+      "image": "http://localhost:3000/products/1721387008839-193551326.png",
+      "name": "MSI GeForce RTX 3060 Ti VENTUS",
+      "price": 48895,
+      "quantity": 2,
+      "weight": 3
+    },
+    {
+      "product_id": "81e6388c-e2e1-4536-aa40-085734ab782b",
+      "image": "http://localhost:3000/products/1721386774314-341163843.png",
+      "name": "Palit GeForce RTX 4070",
+      "price": 76549,
+      "quantity": 1,
+      "weight": 1.1
+    },
+    {
+      "product_id": "4f2b9c8a-a2b9-4b63-b34d-5176baba1945",
+      "image": "http://localhost:3000/products/1721388835170-55017409.png",
+      "name": "Kingston KF552C40BWAK4",
+      "price": 55458,
+      "quantity": 2,
+      "weight": 0.4
+    },
+    {
+      "product_id": "5974001e-21ac-46ab-951b-4a7f6e9c957b",
+      "image": "http://localhost:3000/products/1721388632242-720684770.png",
+      "name": "Kingston KF568C34BWK2",
+      "price": 14460,
+      "quantity": 3,
+      "weight": 0.30000000000000004
+    },
+    {
+      "product_id": "fea85df6-f1f0-49dd-8ad8-65c892eaf4ed",
+      "image": "http://localhost:3000/products/1721389122886-271909351.webp",
+      "name": "G.SKILL F5-6000J3636F16GX2-TZ5K",
+      "price": 69373,
+      "quantity": 1,
+      "weight": 0.1
+    }
+  ],
+  "weight": 6.6000000000000005,
+  "subtotal": 529251,
+  "shippingCost": 951,
+  "grandTotal": 530202,
+  "creationTime": "Tue Aug 27 2024 17:04:35 GMT+0200 (Central European Summer Time)",
+  "accountingSent": true,
+  "saleGenerated": true
+},
+{
+  "_id": "af06de98-3233-4cf6-ac77-610a44c2b165",
+  "number": "1331",
+  "user": {
+    "firstname": "Phil",
+    "lastname": "Anselmo",
+    "email": "aleksachampion14@gmail.com",
+    "phone": "0658891631",
+    "country": "Republic of Serbia",
+    "city": "Novi Sad",
+    "street": "Krajiska 14",
+    "zip": "21410",
+    "note": "Please be careful with my package bla bla bla bla bla."
+  },
+  "courier_id": "f9fff01b-2cc0-4d51-8b1e-363124d6ea24",
+  "pcBuild": false,
+  "pcBuildName": "",
+  "status": "picked",
+  "paid": true,
+  "items": [
+    {
+      "product_id": "0a15a62c-b1fa-4d24-b608-317b8703aad3",
+      "image": "http://localhost:3000/products/1721383756537-324699038.png",
+      "name": "AMD Ryzen 7 8700F",
+      "price": 24537,
+      "quantity": 1,
+      "weight": 0.2
+    },
+    {
+      "product_id": "0141f98e-380f-4856-9d4e-f6ac44ea680f",
+      "image": "http://localhost:3000/products/1721383992796-910778098.webp",
+      "name": "Intel i9-14900KS",
+      "price": 95519,
+      "quantity": 3,
+      "weight": 0.30000000000000004
+    },
+    {
+      "product_id": "dacc56a8-c3b8-48d0-a437-6742cb3a1917",
+      "image": "http://localhost:3000/products/1721386082247-736919148.png",
+      "name": "Asus GeForce ROG-STRIX-RTX4070TIS",
+      "price": 131243,
+      "quantity": 2,
+      "weight": 3.4
+    }
+  ],
+  "weight": 3.9,
+  "subtotal": 573580,
+  "shippingCost": 668,
+  "grandTotal": 574248,
+  "creationTime": "Mon Sep 16 2024 15:50:20 GMT+0200 (Central European Summer Time)",
+  "accountingSent": false,
+  "saleGenerated": true
+},
+{
+  "_id": "f086dfff-d244-408f-8013-070c715b396f",
+  "number": "1293",
+  "user": {
+    "firstname": "Phil",
+    "lastname": "Anselmo",
+    "email": "aleksachampion14@gmail.com",
+    "phone": "0658891631",
+    "country": "Republic of Serbia",
+    "city": "Novi Sad",
+    "street": "Krajiska 14",
+    "zip": "21410",
+    "note": "Those are bla bla bla truć."
+  },
+  "courier_id": "1b7b55b7-fdf3-40ae-b144-9b94dbc7ef25",
+  "pcBuild": false,
+  "pcBuildName": "",
+  "status": "shipped",
+  "paid": true,
+  "items": [
+    {
+      "product_id": "a38444b7-e55d-46ed-9a6c-eba1a37b8289",
+      "image": "http://localhost:3000/products/1721391589987-970963034.png",
+      "name": "Thermaltake The Tower 500 Black",
+      "price": 17784,
+      "quantity": 1,
+      "weight": 14.8
+    },
+    {
+      "product_id": "f578bef6-13ee-4bc0-aedb-bdee78048e67",
+      "image": "http://localhost:3000/products/1721391879116-496777721.png",
+      "name": "Thermaltake Core P90 TG Black",
+      "price": 20420,
+      "quantity": 2,
+      "weight": 0
+    }
+  ],
+  "weight": 14.8,
+  "subtotal": 58624,
+  "shippingCost": 1268,
+  "grandTotal": 59892,
+  "creationTime": "Mon Sep 16 2024 15:57:36 GMT+0200 (Central European Summer Time)",
+  "accountingSent": true,
+  "saleGenerated": true
+}]

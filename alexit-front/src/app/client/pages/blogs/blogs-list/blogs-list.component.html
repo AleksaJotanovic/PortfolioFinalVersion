@@ -1,0 +1,45 @@
+<main class="column-center-stretch">
+
+    <section class="blogs-header column-spacebetween-center">
+        <span></span>
+        <div class="column-center-center gap-1_5">
+            <h1 class="lineheight-fit">BLOGS</h1>
+            <ul class="row-center-center gap-1">
+                <li class="lineheight-fit"><a routerLink="" class="lineheight-fit">Home</a></li>
+                <li class="lineheight-fit"><i class="fa-light fa-chevron-right"></i></li>
+                <li class="lineheight-fit"><a routerLink="" class="lineheight-fit">Blogs</a></li>
+            </ul>
+        </div>
+        <span></span>
+    </section>
+    <section class="blogs-main column-center-stretch gap-4">
+        <div class="search-blogs row-center-stretch">
+            <input #search type="text" placeholder="Search for blogs..." (input)="searchBlogs($event.target)">
+        </div>
+
+        <div class="mobile-topics-activator" (click)="mobileTopicsActive = true">
+            <span class="row-start-center gap-0_5">
+                <i class="fa-light fa-list"></i>
+                <h1>TOPICS</h1>
+            </span>
+            <button type="button"><i class="fa-solid fa-caret-down"></i></button>
+        </div>
+
+        <div class="blogs-container">
+
+            <blog-topics [topics]="topics" />
+
+            <div class="blogs-list">
+
+                @for (blog of blogs; track $index) {
+                <blog-card [blog]="blog" />
+                }
+
+            </div>
+        </div>
+
+    </section>
+</main>
+
+
+<mobile-blog-topics [active]="mobileTopicsActive" [topics]="topics" (onClose)="mobileTopicsActive = false" />

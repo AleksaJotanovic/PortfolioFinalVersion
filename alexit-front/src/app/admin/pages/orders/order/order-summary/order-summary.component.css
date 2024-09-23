@@ -1,0 +1,52 @@
+.summary h4 {
+    font-size: 0.8rem;
+    color: var(--dark-text);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.summary strong {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--dark-text);
+}
+
+
+.change-paid>button#paidBtn {
+    cursor: pointer;
+    background: none;
+    transition: background-color 0.2s ease-in-out;
+    outline: none;
+    color: #57c86e;
+    border: 1px solid #57c86e;
+    outline: none;
+    padding: 0.3rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 50px;
+}
+
+.change-paid>button#paidBtn.active {
+    background-color: #57c86e;
+    color: #ffffff;
+}
+
+.change-paid>button#notPaidBtn {
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    background: none;
+    color: #e14242;
+    border: 1px solid #e14242;
+    border-left: none;
+    outline: none;
+    padding: 0.3rem;
+    width: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.change-paid>button#notPaidBtn.active {
+    background-color: #e14242;
+    color: #ffffff;
+}

@@ -1,0 +1,70 @@
+<div class="product-specs">
+        <div class="row-start-center gap-0_5 filters-captions">
+                <i class="fa-light fa-list"></i>
+                <h1>FILTERS</h1>
+        </div>
+        <div class="filter-container column-start-stretch">
+
+                <div class="filter-header row-spacebetween-center" (click)="price.classList.toggle('filter-active')">
+                        <h1 class="lineheight-fit">Price</h1>
+                        <i class="fa-solid fa-caret-down"></i>
+                </div>
+
+                <div class="filter-collapse filter-active" #price>
+                        <ul class="column-start-stretch">
+                                <li class="lineheight-fit column-center-stretch">
+                                        <input type="range" [(ngModel)]="priceRange.min" [min]="rangeInput.min"
+                                                [max]="rangeInput.max" step="1"
+                                                (mouseup)="emitOnPriceFilterSelect(priceRange.min, priceRange.max)">
+                                        <span class="lineheight-fit">{{priceRange.min}}</span>
+                                </li>
+                                <li class="lineheight-fit column-center-stretch">
+                                        <input type="range" [(ngModel)]="priceRange.max" [min]="rangeInput.min"
+                                                [max]="rangeInput.max" step="1"
+                                                (mouseup)="emitOnPriceFilterSelect(priceRange.min, priceRange.max)">
+                                        <span class="lineheight-fit">{{priceRange.max}}</span>
+                                </li>
+                        </ul>
+                </div>
+
+        </div>
+        <div class="filter-container column-start-stretch">
+                <div class="filter-header row-spacebetween-center" (click)="discount.classList.toggle('filter-active')">
+                        <h1 class="lineheight-fit">Discount</h1>
+                        <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="filter-collapse filter-active" #discount>
+                        <ul class="column-start-stretch">
+                                <li class="lineheight-fit row-spacebetween-center">
+                                        <label for="onDiscountTrue" class="lineheight-fit">On discount</label>
+                                        <input type="checkbox" id="onDiscountTrue"
+                                                (change)="emitOnDiscountFilterSelect($event.target)"
+                                                [checked]="initialOnDiscount">
+                                </li>
+                        </ul>
+                </div>
+        </div>
+        @if (category) {
+        @for (spec of category.specifications; track $index) {
+        <div class="filter-container column-start-stretch">
+                <div class="filter-header row-spacebetween-center"
+                        (click)="collapser.classList.toggle('filter-active')">
+                        <h1 class="lineheight-fit">{{spec.key}}</h1>
+                        <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="filter-collapse" #collapser>
+                        <ul class="column-start-stretch">
+                                @for (val of spec.values; track $index) {
+                                <li class="lineheight-fit row-spacebetween-center">
+                                        <label [htmlFor]="val" class="lineheight-fit">{{val}}</label>
+                                        <input type="checkbox" [id]="val"
+                                                (change)="emitOnFilterSelect(spec.key, val, $event.target)"
+                                                [checked]="checkedInput(spec.key, val)">
+                                </li>
+                                }
+                        </ul>
+                </div>
+        </div>
+        }
+        }
+</div>

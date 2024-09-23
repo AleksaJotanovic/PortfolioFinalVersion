@@ -1,0 +1,19 @@
+<div class="vanilla-data column-center-start gap-1">
+    <h1>Avg. weekly income</h1>
+    <h4>~{{$.money(weeklyIncome.value)}}</h4>
+    @if ($.isPositive(weeklyIncome.previousValue)) {
+    <span class="good-growth">
+        <h5>~{{$.money(weeklyIncome.previousValue)}}</h5>
+        <i class="fa-regular fa-arrow-up-right"></i>
+    </span>
+    }@else {
+    <span class="bad-growth">
+        <h5>~{{$.money(weeklyIncome.previousValue).replace("-", "")}}</h5>
+        <i class="fa-regular fa-arrow-down-right"></i>
+    </span>
+    }
+</div>
+<div class="percentage-data"
+    [ngStyle]="{'background': 'conic-gradient(#28cbe8 '+ weeklyIncome.percentage +', #ecf0ff 0%)'}">
+    <h1>{{weeklyIncome.percentage}}</h1>
+</div>

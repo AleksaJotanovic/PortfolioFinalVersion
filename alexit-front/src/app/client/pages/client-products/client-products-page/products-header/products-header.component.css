@@ -1,0 +1,155 @@
+.products-header {
+    gap: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-grey);
+}
+
+.breadcrumbs>ul {
+    gap: 0.7rem;
+}
+
+.breadcrumbs>ul>li {
+    gap: 0.7rem;
+}
+
+.breadcrumbs a {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: var(--dark-light);
+    font-weight: 200;
+}
+
+.breadcrumbs i {
+    font-size: 0.5rem;
+    color: var(--dark-light);
+}
+
+.products-title {
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products-title>h1 {
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: var(--main-black);
+    letter-spacing: 5px;
+    flex: 1.5;
+}
+
+.sorter {
+    display: flex;
+    flex: 0.5;
+}
+
+.selectmenu>select {
+    background-color: var(--main-black);
+    color: var(--main-white);
+    font-weight: 200;
+    letter-spacing: 3px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    flex: 1;
+    padding: 0.5rem 1rem;
+    outline: none;
+    appearance: none;
+    border: none;
+}
+
+.selectmenu>button {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border: none;
+    background-color: var(--yellow-light);
+    color: var(--main-white);
+}
+
+.products-sorting {
+    display: none;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--main-black);
+    color: var(--main-white);
+    padding-inline: 1rem;
+    cursor: pointer;
+}
+
+.products-sorting>h1 {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    font-weight: 200;
+}
+
+.products-sorting>h1>i {
+    font-size: 1rem;
+}
+
+.products-sorting>button {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border: none;
+    background-color: var(--yellow-light);
+    color: var(--main-white);
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+}
+
+.products-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding-block: 2rem;
+}
+
+
+
+
+
+
+
+
+@media only screen and (width < 1024px) {
+    .products-title {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2.5rem;
+    }
+
+    .products-sorting {
+        display: flex;
+    }
+
+    .sorter {
+        flex: 1;
+        gap: 1.5rem;
+    }
+
+    .products-title>h1 {
+        flex: 1;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .sorter {
+        flex-direction: column;
+    }
+
+    .products-sorting {
+        padding-block: 0.5rem;
+    }
+
+    .products-list {
+        grid-template-columns: 1fr;
+    }
+}

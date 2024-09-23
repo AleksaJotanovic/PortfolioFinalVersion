@@ -1,0 +1,1 @@
+export const sorterValues = { PRICE_ASCENDING: "priceAscending", PRICE_DESCENDING: "priceDescending", DATE_ASCENDING: "dateAscending", DATE_DESCENDING: "dateDescending" };

@@ -1,0 +1,110 @@
+.vanilla-data>h1 {
+    letter-spacing: 1px;
+    color: var(--dark-text);
+    font-weight: 700;
+    font-size: 0.7rem;
+    line-height: 100%;
+}
+
+.vanilla-data>h4 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+    color: #363b50;
+}
+
+.vanilla-data>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-main);
+    padding: 0.5rem 0.85rem;
+    gap: 0.4rem;
+}
+
+.vanilla-data>span.bad-growth {
+    background-color: rgba(216, 27, 52, 0.164);
+    color: var(--bad-color);
+}
+
+.vanilla-data>span.good-growth {
+    background-color: rgba(90, 218, 135, 0.2);
+    color: var(--good-color);
+}
+
+.vanilla-data>span>i {
+    font-size: 0.8rem;
+}
+
+.vanilla-data>span>h5 {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.percentage-data {
+    border-radius: 50%;
+    max-width: 135px;
+    flex: 1;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.percentage-data::after {
+    position: absolute;
+    content: "";
+    height: 82%;
+    width: 82%;
+    background-color: #ffffff;
+    border-radius: 50%;
+    inset: 0;
+    margin: auto;
+}
+
+.percentage-data>h1 {
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    color: var(--dark-text);
+    line-height: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1366px) {
+    .percentage-data>h1 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .percentage-data>h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .percentage-data>h1 {
+        font-size: 1rem;
+    }
+}

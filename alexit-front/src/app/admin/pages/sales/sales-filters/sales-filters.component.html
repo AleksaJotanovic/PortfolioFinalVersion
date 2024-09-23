@@ -1,0 +1,25 @@
+<div class="adm-form-group flex-full">
+    <select #category_id>
+        <option value="all">All groups</option>
+        @for (category of (categories | ctgIf); track $index) {
+        <option [value]="category._id">{{category.name}}</option>
+        }
+    </select>
+    <i class="fa-solid fa-caret-down"></i>
+</div>
+<div class="adm-form-group flex-full">
+    <input #productCode type="text" placeholder="Enter product code">
+</div>
+<div class="adm-form-group flex-full">
+    <input #productName type="text" placeholder="Enter product name">
+</div>
+<div class="date-filter flex-full row-spacebetween-center gap-0_4">
+    <input type="date" #startDate [(ngModel)]="date.start">
+    <b>-</b>
+    <input type="date" #endDate [(ngModel)]="date.end">
+</div>
+<button type="button" class="blue-btn"
+    (click)="emitOnFiltersUpdate(category_id.value, startDate.value, endDate.value, productCode.value, productName.value)">
+    <i class="fa-light fa-magnifying-glass"></i>
+    <h5>Search</h5>
+</button>

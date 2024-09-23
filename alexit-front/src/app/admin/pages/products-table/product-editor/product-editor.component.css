@@ -1,0 +1,236 @@
+main {
+    scrollbar-width: thin;
+    scrollbar-color: var(--light-blue) transparent;
+    grid-column: 2 / 3;
+    padding: 0 1rem 1rem 1rem;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.goback-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goback-title h6 {
+    font-size: 0.7rem;
+    line-height: 100%;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--light-blue);
+}
+
+.goback-title h1 {
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    line-height: 100%;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%);
+    gap: 1rem;
+}
+
+.main-container>div:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.main-container>div:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.main-container>div:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.main-container>div:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.main-container>div:nth-child(5) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.images-box {
+    border-radius: var(--border-radius-main);
+    background-color: #ffffff;
+    box-shadow: var(--box-shadow-main);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    padding: 1rem;
+    gap: 1rem;
+    height: fit-content;
+}
+
+.images-box>h1 {
+    line-height: 100%;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--dark-text);
+}
+
+.images-layout {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.images-layout>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.images-layout>div>span {
+    outline: 2px dashed var(--border-light);
+    aspect-ratio: 1 / 1;
+    border-radius: var(--border-radius-sub);
+    flex: 1;
+}
+
+.images-layout>div>span>img {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.remaining-images-output {
+    display: none;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(46, 91, 226, 0.35);
+    border-radius: var(--border-radius-sub);
+    justify-content: center;
+    align-items: center;
+}
+
+.remaining-images-output>h1 {
+    font-size: 2.8rem;
+    font-weight: 200;
+    color: #edf2ff;
+    letter-spacing: 1px;
+}
+
+.images-layout>button {
+    width: 100%;
+}
+
+.images-layout input {
+    display: none;
+}
+
+.specifications>div {
+    position: relative;
+}
+
+.specifications>div>i {
+    position: absolute;
+    right: 0.8rem;
+    font-size: 0.7rem;
+    color: #b6bcd7;
+}
+
+.specifications>h4 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--dark-text);
+    font-size: 0.85rem;
+}
+
+.specifications input {
+    background-color: #ebefff;
+    flex: 1;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 0.4rem 0.8rem;
+    color: var(--dark-text);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.specifications select {
+    flex: 1;
+    background-color: #ffffff;
+    outline: 2px solid #ebefff;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    letter-spacing: 1px;
+    border-radius: var(--border-radius-sub);
+    font-size: 0.75rem;
+    color: var(--dark-text);
+    font-weight: 500;
+    appearance: none;
+    transition: outline 0.2s ease-in-out;
+}
+
+.inline-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inline-group>.green-btn {
+    align-self: flex-end;
+    padding: 0.5rem 0;
+}
+
+
+.adm-form-group>label.req::after {
+    content: "*";
+    color: var(--bad-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 812px) {
+    .goback-title>div:first-child>span {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .goback-title>div:last-child>button>h5 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .images-layout {
+        grid-template-columns: 100%;
+    }
+}

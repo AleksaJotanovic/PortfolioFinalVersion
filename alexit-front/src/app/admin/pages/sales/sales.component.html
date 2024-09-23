@@ -1,0 +1,21 @@
+<main class="column-start-stretch gap-1">
+    <span class="main-title row-spacebetween-center">
+        <h1>Sales report</h1>
+        <button type="button" class="purple-btn" (click)="printSalesReport()">
+            <i class="fa-light fa-print"></i>
+            <h5>Print sales report</h5>
+        </button>
+    </span>
+    <sales-filters [categories]="categories" [date]="date" (onFiltersUpdate)="updateFilters($event)" />
+    <div class="table-container">
+        <sales-table [sales]="sales" [totals]="totals" (onSalesReportPrint)="printSalesReport()"
+            (onSort)="sort($event)" />
+        <div class="pagination-container row-spacebetween-center">
+            <button type="button" class="row-center-center" (click)="previousPile()"><i
+                    class="fa-solid fa-caret-left"></i></button>
+            <p>Showing {{currentPile + 1}} of {{paginatedSales.length}}</p>
+            <button type="button" class="row-center-center" (click)="nextPile()"><i
+                    class="fa-solid fa-caret-right"></i></button>
+        </div>
+    </div>
+</main>

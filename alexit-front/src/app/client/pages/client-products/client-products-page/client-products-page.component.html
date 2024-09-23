@@ -1,0 +1,25 @@
+<main class="column-center-center">
+
+    <section class="products-main column-center-stretch">
+
+        <products-header (onMobileFiltersActive)="mobileFiltersActive = true" (onSorting)="sortProducts($event)"
+            [initialSorterValue]="initialSorterValue" />
+
+        <div class="products-container">
+            <filters [category]="category" (onFilterSelect)="selectFilterOption($event)" [priceRange]="priceRange"
+                [rangeInput]="rangeInput" (onPriceFilterSelect)="filterProductsByPrice($event)"
+                (onDiscountFilterSelect)="filterProductsByDiscount($event)" [initialOnDiscount]="initialOnDiscount" />
+            <div class="products-list">
+                @for (product of products; track $index) {
+                <product-card [product]="product" (onAddToCart)="addToCart($event)"
+                    (onAddToFavorites)="addToFavorites($event)" [configuratorMode]="configuratorMode"
+                    (onAddToConfigurator)="addToConfigurator($event)" />
+                }
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<mobile-filters [category]="category" [mobileFiltersActive]="mobileFiltersActive"
+    (onClose)="mobileFiltersActive = false" (onFilterSelect)="selectFilterOption($event)" />

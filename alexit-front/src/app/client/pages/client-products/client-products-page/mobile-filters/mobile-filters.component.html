@@ -1,0 +1,69 @@
+<aside class="mobile-products-filter column-start-stretch"
+    [ngClass]="[mobileFiltersActive ? 'mobile-products-filter-active': '']">
+    <div class="mobile-filter-exit row-spacebetween-center">
+        <h1 class="lineheight-fit"><i class="fa-light fa-list"></i> FILTERS</h1>
+        <span (click)="onClose.emit()"><i class="fa-light fa-xmark"></i></span>
+    </div>
+    <div class="column-start-stretch gap-2">
+        <div class="mobile-filter-container column-start-stretch">
+            <div class="mobile-filter-header row-spacebetween-center"
+                (click)="price.classList.toggle('mobile-filter-collapse-active')">
+                <h1 class="lineheight-fit">Price</h1>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div #price class="mobile-filter-collapse">
+                <ul class="column-start-stretch">
+                    <li class="lineheight-fit column-center-stretch">
+                        <input type="range">
+                        <span class="lineheight-fit">0</span>
+                    </li>
+                    <li class="lineheight-fit column-center-stretch">
+                        <input type="range">
+                        <span class="lineheight-fit">999999</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobile-filter-container column-start-stretch">
+            <div class="mobile-filter-header row-spacebetween-center"
+                (click)="onDiscount.classList.toggle('mobile-filter-collapse-active')">
+                <h1 class="lineheight-fit">On discount</h1>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div #onDiscount class="mobile-filter-collapse">
+                <ul class="column-start-stretch">
+                    <li class="lineheight-fit row-spacebetween-center">
+                        <label for="onDiscountYes" class="lineheight-fit">Yes</label>
+                        <input type="checkbox" id="onDiscountYes">
+                    </li>
+                    <li class="lineheight-fit row-spacebetween-center">
+                        <label for="onDiscountNo" class="lineheight-fit">No</label>
+                        <input type="checkbox" id="onDiscountNo">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        @if (category) {
+        @for (spec of category.specifications; track $index) {
+        <div class="mobile-filter-container column-start-stretch">
+            <div class="mobile-filter-header row-spacebetween-center"
+                (click)="collapser.classList.toggle('mobile-filter-collapse-active')">
+                <h1 class="lineheight-fit">{{spec.key}}</h1>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div #collapser class="mobile-filter-collapse">
+                <ul class="column-start-stretch">
+                    @for (val of spec.values; track $index) {
+                    <li class="lineheight-fit row-spacebetween-center">
+                        <label [htmlFor]="val" class="lineheight-fit">{{val}}</label>
+                        <input type="checkbox" [id]="val" [value]="val"
+                            (change)="emitOnFilterSelect(spec.key, val, $event.target)">
+                    </li>
+                    }
+                </ul>
+            </div>
+        </div>
+        }
+        }
+    </div>
+</aside>

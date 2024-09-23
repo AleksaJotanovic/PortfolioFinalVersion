@@ -1,0 +1,39 @@
+<h1>Items</h1>
+<div class="items column-start-stretch gap-0_7">
+    @if(order){
+    @for (item of order.items; track $index) {
+    <div class="row-start-center gap-1">
+        <picture><img [src]="item.image" width="50" height="50"></picture>
+        <span class="prod-title column-center-start gap-0_3 flex-full">
+            <h4>{{item.name}}</h4>
+            <h5>Category</h5>
+        </span>
+        <span class="price-counting row-spacebetween-center gap-1 flex-full">
+            <output>{{item.quantity}}</output>
+            <output>{{$.money(item.price)}}</output>
+            <output>{{$.money(item.price * item.quantity)}}</output>
+        </span>
+    </div>
+    }
+    }
+</div>
+<div class="note-total row-spacebetween-center gap-3">
+    <span class="column-start-stretch gap-0_2">
+        <h4>User's note:</h4>
+        <p>{{order.user.note}}</p>
+    </span>
+    <div class="column-start-stretch gap-0_5">
+        <span class="row-spacebetween-center">
+            <h5>Subtotal</h5>
+            <b>{{$.money(order.subtotal)}}</b>
+        </span>
+        <span class="row-spacebetween-center">
+            <h5>Shipping</h5>
+            <b>{{$.money(order.shippingCost)}}</b>
+        </span>
+        <span class="row-spacebetween-center">
+            <h5>Total</h5>
+            <b>{{$.money(order.grandTotal)}}</b>
+        </span>
+    </div>
+</div>

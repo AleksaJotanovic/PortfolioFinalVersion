@@ -1,0 +1,130 @@
+<main class="column-start-stretch gap-1">
+    <span class="main-title">
+        <h1>Categories</h1>
+        <button type="button" class="blue-btn" routerLink="create-category">
+            <i class="fa-light fa-plus-circle"></i>
+            <h5>Add new category</h5>
+        </button>
+    </span>
+    <div class="table-options gap-1">
+        <div class="adm-form-group">
+            <input #search type="text" id="search" placeholder="Search for name, parent, specs, etc.">
+        </div>
+        <button type="button" class="blue-btn" (click)="updateFilters(search)">
+            <i class="fa-light fa-magnifying-glass"></i>
+            <h5>Search</h5>
+        </button>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <button #name type="button" [id]="sortingTriggers.NAME" (click)="sort($event.currentTarget)">
+                            NAME
+                            @if (name.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th>
+                        <button #parent type="button" [id]="sortingTriggers.PARENT"
+                            (click)="sort($event.currentTarget)">
+                            PARENT
+                            @if (parent.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th>
+                        <button #cfgField type="button" [id]="sortingTriggers.CONFIGURATOR_FIELD"
+                            (click)="sort($event.currentTarget)">
+                            CONFIGURATOR
+                            @if (cfgField.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th>
+                        <button #specifications type="button" [id]="sortingTriggers.SPECIFICATIONS"
+                            (click)="sort($event.currentTarget)">
+                            SPECIFICATIONS
+                            @if (specifications.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th>
+                        <button #products type="button" [id]="sortingTriggers.PRODUCTS"
+                            (click)="sort($event.currentTarget)">
+                            PRODUCTS
+                            @if (products.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th>ACTIONS</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (category of categories; track $index) {
+                <tr>
+                    <td>{{category.name}}</td>
+                    <td>{{parentName(category.parent_id) || "-"}}</td>
+                    <td>{{category.configuratorField || "-"}}</td>
+                    <td>{{category.specifications.length}}</td>
+                    <td>{{productsInCategory(category._id)}}</td>
+                    <td><i class="fa-regular fa-sliders" [routerLink]="['category', category._id]"></i></td>
+                </tr>
+                }
+            </tbody>
+        </table>
+        <div class="pagination-container row-spacebetween-center">
+            <button type="button" class="row-center-center" (click)="previousPile()"><i
+                    class="fa-solid fa-caret-left"></i></button>
+            <p>Showing {{currentPile + 1}} of {{paginatedCategories.length}}</p>
+            <button type="button" class="row-center-center" (click)="nextPile()"><i
+                    class="fa-solid fa-caret-right"></i></button>
+        </div>
+    </div>
+</main>

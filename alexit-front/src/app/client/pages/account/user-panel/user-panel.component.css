@@ -1,0 +1,69 @@
+.user-panel :where(ul, a) {
+    flex: 1;
+}
+
+.user-panel a {
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.user-panel a>span:first-child {
+    aspect-ratio: 1 / 1;
+    width: 70px;
+    font-size: 1.125rem;
+    color: var(--dark-medium);
+    border-right: 1px solid var(--border-grey);
+}
+
+.user-panel a>span:last-child {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    font-weight: 300;
+    color: var(--dark-light);
+    flex: 1;
+}
+
+.user-panel li {
+    position: relative;
+    border-bottom: 1px solid var(--border-grey);
+    border-inline: 1px solid var(--border-grey);
+    padding-right: 1rem;
+}
+
+.user-panel li::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 0px;
+    background-color: var(--yellow-light);
+    left: 0;
+    transition: height 0.2s ease-in-out;
+}
+
+.user-panel li:hover::before {
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (width < 1024px) {
+    .user-panel a>span:last-child {
+        display: none;
+    }
+
+    .user-panel li {
+        padding: 0;
+    }
+
+    .user-panel a>span:first-child {
+        border-right: none;
+    }
+}

@@ -1,0 +1,89 @@
+.user-account-routing {
+    gap: 3rem;
+    padding: 2rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table picture {
+    height: 80px;
+    aspect-ratio: 1 / 1;
+}
+
+table picture>img {
+    width: 100%;
+    height: 100%;
+}
+
+table th {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--main-white);
+    background-color: var(--main-black);
+    letter-spacing: 3px;
+}
+
+table td {
+    padding: 1rem;
+    text-align: center;
+}
+
+table h1 {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: var(--main-black);
+    text-align: start;
+}
+
+table h2 {
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: var(--dark-light);
+    text-align: start;
+}
+
+
+table td>#price {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: var(--main-black);
+    font-weight: 300;
+}
+
+table td>#inStock {
+    color: #308530;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+table td>#outOfStock {
+    color: #982c2c;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+table>tbody>tr {
+    border-bottom: 1px solid var(--border-grey);
+}
+
+table button {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background-color: var(--yellow-light);
+    color: var(--main-white);
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+    border: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+table button:hover {
+    background-color: var(--yellow-dark);
+}

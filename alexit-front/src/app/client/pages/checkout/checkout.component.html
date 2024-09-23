@@ -1,0 +1,141 @@
+<main class="column-start-stretch">
+    <section class="checkout-header column-spacebetween-center">
+        <span></span>
+        <div class="column-center-center gap-1_5">
+            <h1 class="lineheight-fit">CHECKOUT</h1>
+            <ul class="row-center-center gap-1">
+                <li class="lineheight-fit"><a routerLink="" class="lineheight-fit">Home</a></li>
+                <li class="lineheight-fit"><i class="fa-sharp fa-light fa-chevron-right"></i></li>
+                <li class="lineheight-fit"><a routerLink="checkout" class="lineheight-fit">Checkout</a></li>
+            </ul>
+        </div>
+        <span></span>
+    </section>
+    <section class="checkout-section">
+        @if (order) {
+        <div class="user-form column-start-stretch">
+            <form [formGroup]="userForm" class="column-start-stretch">
+                <div class="user-info column-start-stretch">
+                    <h1 class="lineheight-fit">CUSTOMER INFO</h1>
+                    <div class="user-name">
+                        <div class="column-center-stretch">
+                            <label class="lineheight-fit" for="firstname">Firstname</label>
+                            <input type="text" id="firstname" formControlName="firstname"
+                                placeholder="Enter your firstname">
+                        </div>
+                        <div class="column-center-stretch">
+                            <label class="lineheight-fit" for="lastname">Lastname</label>
+                            <input type="text" id="lastname" formControlName="lastname"
+                                placeholder="Enter your lastname">
+                        </div>
+                    </div>
+                    <div class="user-email column-center-stretch">
+                        <label class="lineheight-fit" for="email">Email</label>
+                        <input type="email" id="email" formControlName="email" placeholder="Enter your email">
+                    </div>
+                </div>
+                <div class="shipping-details column-start-stretch">
+                    <h1 class="lineheight-fit">SHIPPING DETAILS</h1>
+                    <div class="phone-num column-center-stretch">
+                        <label class="lineheight-fit" for="phone">Phone number</label>
+                        <input type="text" id="phone" formControlName="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="country-city">
+                        <div class="column-center-stretch">
+                            <label class="lineheight-fit" for=" country">Country</label>
+                            <input type="text" id="country" formControlName="country" placeholder="Enter your country">
+                        </div>
+                        <div class="column-center-stretch">
+                            <label class="lineheight-fit" for=" city">City</label>
+                            <input type="text" id="city" formControlName="city" placeholder="Enter your city">
+                        </div>
+                    </div>
+                    <div class="zipcode-street">
+                        <div class="column-center-stretch">
+                            <label class="lineheight-fit" for="street">Street</label>
+                            <input type="text" id="street" formControlName="street" placeholder="Enter a street">
+                        </div>
+                        <div class="column-center-stretch">
+                            <label class="lineheight-fit" for="zip">Zip</label>
+                            <input type="text" id="zip" formControlName="zip" placeholder="Enter a zip code">
+                        </div>
+                    </div>
+                </div>
+                <div class="column-start-stretch">
+                    <label for="note">Note</label>
+                    <textarea class="user-note" id="note" rows="10" formControlName="note"
+                        placeholder="Enter your remark"></textarea>
+                </div>
+            </form>
+
+
+
+
+            <div class="payment-details column-start-stretch">
+                <div class="on-delivery">
+                    @for (courier of couriers; track $index) {
+                    <picture #courierRef class="row-center-center" [id]="courier._id" (click)="setCourier($event)">
+                        <img [src]="courier.image">
+                    </picture>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="purchased-items column-start-stretch">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (item of order.items; track $index) {
+                    <tr>
+                        <td>
+                            <div class="row-start-stretch">
+                                <picture class="row-center-center">
+                                    <img [src]="item.image">
+                                </picture>
+                                <div class="product-title column-start-stretch">
+                                    <h1>{{item.name}}</h1>
+                                    <h2>Controllers</h2>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="price">{{$.money(item.price)}}</p>
+                        </td>
+                        <td>
+                            <div class="quantity row-center-center">
+                                <span class="lineheight-fit row-center-center">{{item.quantity}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="total-price">{{$.money(item.price * item.quantity)}}</p>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+            <div class="column-start-stretch checkout-totals">
+                <div class="row-spacebetween-center">
+                    <h1>Subtotal</h1>
+                    <b>{{$.money(order.subtotal)}} <small>RSD</small></b>
+                </div>
+                <div class="row-spacebetween-center">
+                    <h1>Shipping</h1>
+                    <b>{{$.money(order.shippingCost)}} <small>RSD</small></b>
+                </div>
+                <div class="row-spacebetween-center">
+                    <h1>Total</h1>
+                    <b>{{$.money(order.subtotal + order.shippingCost)}} <small>RSD</small></b>
+                </div>
+                <button type="button" (click)="sendOrder()">ORDER</button>
+            </div>
+        </div>
+        }
+    </section>
+</main>

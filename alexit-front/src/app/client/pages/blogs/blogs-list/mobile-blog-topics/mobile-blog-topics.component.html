@@ -1,0 +1,16 @@
+<aside [ngClass]="[active ? 'active' : '']" class="column-start-stretch">
+    <div class="exit row-spacebetween-center">
+        <h1 class="lineheight-fit"><i class="fa-light fa-list"></i> TOPICS</h1>
+        <button type="button" (click)="onClose.emit();"><i class="fa-light fa-xmark"></i></button>
+    </div>
+    <div class="row-start-center">
+        <ul class="column-start-stretch flex-full">
+            <li routerLink="/blogs" [queryParams]="{topicId: 'all'}" (click)="onClose.emit()"><a>All topics</a></li>
+            @for (topic of topics; track $index) {
+            <li routerLink="/blogs" [queryParams]="{topicId: topic._id, topicName: topic.name}"
+                (click)="onClose.emit()"><a>{{topic.name}}</a>
+            </li>
+            }
+        </ul>
+    </div>
+</aside>

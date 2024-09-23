@@ -1,0 +1,23 @@
+@if (isReady) {
+<div class="body">
+    <admin-header />
+    <aside>
+        <sidebar />
+    </aside>
+    <div class="main">
+        <router-outlet (activate)="onActivate()" />
+    </div>
+</div>
+}
+
+
+<div #preloadCanvas class="preload-canvas row-center-center">
+    <div class="column-center-center gap-1">
+        <span class="logo row-center-center gap-0_2">
+            <i class="fa-solid fa-caret-left"></i>
+            <h1>ALEX<span>IT</span></h1>
+        </span>
+        <i class="fa-duotone fa-solid fa-spinner-third fa-spin"
+            style="--fa-primary-color: #1642c8; --fa-secondary-color: #1642c8; --fa-secondary-opacity: 0.2;"></i>
+    </div>
+</div>

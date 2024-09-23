@@ -1,0 +1,1 @@
+export const offerContentItemTypes = { HEADING: 'heading', TEXT: 'text' };

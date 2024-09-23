@@ -1,0 +1,295 @@
+main {
+    scrollbar-width: thin;
+    scrollbar-color: var(--light-blue) transparent;
+    grid-column: 2 / 3;
+    padding: 0 1rem 1rem 1rem;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.goback-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goback-title h6 {
+    font-size: 0.7rem;
+    line-height: 100%;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--light-blue);
+}
+
+.goback-title h1 {
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    line-height: 100%;
+    color: var(--dark-text);
+}
+
+.category-editor {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, fit-content(100%));
+}
+
+.category-editor>div {
+    background-color: #ffffff;
+    box-shadow: var(--box-shadow-main);
+    border-radius: var(--border-radius-main);
+}
+
+.category-editor>div:nth-child(1) {
+    grid-column: 1 / 2;
+}
+
+.category-editor>div:nth-child(2) {
+    grid-column: 2 / 3;
+}
+
+.category-editor>div:nth-child(3) {
+    grid-column: 1 / 3;
+}
+
+
+
+.img-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.img-box>h1 {
+    line-height: 100%;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--dark-text);
+}
+
+
+.img-box input[type="file"] {
+    display: none;
+}
+
+
+.img-field {
+    outline: 2px dashed var(--border-light);
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    max-height: 183px;
+    border-radius: var(--border-radius-sub);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.img-field>i {
+    color: var(--light-blue);
+    font-size: 1.125rem;
+}
+
+.img-field>h5 {
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--light-text);
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.img-field>picture {
+    display: none;
+    border-radius: var(--border-radius-sub);
+    height: 100%;
+    width: 100%;
+}
+
+.img-field>picture>img {
+    border-radius: var(--border-radius-sub);
+    height: 100%;
+    width: 100%;
+}
+
+.img-field.hidden :is(h5, i) {
+    display: none;
+}
+
+.specifications {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    padding: 1rem;
+    gap: 1.3rem;
+}
+
+.specifications>div>span>h1 {
+    line-height: 100%;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--dark-text);
+    line-height: 100%;
+}
+
+.specifications>div>span>h6 {
+    line-height: 100%;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: var(--dark-text);
+    font-size: 0.65rem;
+}
+
+.specvalues-field {
+    outline: 2px solid #ebefff;
+    border-radius: var(--border-radius-sub);
+    padding-inline: 0.75rem;
+}
+
+.specvalues-field>span {
+    padding-block: 0.325rem;
+}
+
+.specvalues-field>span>input {
+    font-size: 0.725rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--dark-text);
+    line-height: 100%;
+    outline: none;
+    border: none;
+}
+
+.specvalues-field>span>input::placeholder {
+    color: var(--light-text);
+}
+
+.specvalues-field>span>button.active {
+    transform: rotate(-90deg);
+}
+
+.specvalues-field>span>i {
+    font-size: 0.9rem;
+    color: var(--dark-text);
+}
+
+.specvalues-field>div {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.2s ease-in-out;
+}
+
+.specvalues-field>div.active {
+    grid-template-rows: 1fr;
+}
+
+.values-wrapper {
+    overflow: hidden;
+}
+
+.values-list {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-block: 0.5rem;
+}
+
+.values-list>li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.values-list>li>input {
+    border: none;
+    outline: none;
+    background-color: #9544b5;
+    color: #ffffff;
+    padding: 0.4rem 1.5rem 0.4rem 0.55rem;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    font-size: 0.675rem;
+}
+
+.values-list>li>i {
+    position: absolute;
+    right: 0.6rem;
+    font-size: 0.725rem;
+    color: #ffffff;
+}
+
+.value-input {
+    border: none;
+    overflow: hidden;
+    outline: none;
+    background-color: #ffffff;
+    padding: 0.7rem 0.3rem;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+    color: var(--dark-text);
+    font-weight: 500;
+}
+
+.value-input::placeholder {
+    color: #8898ba;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 812px) {
+    .goback-title>div:first-child>span {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 667px) {
+    .specifications>div>span>h6 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .goback-title>div:last-child>button>h5 {
+        display: none;
+    }
+}

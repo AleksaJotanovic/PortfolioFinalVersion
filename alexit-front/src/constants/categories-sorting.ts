@@ -1,0 +1,1 @@
+export const categoriesSortingTriggers = { NAME: "name", PARENT: "parent", CONFIGURATOR_FIELD: "configuratorField", SPECIFICATIONS: "specifications", PRODUCTS: "products" };

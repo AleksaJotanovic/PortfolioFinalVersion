@@ -1,0 +1,28 @@
+.subscription-container {
+    background-color: var(--main-white);
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.subscription-container>span {
+    height: 10px;
+    background-color: var(--yellow-light);
+}
+
+.subscription-container>div {
+    text-align: center;
+}
+
+.subscription-container>div>h1 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: var(--main-black);
+}
+
+.subscription-container>div>h2 {
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: var(--dark-light);
+}

@@ -1,0 +1,13 @@
+<div class="offer-card column-start-stretch" [ngClass]="[isExpired ? 'expired' : '']">
+    <span class="lineheight-fit">{{getCategoryName(offer.category_id)}}</span>
+    <picture><img [src]="offer.featuredImage"></picture>
+    <div class="offer-card-content column-spacebetween-stretch">
+        <h1>{{offer.title}}</h1>
+        <div class="row-spacebetween-center">
+            <span class="lineheight-fit"><i class="fa-light fa-timer"></i>
+                {{$.dateFormatNormal(offer.date.created)}}</span>
+            <a class="lineheight-fit" (click)="visitOffer(offer)">VIEW <i class="fa-solid fa-circle-chevron-down"></i>
+            </a>
+        </div>
+    </div>
+</div>

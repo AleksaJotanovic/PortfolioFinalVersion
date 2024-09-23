@@ -1,0 +1,48 @@
+.user-account-routing {
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.purchase-table {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.purchase-table>table {
+    flex: 1;
+    border-collapse: collapse;
+}
+
+.purchase-table>table th {
+    padding: 0.8rem 0.5rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: var(--main-white);
+    background-color: var(--main-black);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.purchase-table>table td {
+    padding: 1.5rem 0.5rem;
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.purchase-table>table>tbody>tr {
+    border-bottom: 1px solid var(--border-grey);
+}
+
+.purchase-table>table a {
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: var(--yellow-light);
+    transition: color 0.2s ease-in-out;
+}
+
+.purchase-table>table a:hover {
+    color: var(--yellow-dark);
+}

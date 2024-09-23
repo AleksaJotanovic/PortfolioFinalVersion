@@ -1,0 +1,193 @@
+<main class="column-start-stretch gap-1">
+    <div class="goback-title">
+        <div class="row-start-center gap-0_5">
+            <button type="button" class="circle-btn" routerLink="/admin/products"
+                [queryParams]="{limit: 12, currentPile: 0, categoryId: 'all'}">
+                <i class="fa-light fa-arrow-left"></i>
+            </button>
+            <span class="column-start-start gap-0_2">
+                <h6>Back to inventory</h6>
+                <h1>Add new product</h1>
+            </span>
+        </div>
+        <button type="button" class="blue-btn" (click)="save()" [disabled]="!productForm.valid">
+            <i class="fa-light fa-floppy-disk"></i>
+            <h5>{{id !== "" ? "Update product" : "Save product"}}</h5>
+        </button>
+    </div>
+    <form class="main-container" [formGroup]="productForm">
+        <div class="content-box">
+            <h1>General info</h1>
+            <div class="column-start-stretch gap-1">
+                <div class="adm-form-group">
+                    <label for="name" class="req">Name (Minimum 5 characters)</label>
+                    <input type="text" id="name" placeholder="Enter a name for the category" formControlName="name">
+                </div>
+                <div class="adm-form-group flex-full">
+                    <label for="description">Description</label>
+                    <textarea id="description" placeholder="Enter a description for the category"
+                        formControlName="description"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="images-box">
+            <h1>Images</h1>
+            <div class="images-layout">
+                <input #productImages type="file" multiple
+                    (input)="handleFileInput(productImages, remainingImagesOutput)">
+                <div>
+                    <span><img #summaryImg [src]="[images.length >= 1 ? images[0] : '']"
+                            [ngStyle]="{'display': images.length >= 1 ? 'block' : ''}"></span>
+                    <span><img #summaryImg [src]="[images.length >= 2 ? images[1] : '']"
+                            [ngStyle]="{'display': images.length >= 2 ? 'block' : ''}"></span>
+                    <span class="relative">
+                        <img #summaryImg [src]="[images.length >= 3 ? images[2] : '']"
+                            [ngStyle]="{'display': images.length >= 3 ? 'block' : ''}">
+                        <div #remainingImagesOutput class="remaining-images-output"
+                            [ngStyle]="{'display': images.length > 3 ? 'flex' : ''}">
+                            @if (id !== "") {
+                            @if ((images.length + summaryFiles.getAll("files").length) > 3) {
+                            <h1>+{{(images.length + summaryFiles.getAll("files").length) - 3}}</h1>
+                            }
+                            }@else {
+                            <h1>+{{summaryFiles.getAll("files").length - 3}}</h1>
+                            }
+                        </div>
+                    </span>
+                </div>
+                <button type="button" class="purple-btn" (click)="productImages.click()">
+                    <i class="fa-light fa-cloud-arrow-up"></i>
+                    <h5>Upload multiple images</h5>
+                </button>
+            </div>
+        </div>
+        <div class="content-box">
+            <h1>Inventory</h1>
+            <div class="column-start-stretch gap-1">
+                <div class="inline-group">
+                    <div class="adm-form-group flex-full">
+                        <label for="sku" class="req">SKU (Minimum 5 characters)</label>
+                        <input type="text" size="1" id="sku" placeholder="Enter sku" formControlName="sku">
+                    </div>
+                    <div class="adm-form-group flex-full">
+                        <label for="uom" class="req">UOM</label>
+                        <input type="text" size="1" id="uom" placeholder="Enter unit of measurement"
+                            formControlName="uom">
+                    </div>
+                </div>
+                <div class="inline-group">
+                    <div class="adm-form-group flex-full">
+                        <label for="stock" class="req">In stock</label>
+                        <input type="text" size="1" id="stock" placeholder="Enter quantity" formControlName="inStock">
+                    </div>
+                    <div class="adm-form-group flex-full">
+                        <label for="weight" class="req">Weight</label>
+                        <input type="text" size="1" id="weight" placeholder="Enter weight" formControlName="weight">
+                    </div>
+                </div>
+                <div class="inline-group">
+                    <div class="adm-form-group flex-full">
+                        <label for="recommended" class="req">Include as recommended</label>
+                        <select id="recommended" formControlName="includedAsRecommended">
+                            <option [ngValue]="true">YES</option>
+                            <option [ngValue]="false">NO</option>
+                        </select>
+                    </div>
+                    <div class="adm-form-group flex-full">
+                        <label for="status" class="req">Status</label>
+                        <select formControlName="published">
+                            <option [value]="true">Published</option>
+                            <option [value]="false">Unpublished</option>
+                        </select>
+                        <i class="ph-fill ph-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-box">
+            <h1>Pricing</h1>
+            <div class="column-start-stretch gap-1" formGroupName="price">
+                <div class="inline-group">
+                    <div class="adm-form-group flex-full">
+                        <label for="margin" class="req">Margin</label>
+                        <input type="number" size="1" id="margin" placeholder="Enter margin here"
+                            formControlName="margin">
+                    </div>
+                    <div class="adm-form-group flex-full">
+                        <label for="purchaseValue" class="req">Purchase value</label>
+                        <input type="number" size="1" id="purchaseValue" placeholder="Enter purchase value here"
+                            formControlName="purchase">
+                    </div>
+                    <div class="adm-form-group">
+                        <label for="discount">Discount</label>
+                        <input type="number" size="1" id="discount" placeholder="%" formControlName="discount" min="0"
+                            max="100">
+                    </div>
+                </div>
+                <div class="inline-group">
+                    <div class="adm-form-group flex-full">
+                        <label for="purchasePrice" class="req">Purchase price</label>
+                        <input type="number" size="1" id="purchasePrice" value="0" formControlName="regular">
+                    </div>
+                    <div class="adm-form-group flex-full">
+                        <label for="salePrice" class="req">Sale price</label>
+                        <input type="number" size="1" id="salePrice" value="0" formControlName="sale">
+                    </div>
+                </div>
+                <div class="inline-group">
+                    <div class="adm-form-group flex-full">
+                        <label for="earning" class="req">Earning</label>
+                        <input type="number" size="1" id="earning" value="0" formControlName="earning">
+                    </div>
+                    <button type="button" class="green-btn flex-full" (click)="countPrices()">
+                        <i class="fa-light fa-calculator"></i>
+                        <h5>Calculate price</h5>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="content-box">
+            <h1>Category & specifications</h1>
+            <div class="column-start-stretch gap-1_8">
+                <div class="adm-form-group">
+                    <label for="category">Category</label>
+                    <select formControlName="category_id" (ngModelChange)="onCategorySelect($event)" size="1">
+                        <option value="" disabled selected hidden>--choose category--</option>
+                        @for (category of (categories | ctgIf); track $index) {
+                        <option [ngValue]="category._id">{{category.name}}
+                        </option>
+                        }
+                    </select>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                @if (id !== "") {
+                <div class="specifications column-start-stretch gap-0_8" formArrayName="specifications">
+                    <h4>Specifications</h4>
+                    <div class="row-center-center gap-0_4" *ngFor="let spec of specifications.controls; let i = index"
+                        [formGroupName]="i">
+                        <input type="text" size="1" value="Socket type" formControlName="key">
+                        <select formControlName="value" size="1">
+                            <option *ngFor="let ctgSpecValue of matchingValues(spec.value.key)"
+                                [ngValue]="ctgSpecValue">
+                                {{ctgSpecValue}}</option>
+                        </select>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                }@else {
+                <div class="specifications column-start-stretch gap-0_8" formArrayName="specifications">
+                    <h4>Specifications</h4>
+                    <div class="row-center-center gap-0_4"
+                        *ngFor="let spec of selectedCategory.specifications; let i = index" [formGroupName]="i">
+                        <input type="text" size="1" value="Socket type" formControlName="key">
+                        <select formControlName="value" size="1">
+                            <option *ngFor="let val of spec.values" [ngValue]="val">{{val}}</option>
+                        </select>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+    </form>
+</main>

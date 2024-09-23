@@ -1,0 +1,101 @@
+<main class="column-center-stretch gap-2_5">
+    <div class="breadcrumbs row-start-center">
+        <ul class="row-start-center gap-0_7">
+            <li class="lineheight-fit row-center-center">
+                <a routerLink="" class="lineheight-fit">Home</a>
+            </li>
+            <li class="lineheight-fit"><i class="fa-light fa-chevron-right"></i></li>
+            <li class="lineheight-fit row-center-center">
+                <a class="lineheight-fit">Motherboards</a>
+            </li>
+            <li class="lineheight-fit"><i class="fa-light fa-chevron-right"></i></li>
+            <li class="lineheight-fit row-center-center">
+                <a class="lineheight-fit">{{product ? product.name : ''}}</a>
+            </li>
+        </ul>
+    </div>
+    <section class="product-container">
+        @if (product) {
+        <div class="product-images">
+            <div class="column-start-center">
+                @for (image of product.images; track $index) {
+                <picture [ngClass]="[selectedImage === image ? 'active' : '']" (click)="selectedImage = image"><img
+                        [src]="image"></picture>
+                }
+            </div>
+            <div class="row-center-center">
+                <picture><img [src]="selectedImage"></picture>
+            </div>
+        </div>
+        <div class="product-details">
+            <div class="offer-favorite row-space-between">
+                @if (offerCategoryName(product._id)) {
+                <span>{{offerCategoryName(product._id)}}</span>
+                }
+                <i class="fa-solid fa-heart" (click)="addToFavorites(product._id)"></i>
+            </div>
+            <div class="title-container column-center-start gap-1">
+                <h2>{{getCategoryName(product.category_id)}}</h2>
+                <h1>{{product.name}}</h1>
+                <div class="stock-status row-start-center gap-0_5">
+                    <div></div>
+                    <h3 class="lineheight-fit">The product is in stock</h3>
+                </div>
+            </div>
+            <div class="price-container column-center-start gap-0_5">
+                <h5 class="lineheight-fit">Price:</h5>
+                <span class="row-start-center gap-1 relative">
+                    @if (product.price.discount.value > 0) {
+                    <h2 class="lineheight-fit"><s>{{$.money(product.price.sale)}} <small> RSD</small></s></h2>
+                    <h1 class="lineheight-fit">{{$.money($.countDiscount(product.price.sale,
+                        product.price.discount.value))}}<small> RSD</small></h1>
+                    <span class="discount-result">{{product.price.discount.value}}% discount | {{product.price.sale -
+                        $.countDiscount(product.price.sale, product.price.discount.value)}} <small>RSD</small>
+                        savings</span>
+                    }@else {
+                    <h1 class="lineheight-fit">{{$.money(product.price.sale)}}<small> RSD</small></h1>
+                    }
+                </span>
+            </div>
+            <div class="buttons-quantity">
+                <span class="quantity row-center-stretch">
+                    <button class="flex-full" type="button" (click)="decreaseQuantity()"><i
+                            class="fa-light fa-minus"></i></button>
+                    <output class="flex-full row-center-center">{{quantity}}</output>
+                    <button class="flex-full" type="button" (click)="increaseQuantity()"><i
+                            class="fa-light fa-plus"></i></button>
+                </span>
+                <button type="button" class="add-tocart" (click)="addToCart(product)">Add To Cart</button>
+                <button type="button" class="buy-now">Buy Now</button>
+            </div>
+        </div>
+        }
+    </section>
+
+    <section class="specifications column-center-stretch">
+        <span class="row-start-center">
+            <h1>SPECIFICATIONS</h1>
+        </span>
+        <div class="specs-list column-start-stretch">
+            @if (product) {
+            @for (spec of product.specifications; track $index) {
+            <div class="row-start-center">
+                <span>{{spec.key}}</span><span>{{spec.value}}</span>
+            </div>
+            }
+            }
+        </div>
+    </section>
+
+    @if (product) {
+    @if (product.description !== "") {
+    <section class="description column-center-stretch gap-1">
+        <span class="row-start-center">
+            <h1>DESCRIPTION</h1>
+        </span>
+        <p>{{product.description}}</p>
+    </section>
+    }
+    }
+
+</main>

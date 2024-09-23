@@ -1,0 +1,199 @@
+[{
+  "_id": "bd48920e-864b-4de0-9910-1ab571d07136",
+  "firstname": "Phil",
+  "lastname": "Anselmo",
+  "email": "aleksachampion14@gmail.com",
+  "password": "$2a$10$F9hEYecP5ChvGnYqnUry..5xoIePSqPtOWM1/.HBDPcla5J2hglOO",
+  "role": "Customer",
+  "shippingAddress": {
+    "country": "Republic of Serbia",
+    "city": "Novi Sad",
+    "street": "Krajiska 14",
+    "zip": "21410",
+    "phone": "0658891631"
+  },
+  "creditCard": {
+    "number": "1234567891011123",
+    "expiryDate": "0710",
+    "cvv": "456"
+  },
+  "favoriteProducts": [
+    "f35a4c56-d834-4034-9a44-d12d585dc4ff",
+    "6c5b952a-f4a7-422c-ba9f-fc1fb2a628ac",
+    "b3846fcf-e44d-4d85-ab1c-68ab669065be",
+    "0a15a62c-b1fa-4d24-b608-317b8703aad3"
+  ],
+  "previouslyViewed": [
+    "f35a4c56-d834-4034-9a44-d12d585dc4ff",
+    "b3846fcf-e44d-4d85-ab1c-68ab669065be",
+    "f5b248ff-e88e-4004-9bb6-85431b187772"
+  ],
+  "cart": [],
+  "purchaseHistory": [
+    "b5dbcb78-7501-406d-b5e3-ace4cd81914e",
+    "b59761d5-e33e-43a8-85fd-18ef8a4b58d0",
+    "977667d4-5df2-4159-9311-8743f8f1a3f2",
+    "a90cea28-32f8-4906-89c2-883c83226c7a",
+    "c490aaf1-31ae-4009-a099-9945df6a7f59",
+    "271d7553-2630-4301-b603-a158023b8430",
+    "55763508-c477-4409-84af-9129e345f5cd",
+    "80c4c90b-4360-4199-a341-6690e46fde5d",
+    "d67f061d-91fe-49c0-968d-bc6cf3feff95",
+    "cf82ca5e-e8d8-4bf3-81bc-70d71b051ec8",
+    "ae994c6c-7599-4a5a-958e-590af1123bd2",
+    "6fe3e50b-18e0-4a25-804b-1d0b4de64b1c",
+    "14cbe49f-0ff8-495e-b8d4-bf22fb1adc66",
+    "c9ac2915-f94e-4eb1-bcfa-fccff85e704e",
+    "ed409d93-f728-4ee6-a6c1-df43ae4d6ded",
+    "8ebc6644-8f4c-455e-932a-ce6eda7e8ccd",
+    "42a1af78-de29-471b-b926-0c02252d2424",
+    "666b6004-17b7-42ba-9b4c-401ca6619b40",
+    "5583d1e0-edae-4f1f-8536-caf9f10eee7e",
+    "7d6b2bd8-2162-43b9-89a7-10a5a8416de4",
+    "85eff3f7-c601-4535-9ace-001eff5c66ce",
+    "23462d0d-e792-4747-b8f4-5de7d15ca395",
+    "69918982-a4c2-4cb2-a633-4e5d8b67b65c",
+    "c6861499-bc71-40af-b994-c6a085324502",
+    "1e9ee044-ecaf-4bd0-b7ef-088da9bd083b",
+    "b41c35e9-0d28-4b96-9a02-718752ac3933",
+    "6e2668b3-6d7b-4fcf-bdd7-605dbf195f3c",
+    "af06de98-3233-4cf6-ac77-610a44c2b165",
+    "f086dfff-d244-408f-8013-070c715b396f",
+    "6f92bfd5-3713-4715-9d2a-ffaa7f4a6a27",
+    "f17f4952-9bf4-402b-acdc-d9dddce4b67c"
+  ]
+},
+{
+  "_id": "32948c27-d570-4e52-bb57-4b654d3f21ff",
+  "firstname": "Aleksa",
+  "lastname": "Jotanovic",
+  "email": "jotanovicaleksa@gmail.com",
+  "password": "$2a$10$xYAbQIJJe5avjGryX1QFhu72OpbMonMy6JCHNrAnC3LIJVDQbKFXa",
+  "role": "Admin",
+  "shippingAddress": {
+    "country": "Serbia",
+    "city": "Futogaa",
+    "street": "Krajiska 14",
+    "zip": "21410",
+    "phone": "0658891631"
+  },
+  "creditCard": {
+    "number": "",
+    "expiryDate": "",
+    "cvv": ""
+  },
+  "favoriteProducts": [],
+  "isAdmin": false,
+  "previouslyReviewed": [],
+  "purchaseHistory": [],
+  "cart": [],
+  "previouslyViewed": []
+},
+{
+  "_id": "66b517d3-6594-4b72-b9b3-bcc643766c1b",
+  "firstname": "Uros",
+  "lastname": "Blagojevic",
+  "email": "alexthecoder01@gmail.com",
+  "password": "$2a$10$v.wb.p7NeSXJ/skjUb49UOBmmokPKA8cSrTp0rwIdYockqm14I4lG",
+  "role": "Admin",
+  "shippingAddress": {
+    "country": "Bosnia & Hercegovina",
+    "city": "Kozarska Dubica",
+    "street": "Ulica Ludaka 10",
+    "zip": "79240",
+    "phone": "060398070"
+  },
+  "creditCard": {
+    "number": "",
+    "expiryDate": "",
+    "cvv": ""
+  },
+  "favoriteProducts": [],
+  "previouslyViewed": [],
+  "cart": [],
+  "purchaseHistory": []
+},
+{
+  "_id": "bba4fa6f-95bc-4782-abb9-dfca3bcd9f9f",
+  "firstname": "Danilo",
+  "lastname": "Kis",
+  "email": "jotanovicaleksa6@gmail.com",
+  "password": "$2a$10$q9eC8FaNdv4.q8A27XpbQ.vQ8T6WLP91WRc2dofEB8oIHcKbVlWRa",
+  "role": "Customer",
+  "shippingAddress": {
+    "country": "Serbia",
+    "city": "Subotica",
+    "street": "Strosmajerova 10",
+    "zip": "24000",
+    "phone": "0248909913"
+  },
+  "creditCard": {
+    "number": "",
+    "expiryDate": "",
+    "cvv": ""
+  },
+  "favoriteProducts": [],
+  "previouslyViewed": [
+    "6c5b952a-f4a7-422c-ba9f-fc1fb2a628ac",
+    "f35a4c56-d834-4034-9a44-d12d585dc4ff"
+  ],
+  "cart": [],
+  "purchaseHistory": []
+},
+{
+  "_id": "9f57647e-ae70-4458-89ba-e8088270e82b",
+  "firstname": "Albert",
+  "lastname": "Camus",
+  "email": "albertcamus@gmail.com",
+  "password": "",
+  "role": "Admin",
+  "shippingAddress": {
+    "country": "Algeria",
+    "city": "Oran",
+    "street": "Crazyfuckingstreet 64",
+    "zip": "80670",
+    "phone": "077098378"
+  },
+  "favoriteProducts": [],
+  "purchaseHistory": [],
+  "previouslyViewed": [],
+  "cart": []
+},
+{
+  "_id": "424e21f9-9fff-4ac1-982a-427bf0147d8e",
+  "firstname": "Bruce",
+  "lastname": "Dickinson",
+  "email": "aleksajotanovic563@gmail.com",
+  "password": "$2a$10$JlbkGMzbrexrYkM2Va6zVO/iOHSmTB4y6iDmPq6pK5J0kfcfdvQeK",
+  "role": "Admin",
+  "shippingAddress": {
+    "country": "France",
+    "city": "London",
+    "street": "Areyoumental 178",
+    "zip": "70123",
+    "phone": "0667790099"
+  },
+  "favoriteProducts": [],
+  "purchaseHistory": [],
+  "previouslyViewed": [],
+  "cart": []
+},
+{
+  "_id": "d8cff9ef-899b-45ed-92cf-9f326975394a",
+  "firstname": "Matthew",
+  "lastname": "Sanders",
+  "email": "matthewsanders077@gmail.com",
+  "password": "$2a$10$4DjKrRGatQnfMR5mtvvbL.vmen0yFMlX0Hr/LaWuVf4yb7oGaQJz2",
+  "role": "Admin",
+  "shippingAddress": {
+    "country": "USA",
+    "city": "Huntington Beach, California",
+    "street": "Springfield Ave 348",
+    "zip": "90742",
+    "phone": "0287220011"
+  },
+  "favoriteProducts": [],
+  "purchaseHistory": [],
+  "previouslyViewed": [],
+  "cart": []
+}]

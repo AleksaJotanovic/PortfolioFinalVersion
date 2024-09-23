@@ -1,0 +1,131 @@
+.benefits-section {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    grid-template-rows: 460px;
+    justify-content: space-between;
+}
+
+.benefits-section>div {
+    padding: 2rem;
+    height: 450px;
+    border: 1px solid var(--border-grey);
+    position: relative;
+    gap: 1.5rem;
+}
+
+.benefit-icon {
+    background-color: var(--yellow-light);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.benefit-icon>i {
+    font-size: 2.5rem;
+    color: var(--main-white);
+}
+
+.benefit-content {
+    text-align: center;
+    gap: 1rem;
+}
+
+.benefit-content h1 {
+    font-weight: 300;
+    color: var(--dark-hard);
+    font-size: 1.125rem;
+    letter-spacing: 2px;
+}
+
+.benefit-content hr {
+    width: 30%;
+    height: 2px;
+    border: none;
+    background-color: var(--yellow-light);
+}
+
+.benefit-content p {
+    font-size: 0.825rem;
+    letter-spacing: 2px;
+    color: var(--dark-light);
+    text-wrap: balance;
+    font-weight: 200;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.8;
+}
+
+.benefits-section a {
+    margin-top: auto;
+    color: var(--yellow-light);
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid var(--yellow-light);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    transition: color 0.2s ease-in-out;
+}
+
+.benefits-section a:hover {
+    color: var(--yellow-dark);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1430px) {
+    .benefits-section {
+        padding-inline: 2rem;
+    }
+}
+
+@media only screen and (width < 1024px) {
+    .benefits-section {
+        grid-template-columns: repeat(2, 48%);
+        justify-content: space-between;
+    }
+
+    .benefits-section>div:nth-child(3),
+    .benefits-section>div:nth-child(4) {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .benefits-section {
+        padding-inline: 1rem;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .benefits-section {
+        grid-template-columns: 70%;
+        grid-template-rows: repeat(4, 450px);
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .benefits-section>div:nth-child(3),
+    .benefits-section>div:nth-child(4) {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .benefits-section {
+        grid-template-columns: 80%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .benefits-section {
+        grid-template-columns: 100%;
+    }
+}

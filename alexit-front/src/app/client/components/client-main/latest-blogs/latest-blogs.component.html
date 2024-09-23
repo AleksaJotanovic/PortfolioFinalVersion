@@ -1,0 +1,20 @@
+<section class="latest-blogs column-center-center">
+    <div class="stellar-wrapper">
+        <div class="cosmic-carousel-title">
+            <h1>LATEST BLOGS</h1>
+            <div>
+                <button type="button" class="arrow" (click)="scrollLeft()">
+                    <i class="fa-light fa-chevron-left"></i>
+                </button>
+                <button type="button" class="arrow" (click)="scrollRight()">
+                    <i class="fa-light fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div #carousel class="carousel" (scroll)="infiniteScroll()">
+            @for (blog of blogs; track $index) {
+            <blog-card [blog]="blog" />
+            }
+        </div>
+    </div>
+</section>

@@ -1,0 +1,3112 @@
+[{
+  "_id": "16970485-c8e4-414b-b6a6-808b6c311ce5",
+  "price": {
+    "discount": {
+      "value": 50,
+      "activationDate": "Mon Sep 23 2024 10:29:16 GMT+0200 (Central European Summer Time)"
+    },
+    "margin": 30,
+    "purchase": 50770,
+    "regular": 66001,
+    "sale": 79201,
+    "earning": 19800
+  },
+  "category_id": "aa9a2904-6f0c-4076-a0be-b326c6c7cd67",
+  "name": "Sapphire Radeon RX 6800",
+  "uom": "PC",
+  "sku": "SAP-RAD-RX-680-013",
+  "images": [
+    "http://localhost:3000/products/1721386385590-341319749.png",
+    "http://localhost:3000/products/1721386385590-745991256.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Sapphire"
+    },
+    {
+      "key": "Memory interface",
+      "value": "256-bit"
+    },
+    {
+      "key": "Memory type",
+      "value": "DDR6"
+    },
+    {
+      "key": "Memory size",
+      "value": "16 GB"
+    },
+    {
+      "key": "HDMI ports",
+      "value": "1"
+    },
+    {
+      "key": "VGA ports",
+      "value": "1"
+    },
+    {
+      "key": "Display ports",
+      "value": "3"
+    },
+    {
+      "key": "TDP",
+      "value": "180 W"
+    }
+  ],
+  "inStock": 24,
+  "weight": 1.1,
+  "published": true,
+  "creationDate": "Sun Jul 07 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "dacc56a8-c3b8-48d0-a437-6742cb3a1917",
+  "price": {
+    "discount": {
+      "value": 30,
+      "activationDate": "Mon Sep 23 2024 10:16:27 GMT+0200 (Central European Summer Time)"
+    },
+    "margin": 30,
+    "purchase": 85130,
+    "regular": 110669,
+    "sale": 132803,
+    "earning": 33201
+  },
+  "category_id": "aa9a2904-6f0c-4076-a0be-b326c6c7cd67",
+  "name": "Asus GeForce ROG-STRIX-RTX4070TIS",
+  "uom": "PC",
+  "sku": "ASU-ROG-STR-RTX-012",
+  "images": [
+    "http://localhost:3000/products/1721386082247-736919148.png",
+    "http://localhost:3000/products/1721386082254-117155644.png",
+    "http://localhost:3000/products/1721386082270-870728552.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Asus"
+    },
+    {
+      "key": "Memory interface",
+      "value": "256-bit"
+    },
+    {
+      "key": "Memory type",
+      "value": "DDR6"
+    },
+    {
+      "key": "Memory size",
+      "value": "16 GB"
+    },
+    {
+      "key": "HDMI ports",
+      "value": "2"
+    },
+    {
+      "key": "VGA ports",
+      "value": "1"
+    },
+    {
+      "key": "Display ports",
+      "value": "3"
+    },
+    {
+      "key": "TDP",
+      "value": "80 W"
+    }
+  ],
+  "inStock": 14,
+  "weight": 1.7,
+  "published": true,
+  "creationDate": "Fri Jul 26 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "fea85df6-f1f0-49dd-8ad8-65c892eaf4ed",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 44470,
+    "regular": 57811,
+    "sale": 69373,
+    "earning": 17343
+  },
+  "category_id": "20d19249-70e7-474a-9c1d-e97dbda4b756",
+  "name": "G.SKILL F5-6000J3636F16GX2-TZ5K",
+  "uom": "PC",
+  "sku": "GSK-F56-0J36-36-023",
+  "images": [
+    "http://localhost:3000/products/1721389122886-271909351.webp",
+    "http://localhost:3000/products/1721389122887-721638793.webp"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "G.SKILL"
+    },
+    {
+      "key": "Usage",
+      "value": "Desktop"
+    },
+    {
+      "key": "Memory type",
+      "value": "DDR5"
+    },
+    {
+      "key": "Memory size",
+      "value": "32 GB"
+    },
+    {
+      "key": "Clock speed",
+      "value": "6000 MHz"
+    },
+    {
+      "key": "Packaging",
+      "value": "2 x 16 GB"
+    }
+  ],
+  "inStock": 31,
+  "weight": 0.1,
+  "published": true,
+  "creationDate": "Tue Jul 09 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "67667eaf-5d5b-4ad9-b582-b085e4f544ae",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 67350,
+    "regular": 87555,
+    "sale": 105066,
+    "earning": 26267
+  },
+  "category_id": "6e221c3d-8b68-4850-956d-529d838d802f",
+  "name": "MSI MEG X670E ACE",
+  "uom": "PC",
+  "sku": "MSI-MEG-X67-ACE-004",
+  "images": [
+    "http://localhost:3000/products/1721382812540-277983930.png",
+    "http://localhost:3000/products/1721382812546-750986282.png",
+    "http://localhost:3000/products/1721382812550-320249896.png"
+  ],
+  "specifications": [
+    {
+      "key": "Socket",
+      "value": "Socket AM5"
+    },
+    {
+      "key": "Chipset",
+      "value": "AMD X670"
+    },
+    {
+      "key": "Memory slots",
+      "value": "4"
+    },
+    {
+      "key": "Supported memory type",
+      "value": "DDR5"
+    },
+    {
+      "key": "PCI Express",
+      "value": "3 X 16"
+    },
+    {
+      "key": "Dimensions",
+      "value": "E-ATX"
+    },
+    {
+      "key": "LAN",
+      "value": "1 x 10/100/1000, 1 x 10/100/1000/2500/5000/10000"
+    },
+    {
+      "key": "Bluetooth",
+      "value": "5.2"
+    },
+    {
+      "key": "HDMI Outputs",
+      "value": "2"
+    },
+    {
+      "key": "Max. memory size",
+      "value": "128 GB"
+    },
+    {
+      "key": "Multi GPU support",
+      "value": "CrossFire"
+    },
+    {
+      "key": "SATA",
+      "value": "6 X SATA3"
+    },
+    {
+      "key": "Supported memory speed",
+      "value": "6600 MHz"
+    },
+    {
+      "key": "Display ports",
+      "value": "2"
+    },
+    {
+      "key": "RAM support",
+      "value": "Dual Channel"
+    },
+    {
+      "key": "Manufacturer",
+      "value": "Microstar"
+    }
+  ],
+  "inStock": 22,
+  "weight": 2,
+  "published": true,
+  "creationDate": "Mon Jul 15 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "207f6719-8295-4681-8ac5-23722c5c3aaf",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 8350,
+    "regular": 10855,
+    "sale": 13026,
+    "earning": 3257
+  },
+  "category_id": "6e221c3d-8b68-4850-956d-529d838d802f",
+  "name": "ASRock B650M-H/M.2+",
+  "uom": "PC",
+  "sku": "ASR-B65-H-M2-003",
+  "images": [
+    "http://localhost:3000/products/1721382374512-497846885.png",
+    "http://localhost:3000/products/1721382374515-391992.png",
+    "http://localhost:3000/products/1724953115931-612373640.png",
+    "http://localhost:3000/products/1724953115933-879264910.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "AsRock"
+    },
+    {
+      "key": "Socket",
+      "value": "Socket AM5"
+    },
+    {
+      "key": "Chipset",
+      "value": "AMD B650"
+    },
+    {
+      "key": "Memory slots",
+      "value": "2"
+    },
+    {
+      "key": "Supported memory type",
+      "value": "DDR5"
+    },
+    {
+      "key": "PCI Express",
+      "value": "1 X 16"
+    },
+    {
+      "key": "Dimensions",
+      "value": "Micro-ATX"
+    },
+    {
+      "key": "LAN",
+      "value": "1 X 10/100/1000"
+    },
+    {
+      "key": "Bluetooth",
+      "value": "N/A"
+    },
+    {
+      "key": "HDMI Outputs",
+      "value": "1"
+    },
+    {
+      "key": "Max. memory size",
+      "value": "96 GB"
+    },
+    {
+      "key": "Multi GPU support",
+      "value": "No"
+    },
+    {
+      "key": "SATA",
+      "value": "4 X SATA3"
+    },
+    {
+      "key": "Supported memory speed",
+      "value": "6400 MHz"
+    },
+    {
+      "key": "Display ports",
+      "value": "1"
+    },
+    {
+      "key": "RAM support",
+      "value": "Dual Channel"
+    }
+  ],
+  "inStock": 18,
+  "weight": 1,
+  "published": true,
+  "creationDate": "Mon Jul 08 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": true
+},
+{
+  "_id": "1a65f101-6b4f-4e2a-a50f-48988fcbbdc7",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 48350,
+    "regular": 62855,
+    "sale": 75426,
+    "earning": 18857
+  },
+  "category_id": "6e221c3d-8b68-4850-956d-529d838d802f",
+  "name": "Gigabyte TRX40 AORUS MASTER",
+  "uom": "PC",
+  "sku": "GIG-TRX-AOR-MAS-005",
+  "images": [
+    "http://localhost:3000/products/1721383138949-164815752.png",
+    "http://localhost:3000/products/1721383138953-674987893.png",
+    "http://localhost:3000/products/1721383138965-52973455.png"
+  ],
+  "specifications": [
+    {
+      "key": "Socket",
+      "value": "Socket sTRX4"
+    },
+    {
+      "key": "Chipset",
+      "value": "AMD TRX40"
+    },
+    {
+      "key": "Memory slots",
+      "value": "8"
+    },
+    {
+      "key": "Supported memory type",
+      "value": "GDDR6"
+    },
+    {
+      "key": "PCI Express",
+      "value": "4 X 16"
+    },
+    {
+      "key": "Dimensions",
+      "value": "E-ATX"
+    },
+    {
+      "key": "LAN",
+      "value": "1 X 10/100/1000, 1 X 10/100/1000/2500/5000"
+    },
+    {
+      "key": "Bluetooth",
+      "value": "5.0"
+    },
+    {
+      "key": "HDMI Outputs",
+      "value": "2"
+    },
+    {
+      "key": "Max. memory size",
+      "value": "256 GB"
+    },
+    {
+      "key": "Multi GPU support",
+      "value": "CrossFire & SLI"
+    },
+    {
+      "key": "SATA",
+      "value": "8 X SATA3"
+    },
+    {
+      "key": "Supported memory speed",
+      "value": "4400 MHz"
+    },
+    {
+      "key": "Display ports",
+      "value": "2"
+    },
+    {
+      "key": "RAM support",
+      "value": "Quad Channel"
+    },
+    {
+      "key": "Manufacturer",
+      "value": "Gigabyte"
+    }
+  ],
+  "inStock": 7,
+  "weight": 3.1,
+  "published": false,
+  "creationDate": "Sat Jul 13 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "41a251da-ce81-4665-9962-3c59ea1489a3",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 25550,
+    "regular": 33215,
+    "sale": 39858,
+    "earning": 9965
+  },
+  "category_id": "ec6ef74f-1997-4561-a2cc-6d9408b7ab8a",
+  "name": "NZXT Kraken Z73",
+  "uom": "PC",
+  "sku": "NZX-KRA-Z73-017",
+  "images": [
+    "http://localhost:3000/products/1721387627577-457517425.png",
+    "http://localhost:3000/products/1721387627588-187866237.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Thermaltake"
+    },
+    {
+      "key": "Cooling type",
+      "value": "Liquid"
+    },
+    {
+      "key": "RPM(Revolution per minute)",
+      "value": "1500 RPM"
+    },
+    {
+      "key": "Fan wire diagrams",
+      "value": "4 pin"
+    },
+    {
+      "key": "Fans",
+      "value": "3"
+    },
+    {
+      "key": "LED Lights",
+      "value": "Yes"
+    },
+    {
+      "key": "Size",
+      "value": "40 x 40 x 25 mm"
+    },
+    {
+      "key": "Noise level",
+      "value": "33.0 dBA"
+    }
+  ],
+  "inStock": 21,
+  "weight": 2.2,
+  "published": true,
+  "creationDate": "Thu Aug 01 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "0141f98e-380f-4856-9d4e-f6ac44ea680f",
+  "price": {
+    "discount": {
+      "value": 30,
+      "activationDate": "Mon Sep 23 2024 10:24:02 GMT+0200 (Central European Summer Time)"
+    },
+    "margin": 30,
+    "purchase": 61230,
+    "regular": 79599,
+    "sale": 95519,
+    "earning": 23880
+  },
+  "category_id": "3da85972-b957-4b8b-a1e5-3ae51e5f29d0",
+  "name": "Intel i9-14900KS",
+  "uom": "PC",
+  "sku": "INT-I9-149-0KS-007",
+  "images": [
+    "http://localhost:3000/products/1721383992796-910778098.webp"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Intel"
+    },
+    {
+      "key": "Socket",
+      "value": "LGA 1700"
+    },
+    {
+      "key": "Cores",
+      "value": "24"
+    },
+    {
+      "key": "Threads",
+      "value": "32"
+    },
+    {
+      "key": "Base clock speed",
+      "value": "2.4 GHz"
+    },
+    {
+      "key": "Max. clock speed",
+      "value": "6.2 GHz"
+    },
+    {
+      "key": "Process",
+      "value": "10 nm"
+    },
+    {
+      "key": "TDP",
+      "value": "253W"
+    },
+    {
+      "key": "Integrated graphics",
+      "value": "Intel UHD Graphics 770"
+    }
+  ],
+  "inStock": 28,
+  "weight": 0.1,
+  "published": false,
+  "creationDate": "Sat Jul 27 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "5f920192-4f3d-49b6-bdb3-22c00804a874",
+  "price": {
+    "discount": {
+      "value": 30,
+      "activationDate": "Mon Sep 23 2024 10:24:02 GMT+0200 (Central European Summer Time)"
+    },
+    "margin": 30,
+    "purchase": 50640,
+    "regular": 65832,
+    "sale": 78998,
+    "earning": 19750
+  },
+  "category_id": "3da85972-b957-4b8b-a1e5-3ae51e5f29d0",
+  "name": "Intel i9-10920X",
+  "uom": "PC",
+  "sku": "INT-I9-109-20X-009",
+  "images": [
+    "http://localhost:3000/products/1721384437181-662185717.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Intel"
+    },
+    {
+      "key": "Socket",
+      "value": "LGA 2066"
+    },
+    {
+      "key": "Cores",
+      "value": "12"
+    },
+    {
+      "key": "Threads",
+      "value": "24"
+    },
+    {
+      "key": "Base clock speed",
+      "value": "3.5 GHz"
+    },
+    {
+      "key": "Max. clock speed",
+      "value": "4.6 GHz"
+    },
+    {
+      "key": "Process",
+      "value": "14 nm"
+    },
+    {
+      "key": "TDP",
+      "value": "165W"
+    },
+    {
+      "key": "Integrated graphics",
+      "value": "N/A"
+    }
+  ],
+  "inStock": 24,
+  "weight": 0.1,
+  "published": true,
+  "creationDate": "Sun Jul 07 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "0a15a62c-b1fa-4d24-b608-317b8703aad3",
+  "price": {
+    "discount": {
+      "value": 45,
+      "activationDate": "Wed Sep 18 2024 18:13:04 GMT+0200 (Central European Summer Time)"
+    },
+    "margin": 30,
+    "purchase": 22470,
+    "regular": 29211,
+    "sale": 35053,
+    "earning": 8763
+  },
+  "category_id": "3da85972-b957-4b8b-a1e5-3ae51e5f29d0",
+  "name": "AMD Ryzen 7 8700F",
+  "uom": "PC",
+  "sku": "AMD-RYZ-870-0F-006",
+  "images": [
+    "http://localhost:3000/products/1721383756537-324699038.png",
+    "http://localhost:3000/products/1721383756547-473675627.webp",
+    "http://localhost:3000/products/1721383756549-997027258.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "AMD"
+    },
+    {
+      "key": "Socket",
+      "value": "Socket AM5"
+    },
+    {
+      "key": "Cores",
+      "value": "8"
+    },
+    {
+      "key": "Threads",
+      "value": "16"
+    },
+    {
+      "key": "Base clock speed",
+      "value": "4.1 GHz"
+    },
+    {
+      "key": "Max. clock speed",
+      "value": "5.0 GHz"
+    },
+    {
+      "key": "Process",
+      "value": "4 nm"
+    },
+    {
+      "key": "TDP",
+      "value": "65W"
+    },
+    {
+      "key": "Integrated graphics",
+      "value": "N/A"
+    }
+  ],
+  "inStock": 21,
+  "weight": 0.2,
+  "published": true,
+  "creationDate": "Thu Aug 01 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "5412eff3-8f67-457b-bee7-868985364716",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 10430,
+    "regular": 13559,
+    "sale": 16271,
+    "earning": 4068
+  },
+  "category_id": "6e221c3d-8b68-4850-956d-529d838d802f",
+  "name": "Gigabyte B760M GAMING",
+  "uom": "PC",
+  "sku": "GIG-B760-M-GAM-002",
+  "images": [
+    "http://localhost:3000/products/1721382117528-118202904.png",
+    "http://localhost:3000/products/1721382117541-237217871.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Gigabyte"
+    },
+    {
+      "key": "Socket",
+      "value": "LGA 1700"
+    },
+    {
+      "key": "Chipset",
+      "value": "Intel B760"
+    },
+    {
+      "key": "Memory slots",
+      "value": "2"
+    },
+    {
+      "key": "Supported memory type",
+      "value": "DDR5"
+    },
+    {
+      "key": "PCI Express",
+      "value": "2 X 16"
+    },
+    {
+      "key": "Dimensions",
+      "value": "Micro-ATX"
+    },
+    {
+      "key": "LAN",
+      "value": "1 x 10/100/1000/2500"
+    },
+    {
+      "key": "Bluetooth",
+      "value": "N/A"
+    },
+    {
+      "key": "HDMI Outputs",
+      "value": "1"
+    },
+    {
+      "key": "Max. memory size",
+      "value": "96 GB"
+    },
+    {
+      "key": "Multi GPU support",
+      "value": "No"
+    },
+    {
+      "key": "SATA",
+      "value": "4 X SATA3"
+    },
+    {
+      "key": "Supported memory speed",
+      "value": "8000 MHz"
+    },
+    {
+      "key": "Display ports",
+      "value": "1"
+    },
+    {
+      "key": "RAM support",
+      "value": "Dual Channel"
+    }
+  ],
+  "inStock": 31,
+  "weight": 1,
+  "published": false,
+  "creationDate": "Mon Jul 08 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "3a501e47-4f29-4238-970e-2c61ab0b0a93",
+  "category_id": "3da85972-b957-4b8b-a1e5-3ae51e5f29d0",
+  "name": "AMD Ryzen 5 9600X",
+  "uom": "PC",
+  "sku": "AMD-RYZ-596-00X",
+  "price": {
+    "discount": {
+      "value": 45,
+      "activationDate": "Wed Sep 18 2024 18:13:04 GMT+0200 (Central European Summer Time)"
+    },
+    "margin": 30,
+    "purchase": 24170,
+    "regular": 31421,
+    "sale": 37705,
+    "earning": 9426
+  },
+  "images": [
+    "http://localhost:3000/products/1724887856277-333582961.png",
+    "http://localhost:3000/products/1724887856288-43795431.avif"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "AMD"
+    },
+    {
+      "key": "Socket",
+      "value": "Socket AM5"
+    },
+    {
+      "key": "Cores",
+      "value": "6"
+    },
+    {
+      "key": "Threads",
+      "value": "12"
+    },
+    {
+      "key": "Base clock speed",
+      "value": "3.9 GHz"
+    },
+    {
+      "key": "Max. clock speed",
+      "value": "5.4 GHz"
+    },
+    {
+      "key": "Process",
+      "value": "4 nm"
+    },
+    {
+      "key": "TDP",
+      "value": "65W"
+    },
+    {
+      "key": "Integrated graphics",
+      "value": "N/A"
+    }
+  ],
+  "inStock": 53,
+  "weight": 0.4,
+  "published": true,
+  "creationDate": "Thu Aug 29 2024 01:30:54 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "12842ac7-8ffc-48cd-bf5a-3b921f241a56",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 38640,
+    "regular": 50232,
+    "sale": 60278,
+    "earning": 15070
+  },
+  "category_id": "ec6ef74f-1997-4561-a2cc-6d9408b7ab8a",
+  "name": "Thermaltake Pacific M360 Plus CL-W218-CU00SW-A",
+  "uom": "PC",
+  "sku": "THE-PAC-M36-PLU-016",
+  "images": [
+    "http://localhost:3000/products/1721387337217-489393362.webp"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Thermaltake"
+    },
+    {
+      "key": "Cooling type",
+      "value": "Liquid"
+    },
+    {
+      "key": "RPM(Revolution per minute)",
+      "value": "1500 RPM"
+    },
+    {
+      "key": "Fan wire diagrams",
+      "value": "5 pin"
+    },
+    {
+      "key": "Fans",
+      "value": "3"
+    },
+    {
+      "key": "LED Lights",
+      "value": "Yes"
+    },
+    {
+      "key": "Size",
+      "value": "120 x 120 x 25 mm"
+    },
+    {
+      "key": "Noise level",
+      "value": "36.5 dBA"
+    }
+  ],
+  "inStock": 18,
+  "weight": 7.4,
+  "published": true,
+  "creationDate": "Thu Jul 11 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "5974001e-21ac-46ab-951b-4a7f6e9c957b",
+  "price": {
+    "discount": {
+      "value": 35,
+      "activationDate": "Sun Jul 21 2024 19:52:26 GMT+0200 (Central European Summer Time)"
+    },
+    "margin": 30,
+    "purchase": 14260,
+    "regular": 18538,
+    "sale": 22246,
+    "earning": 5561
+  },
+  "category_id": "20d19249-70e7-474a-9c1d-e97dbda4b756",
+  "name": "Kingston KF568C34BWK2",
+  "uom": "PC",
+  "sku": "KIN-KF5-C34-WK2-021",
+  "images": [
+    "http://localhost:3000/products/1721388632242-720684770.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Kingston"
+    },
+    {
+      "key": "Usage",
+      "value": "Desktop"
+    },
+    {
+      "key": "Memory type",
+      "value": "DDR5"
+    },
+    {
+      "key": "Memory size",
+      "value": "32 GB"
+    },
+    {
+      "key": "Clock speed",
+      "value": "6800 MHz"
+    },
+    {
+      "key": "Packaging",
+      "value": "2 x 16 GB"
+    }
+  ],
+  "inStock": 42,
+  "weight": 0.1,
+  "published": true,
+  "creationDate": "Thu Jul 11 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "3e36c640-cf32-4a31-ae8e-674b42f15583",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 13850,
+    "regular": 18005,
+    "sale": 21606,
+    "earning": 5402
+  },
+  "category_id": "6e221c3d-8b68-4850-956d-529d838d802f",
+  "name": "ASRock B650 LIVEMIXER",
+  "uom": "PC",
+  "sku": "ASR-B65-LIV-MIX-001",
+  "images": [
+    "http://localhost:3000/products/1721381648294-25587508.png",
+    "http://localhost:3000/products/1721381648300-330466870.png",
+    "http://localhost:3000/products/1721381648310-599271631.png",
+    "http://localhost:3000/products/1725092307195-16462630.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "AsRock"
+    },
+    {
+      "key": "Socket",
+      "value": "Socket AM5"
+    },
+    {
+      "key": "Chipset",
+      "value": "AMD B650"
+    },
+    {
+      "key": "Memory slots",
+      "value": "4"
+    },
+    {
+      "key": "Supported memory type",
+      "value": "DDR5"
+    },
+    {
+      "key": "PCI Express",
+      "value": "3 X 16"
+    },
+    {
+      "key": "Dimensions",
+      "value": "ATX"
+    },
+    {
+      "key": "LAN",
+      "value": "1 x 10/100/1000/2500"
+    },
+    {
+      "key": "Bluetooth",
+      "value": "N/A"
+    },
+    {
+      "key": "HDMI Outputs",
+      "value": "1"
+    },
+    {
+      "key": "Max. memory size",
+      "value": "192 GB"
+    },
+    {
+      "key": "Multi GPU support",
+      "value": "CrossFire"
+    },
+    {
+      "key": "SATA",
+      "value": "2 X SATA3"
+    },
+    {
+      "key": "Supported memory speed",
+      "value": "7200 MHz"
+    },
+    {
+      "key": "Display ports",
+      "value": "1"
+    },
+    {
+      "key": "RAM support",
+      "value": "Dual Channel"
+    }
+  ],
+  "inStock": 24,
+  "weight": 2,
+  "published": false,
+  "creationDate": "Fri Jul 05 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "5d8eb76e-d9e0-44fa-a279-892060091cfb",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 20930,
+    "regular": 27209,
+    "sale": 32651,
+    "earning": 8163
+  },
+  "category_id": "ec6ef74f-1997-4561-a2cc-6d9408b7ab8a",
+  "name": "Corsair iCUE H100i ELITE CW-9060074-WW",
+  "uom": "PC",
+  "sku": "COR-ICU-H10-ELI-019",
+  "images": [
+    "http://localhost:3000/products/1721388094267-854524284.png",
+    "http://localhost:3000/products/1721388094273-494628668.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Corsair"
+    },
+    {
+      "key": "Cooling type",
+      "value": "Liquid"
+    },
+    {
+      "key": "RPM(Revolution per minute)",
+      "value": "2100 RPM"
+    },
+    {
+      "key": "Fan wire diagrams",
+      "value": "4 pin"
+    },
+    {
+      "key": "Fans",
+      "value": "2"
+    },
+    {
+      "key": "LED Lights",
+      "value": "Yes"
+    },
+    {
+      "key": "Size",
+      "value": "120 x 120 x 25 mm"
+    },
+    {
+      "key": "Noise level",
+      "value": "29.5 dBA"
+    }
+  ],
+  "inStock": 32,
+  "weight": 2,
+  "published": true,
+  "creationDate": "Wed Jul 17 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "a3b30fbc-c75b-4434-86b7-48be1978a352",
+  "category_id": "aa9a2904-6f0c-4076-a0be-b326c6c7cd67",
+  "name": "Biostar RTX 3060 12GB DDR6 VN3606RML9",
+  "description": "bla bla bla",
+  "uom": "PC",
+  "sku": "BIO-RTX-36ADKJ",
+  "price": {
+    "margin": 30,
+    "purchase": 25670,
+    "regular": 33371,
+    "sale": 40045,
+    "earning": 10011,
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    }
+  },
+  "images": [
+    "http://localhost:3000/products/1726425269136-227182931.png",
+    "http://localhost:3000/products/1726425269140-46917969.png",
+    "http://localhost:3000/products/1726425269142-260467822.png",
+    "http://localhost:3000/products/1726425269145-570175752.png",
+    "http://localhost:3000/products/1726425269148-702567026.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Asus"
+    },
+    {
+      "key": "Memory interface",
+      "value": "2048-bit"
+    },
+    {
+      "key": "Memory type",
+      "value": "DDR5"
+    },
+    {
+      "key": "Memory size",
+      "value": "22 GB"
+    },
+    {
+      "key": "HDMI ports",
+      "value": "2"
+    },
+    {
+      "key": "VGA ports",
+      "value": "1"
+    },
+    {
+      "key": "Display ports",
+      "value": "4"
+    },
+    {
+      "key": "TDP",
+      "value": "150 W"
+    }
+  ],
+  "inStock": 25,
+  "weight": 1.8,
+  "published": true,
+  "creationDate": "Sun Sep 15 2024 20:34:29 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "6463ac34-b87c-4d61-b890-e09f4c3e7e5f",
+  "price": {
+    "discount": {
+      "value": 45,
+      "activationDate": "Wed Sep 18 2024 18:13:04 GMT+0200 (Central European Summer Time)"
+    },
+    "margin": 30,
+    "purchase": 21350,
+    "regular": 27755,
+    "sale": 33306,
+    "earning": 8327
+  },
+  "category_id": "3da85972-b957-4b8b-a1e5-3ae51e5f29d0",
+  "name": "AMD Ryzen 7 5700X3D",
+  "uom": "PC",
+  "sku": "AMD-RYZ-570-X3D-008",
+  "images": [
+    "http://localhost:3000/products/1721384187178-148578666.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "AMD"
+    },
+    {
+      "key": "Socket",
+      "value": "Socket AM4"
+    },
+    {
+      "key": "Cores",
+      "value": "8"
+    },
+    {
+      "key": "Threads",
+      "value": "16"
+    },
+    {
+      "key": "Base clock speed",
+      "value": "3.0 GHz"
+    },
+    {
+      "key": "Max. clock speed",
+      "value": "4.1 GHz"
+    },
+    {
+      "key": "Process",
+      "value": "7 nm"
+    },
+    {
+      "key": "TDP",
+      "value": "105W"
+    },
+    {
+      "key": "Integrated graphics",
+      "value": "N/A"
+    }
+  ],
+  "inStock": 18,
+  "weight": 0.1,
+  "published": true,
+  "creationDate": "Sat Jul 27 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "cc2db9d5-11f9-47f0-bc30-bc5032eeb0b7",
+  "price": {
+    "discount": {
+      "value": 50,
+      "activationDate": "Mon Sep 23 2024 10:29:16 GMT+0200 (Central European Summer Time)"
+    },
+    "margin": 30,
+    "purchase": 170320,
+    "regular": 221416,
+    "sale": 265699,
+    "earning": 66425
+  },
+  "category_id": "aa9a2904-6f0c-4076-a0be-b326c6c7cd67",
+  "name": "PNY GeForce RTX 4090",
+  "uom": "PC",
+  "sku": "PNY-GEF-RTX-409-011",
+  "images": [
+    "http://localhost:3000/products/1721385778955-618020513.png",
+    "http://localhost:3000/products/1721385778956-22655307.png",
+    "http://localhost:3000/products/1721385778981-391788483.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "PNY"
+    },
+    {
+      "key": "Memory interface",
+      "value": "384-bit"
+    },
+    {
+      "key": "Memory type",
+      "value": "DDR6"
+    },
+    {
+      "key": "Memory size",
+      "value": "24 GB"
+    },
+    {
+      "key": "HDMI ports",
+      "value": "3"
+    },
+    {
+      "key": "VGA ports",
+      "value": "1"
+    },
+    {
+      "key": "Display ports",
+      "value": "1"
+    },
+    {
+      "key": "TDP",
+      "value": "170 W"
+    }
+  ],
+  "inStock": 11,
+  "weight": 2,
+  "published": true,
+  "creationDate": "Wed Jul 17 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "45edf04c-ac6d-46b5-851d-1904f261ec06",
+  "price": {
+    "discount": {
+      "value": 50,
+      "activationDate": "Mon Sep 23 2024 10:29:16 GMT+0200 (Central European Summer Time)"
+    },
+    "margin": 30,
+    "purchase": 48220,
+    "regular": 62686,
+    "sale": 75223,
+    "earning": 18806
+  },
+  "category_id": "aa9a2904-6f0c-4076-a0be-b326c6c7cd67",
+  "name": "MSI GeForce RTX 3060 Ti VENTUS",
+  "uom": "PC",
+  "sku": "MSI-GF-RTX-60T-VEN-015",
+  "images": [
+    "http://localhost:3000/products/1721387008839-193551326.png",
+    "http://localhost:3000/products/1721387008843-364971004.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Microstar"
+    },
+    {
+      "key": "Memory interface",
+      "value": "256-bit"
+    },
+    {
+      "key": "Memory type",
+      "value": "DDR6"
+    },
+    {
+      "key": "Memory size",
+      "value": "8 GB"
+    },
+    {
+      "key": "HDMI ports",
+      "value": "1"
+    },
+    {
+      "key": "VGA ports",
+      "value": "1"
+    },
+    {
+      "key": "Display ports",
+      "value": "3"
+    },
+    {
+      "key": "TDP",
+      "value": "55 W"
+    }
+  ],
+  "inStock": 34,
+  "weight": 1.5,
+  "published": true,
+  "creationDate": "Mon Jul 15 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "d3836ec2-47fb-439d-a6c0-feb44b5fbe2b",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 10050,
+    "regular": 13065,
+    "sale": 15678,
+    "earning": 3920
+  },
+  "category_id": "701c5b0c-4f58-4c7d-84d0-b43cee2dae09",
+  "name": "Cooler Master MPX-7503-AFAG-BEU",
+  "uom": "PC",
+  "sku": "COO-MPX-750-AFA-037",
+  "images": [
+    "http://localhost:3000/products/1721392789049-448005590.png",
+    "http://localhost:3000/products/1721392789051-416682612.webp"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Cooler Master"
+    },
+    {
+      "key": "Power usage",
+      "value": "750 W"
+    },
+    {
+      "key": "Efficiency",
+      "value": "80+ Gold"
+    },
+    {
+      "key": "Cables",
+      "value": "Full modular"
+    }
+  ],
+  "inStock": 40,
+  "weight": 2.5,
+  "published": true,
+  "creationDate": "Sun Jul 28 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "95320aad-77b9-45ee-ae5f-f1697e255009",
+  "category_id": "6e221c3d-8b68-4850-956d-529d838d802f",
+  "name": "Asus PRIME X299-DELUXE II",
+  "uom": "PC",
+  "sku": "ASU-PRI-X29-DEL-II041",
+  "price": {
+    "discount": {
+      "value": 30,
+      "activationDate": "Mon Sep 23 2024 10:16:27 GMT+0200 (Central European Summer Time)"
+    },
+    "margin": 30,
+    "purchase": 46180,
+    "regular": 60034,
+    "sale": 72041,
+    "earning": 18010
+  },
+  "images": [
+    "http://localhost:3000/products/1722598348779-94451601.png",
+    "http://localhost:3000/products/1722598348807-824355077.png",
+    "http://localhost:3000/products/1722598348810-308290782.png"
+  ],
+  "specifications": [
+    {
+      "key": "Socket",
+      "value": "LGA 2066"
+    },
+    {
+      "key": "Chipset",
+      "value": "Intel X299"
+    },
+    {
+      "key": "Memory slots",
+      "value": "8"
+    },
+    {
+      "key": "Supported memory type",
+      "value": "DDR4"
+    },
+    {
+      "key": "PCI Express",
+      "value": "3 X 16"
+    },
+    {
+      "key": "Dimensions",
+      "value": "ATX"
+    },
+    {
+      "key": "LAN",
+      "value": "1 X 10/100/1000, 1 X 10/100/1000/2500/5000"
+    },
+    {
+      "key": "Bluetooth",
+      "value": "5.0"
+    },
+    {
+      "key": "HDMI Outputs",
+      "value": "1"
+    },
+    {
+      "key": "Max. memory size",
+      "value": "256 GB"
+    },
+    {
+      "key": "Multi GPU support",
+      "value": "CrossFire & SLI"
+    },
+    {
+      "key": "SATA",
+      "value": "8 X SATA3"
+    },
+    {
+      "key": "Supported memory speed",
+      "value": "4266 MHz"
+    },
+    {
+      "key": "Display ports",
+      "value": "2"
+    },
+    {
+      "key": "RAM support",
+      "value": "Quad Channel"
+    },
+    {
+      "key": "Manufacturer",
+      "value": "Asus"
+    }
+  ],
+  "inStock": 26,
+  "weight": 2.2,
+  "published": true,
+  "creationDate": "Fri Aug 02 2024 13:32:28 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "4f2b9c8a-a2b9-4b63-b34d-5176baba1945",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 35550,
+    "regular": 46215,
+    "sale": 55458,
+    "earning": 13865
+  },
+  "category_id": "20d19249-70e7-474a-9c1d-e97dbda4b756",
+  "name": "Kingston KF552C40BWAK4",
+  "uom": "PC",
+  "sku": "KIN-KF5-C40-WAK-022",
+  "images": [
+    "http://localhost:3000/products/1721388835170-55017409.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Kingston"
+    },
+    {
+      "key": "Usage",
+      "value": "Desktop"
+    },
+    {
+      "key": "Memory type",
+      "value": "DDR5"
+    },
+    {
+      "key": "Memory size",
+      "value": "128 GB"
+    },
+    {
+      "key": "Clock speed",
+      "value": "5200 MHz"
+    },
+    {
+      "key": "Packaging",
+      "value": "4 x 32 GB"
+    }
+  ],
+  "inStock": 18,
+  "weight": 0.2,
+  "published": true,
+  "creationDate": "Wed Jul 17 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "cedd1739-77d9-4816-9df8-d6bf859db6df",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 60550,
+    "regular": 78715,
+    "sale": 94458,
+    "earning": 23615
+  },
+  "category_id": "8e895f3c-4659-479c-97c6-12b5ee7fe086",
+  "name": "Samsung 860 PRO MZ-76P4T0B",
+  "uom": "PC",
+  "sku": "SAM-860-PRO-MZ-030",
+  "images": [
+    "http://localhost:3000/products/1721391089917-657930003.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Samsung"
+    },
+    {
+      "key": "Format",
+      "value": "2.5\""
+    },
+    {
+      "key": "DRAM",
+      "value": "4 TB"
+    },
+    {
+      "key": "Interface",
+      "value": "SATA 3"
+    },
+    {
+      "key": "Read speed",
+      "value": "575 MB/s"
+    },
+    {
+      "key": "Write speed",
+      "value": "525 MB/s"
+    }
+  ],
+  "inStock": 31,
+  "weight": 0.1,
+  "published": true,
+  "creationDate": "Tue Jul 16 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "ee59efdc-54ae-4d26-989f-2c838f287ce5",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 32430,
+    "regular": 42159,
+    "sale": 50591,
+    "earning": 12648
+  },
+  "category_id": "8e895f3c-4659-479c-97c6-12b5ee7fe086",
+  "name": "Gigabyte GP-ASM2NE6200TTTD",
+  "uom": "PC",
+  "sku": "GIG-GP-ASM-2NE-029",
+  "images": [
+    "http://localhost:3000/products/1721390817422-215313405.png",
+    "http://localhost:3000/products/1721390817424-490898646.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Gigabyte"
+    },
+    {
+      "key": "Format",
+      "value": "M.2"
+    },
+    {
+      "key": "DRAM",
+      "value": "2 TB"
+    },
+    {
+      "key": "Interface",
+      "value": "PCI Express"
+    },
+    {
+      "key": "Read speed",
+      "value": "5000 MB/s"
+    },
+    {
+      "key": "Write speed",
+      "value": "4400 MB/s"
+    }
+  ],
+  "inStock": 33,
+  "weight": 0.1,
+  "published": true,
+  "creationDate": "Sun Jul 14 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "159a5f93-3027-4356-99b9-b748168e3e09",
+  "price": {
+    "discount": {
+      "value": 50,
+      "activationDate": "Mon Sep 23 2024 10:29:16 GMT+0200 (Central European Summer Time)"
+    },
+    "margin": 30,
+    "purchase": 14770,
+    "regular": 19201,
+    "sale": 23041,
+    "earning": 5760
+  },
+  "category_id": "701c5b0c-4f58-4c7d-84d0-b43cee2dae09",
+  "name": "Chieftec GPU-1200FC",
+  "uom": "PC",
+  "sku": "CHI-GPU-120-FC-036",
+  "images": [
+    "http://localhost:3000/products/1721392557521-229121631.png",
+    "http://localhost:3000/products/1721392557524-61238188.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Chieftec"
+    },
+    {
+      "key": "Power usage",
+      "value": "1200 W"
+    },
+    {
+      "key": "Efficiency",
+      "value": "80+ Platinum"
+    },
+    {
+      "key": "Cables",
+      "value": "Full modular"
+    }
+  ],
+  "inStock": 45,
+  "weight": 3.4,
+  "published": true,
+  "creationDate": "Wed Jul 10 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "f578bef6-13ee-4bc0-aedb-bdee78048e67",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 13090,
+    "regular": 17017,
+    "sale": 20420,
+    "earning": 5105
+  },
+  "category_id": "731ee8ec-866f-4e86-adf4-e17326f6b9c9",
+  "name": "Thermaltake Core P90 TG Black",
+  "uom": "PC",
+  "sku": "THE-COR-P90-TG-BL-033",
+  "images": [
+    "http://localhost:3000/products/1721391879116-496777721.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Thermaltake"
+    },
+    {
+      "key": "Form factor",
+      "value": "Midi Tower"
+    },
+    {
+      "key": "Power supply",
+      "value": "N/A"
+    },
+    {
+      "key": "5.25\" Tray",
+      "value": "1"
+    },
+    {
+      "key": "3.5\" Tray",
+      "value": "5"
+    },
+    {
+      "key": "2.5\" Tray",
+      "value": "2"
+    },
+    {
+      "key": "2.0 USB ports",
+      "value": "2"
+    },
+    {
+      "key": "3.0 USB ports",
+      "value": "2"
+    },
+    {
+      "key": "Transparent",
+      "value": "Yes"
+    }
+  ],
+  "inStock": 36,
+  "weight": 0,
+  "published": true,
+  "creationDate": "Sun Jul 07 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "7701428c-63c0-46cc-bcc0-8a2c1a1dbfb7",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 8460,
+    "regular": 10998,
+    "sale": 13198,
+    "earning": 3299
+  },
+  "category_id": "731ee8ec-866f-4e86-adf4-e17326f6b9c9",
+  "name": "Cooler Master MasterBox TD500 MESH V2 Ryu (TD500V2-WGNN-SRY)",
+  "uom": "PC",
+  "sku": "COO-MAS-MAS-TD5-035",
+  "images": [
+    "http://localhost:3000/products/1721392314940-71252058.webp"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Cooler Master"
+    },
+    {
+      "key": "Form factor",
+      "value": "Midi Tower"
+    },
+    {
+      "key": "Power supply",
+      "value": "N/A"
+    },
+    {
+      "key": "5.25\" Tray",
+      "value": "1"
+    },
+    {
+      "key": "3.5\" Tray",
+      "value": "2"
+    },
+    {
+      "key": "2.5\" Tray",
+      "value": "3"
+    },
+    {
+      "key": "2.0 USB ports",
+      "value": "2"
+    },
+    {
+      "key": "3.0 USB ports",
+      "value": "2"
+    },
+    {
+      "key": "Transparent",
+      "value": "Yes"
+    }
+  ],
+  "inStock": 28,
+  "weight": 7.7,
+  "published": true,
+  "creationDate": "Sat Jul 13 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": true
+},
+{
+  "_id": "c524ed89-8c7f-4429-831d-293e39e77ff8",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 8930,
+    "regular": 11609,
+    "sale": 13931,
+    "earning": 3483
+  },
+  "category_id": "701c5b0c-4f58-4c7d-84d0-b43cee2dae09",
+  "name": "Chieftec CPX-750FC",
+  "uom": "PC",
+  "sku": "CHI-CPX-750-FC-040",
+  "images": [
+    "http://localhost:3000/products/1721393557034-843105930.png",
+    "http://localhost:3000/products/1721393557037-588422169.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Chieftec"
+    },
+    {
+      "key": "Power usage",
+      "value": "750 W"
+    },
+    {
+      "key": "Efficiency",
+      "value": "80+ Gold"
+    },
+    {
+      "key": "Cables",
+      "value": "Full modular"
+    }
+  ],
+  "inStock": 42,
+  "weight": 1.4,
+  "published": true,
+  "creationDate": "Mon Jul 29 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": true
+},
+{
+  "_id": "e00c3667-a297-4afe-8851-1573c8a1ab51",
+  "price": {
+    "discount": {
+      "value": 45,
+      "activationDate": "Wed Sep 18 2024 18:13:04 GMT+0200 (Central European Summer Time)"
+    },
+    "margin": 30,
+    "purchase": 39130,
+    "regular": 50869,
+    "sale": 61043,
+    "earning": 15261
+  },
+  "category_id": "3da85972-b957-4b8b-a1e5-3ae51e5f29d0",
+  "name": "AMD Ryzen 9 3900XT",
+  "uom": "PC",
+  "sku": "AMD-RYZ-390-0XT-010",
+  "images": [
+    "http://localhost:3000/products/1721384711020-901336123.webp",
+    "http://localhost:3000/products/1724953403607-418211819.png",
+    "http://localhost:3000/products/1724953403613-8288872.png",
+    "http://localhost:3000/products/1724953403620-104918057.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "AMD"
+    },
+    {
+      "key": "Socket",
+      "value": "Socket AM4"
+    },
+    {
+      "key": "Cores",
+      "value": "12"
+    },
+    {
+      "key": "Threads",
+      "value": "24"
+    },
+    {
+      "key": "Base clock speed",
+      "value": "3.8 GHz"
+    },
+    {
+      "key": "Max. clock speed",
+      "value": "4.7 GHz"
+    },
+    {
+      "key": "Process",
+      "value": "7 nm"
+    },
+    {
+      "key": "TDP",
+      "value": "105W"
+    },
+    {
+      "key": "Integrated graphics",
+      "value": "N/A"
+    }
+  ],
+  "inStock": 20,
+  "weight": 0.5,
+  "published": true,
+  "creationDate": "Thu Aug 01 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false,
+  "description": "The AMD Ryzen 9 3900XT is a desktop processor with 12 cores, launched in July 2020, at an MSRP of $499. It is part of the Ryzen 9 lineup, using the Zen 2 (Matisse) architecture with Socket AM4. Thanks to AMD Simultaneous Multithreading (SMT) the core-count is effectively doubled, to 24 threads. Ryzen 9 3900XT has 64 MB of L3 cache and operates at 3.9 GHz by default, but can boost up to 4.7 GHz, depending on the workload. AMD is making the Ryzen 9 3900XT on a 7 nm production node using 7,600 million transistors. The silicon die of the chip is not fabricated at AMD, but at the foundry of TSMC. You may freely adjust the unlocked multiplier on Ryzen 9 3900XT, which simplifies overclocking greatly, as you can easily dial in any overclocking frequency.\nWith a TDP of 105 W, the Ryzen 9 3900XT consumes a good deal of power, so decent cooling is needed. AMD's processor supports DDR4 memory with a dual-channel interface. The highest officially supported memory speed is 3200 MT/s, but with overclocking (and the right memory modules) you can go even higher. For communication with other components in the system, Ryzen 9 3900XT uses a PCI-Express Gen 4 connection. This processor does not have integrated graphics, you will need a separate graphics card.\nHardware virtualization is available on the Ryzen 9 3900XT, which greatly improves virtual machine performance. Programs using Advanced Vector Extensions (AVX) can run on this processor, boosting performance for calculation-heavy applications. Besides AVX, AMD is including the newer AVX2 standard, too, but not AVX-512. "
+},
+{
+  "_id": "38ebc240-811c-4cf7-88a2-80a3bf32074a",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 7880,
+    "regular": 10244,
+    "sale": 12293,
+    "earning": 3073
+  },
+  "category_id": "731ee8ec-866f-4e86-adf4-e17326f6b9c9",
+  "name": "Thermaltake V350 TG ARGB Air Black",
+  "uom": "PC",
+  "sku": "THE-V-350-TG-031",
+  "images": [
+    "http://localhost:3000/products/1721391407036-86744400.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Thermaltake"
+    },
+    {
+      "key": "Form factor",
+      "value": "Midi Tower"
+    },
+    {
+      "key": "Power supply",
+      "value": "N/A"
+    },
+    {
+      "key": "5.25\" Tray",
+      "value": "1"
+    },
+    {
+      "key": "3.5\" Tray",
+      "value": "2"
+    },
+    {
+      "key": "2.5\" Tray",
+      "value": "5"
+    },
+    {
+      "key": "2.0 USB ports",
+      "value": "1"
+    },
+    {
+      "key": "3.0 USB ports",
+      "value": "3"
+    },
+    {
+      "key": "Transparent",
+      "value": "Yes"
+    }
+  ],
+  "inStock": 34,
+  "weight": 8.4,
+  "published": true,
+  "creationDate": "Sun Jul 14 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "a38444b7-e55d-46ed-9a6c-eba1a37b8289",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 11400,
+    "regular": 14820,
+    "sale": 17784,
+    "earning": 4446
+  },
+  "category_id": "731ee8ec-866f-4e86-adf4-e17326f6b9c9",
+  "name": "Thermaltake The Tower 500 Black",
+  "uom": "PC",
+  "sku": "THE-TOW-500-BLA-032",
+  "images": [
+    "http://localhost:3000/products/1721391589987-970963034.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Thermaltake"
+    },
+    {
+      "key": "Form factor",
+      "value": "Midi Tower"
+    },
+    {
+      "key": "Power supply",
+      "value": "N/A"
+    },
+    {
+      "key": "5.25\" Tray",
+      "value": "1"
+    },
+    {
+      "key": "3.5\" Tray",
+      "value": "4"
+    },
+    {
+      "key": "2.5\" Tray",
+      "value": "8"
+    },
+    {
+      "key": "2.0 USB ports",
+      "value": "1"
+    },
+    {
+      "key": "3.0 USB ports",
+      "value": "4"
+    },
+    {
+      "key": "Transparent",
+      "value": "Yes"
+    }
+  ],
+  "inStock": 31,
+  "weight": 14.8,
+  "published": true,
+  "creationDate": "Sat Jul 13 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "68b5960c-f8ea-43d4-a993-a33ee8e496bb",
+  "category_id": "aa9a2904-6f0c-4076-a0be-b326c6c7cd67",
+  "name": "MSI GeForce RTX 4070 Ti SUPRIM 12G",
+  "uom": "PC",
+  "sku": "GEF-RTX-407-SUP",
+  "price": {
+    "discount": {
+      "value": 40,
+      "activationDate": "Fri Aug 30 2024 11:37:50 GMT+0200 (Central European Summer Time)"
+    },
+    "margin": 30,
+    "purchase": 74680,
+    "regular": 97084,
+    "sale": 116501,
+    "earning": 29125
+  },
+  "images": [
+    "http://localhost:3000/products/1724887058430-396785577.png",
+    "http://localhost:3000/products/1724887058434-520205021.png",
+    "http://localhost:3000/products/1724887058445-117753982.png",
+    "http://localhost:3000/products/1724887058448-52360486.png",
+    "http://localhost:3000/products/1724887058452-915106174.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Microstar"
+    },
+    {
+      "key": "Memory interface",
+      "value": "192-bit"
+    },
+    {
+      "key": "Memory type",
+      "value": "GDDR6"
+    },
+    {
+      "key": "Memory size",
+      "value": "12 GB"
+    },
+    {
+      "key": "HDMI ports",
+      "value": "3"
+    },
+    {
+      "key": "VGA ports",
+      "value": "1"
+    },
+    {
+      "key": "Display ports",
+      "value": "3"
+    },
+    {
+      "key": "TDP",
+      "value": "210 W"
+    }
+  ],
+  "inStock": 37,
+  "weight": 1.6,
+  "published": false,
+  "creationDate": "Thu Aug 29 2024 01:17:36 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "b1cf2035-ea35-44da-9d5b-fa6c4cb86c54",
+  "price": {
+    "margin": 30,
+    "purchase": 24220,
+    "regular": 31486,
+    "sale": 37783,
+    "earning": 9446,
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    }
+  },
+  "category_id": "ec6ef74f-1997-4561-a2cc-6d9408b7ab8a",
+  "name": "Corsair iCUE H150i ELITE LCD XT CW-9060075-WW",
+  "uom": "PC",
+  "sku": "COR-ICU-H15-ELI-018",
+  "images": [
+    "http://localhost:3000/products/1721387848119-253746155.avif",
+    "http://localhost:3000/products/1721387848120-644707422.avif"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Corsair"
+    },
+    {
+      "key": "Cooling type",
+      "value": "Liquid"
+    },
+    {
+      "key": "RPM(Revolution per minute)",
+      "value": "1450 RPM"
+    },
+    {
+      "key": "Fan wire diagrams",
+      "value": "4 pin"
+    },
+    {
+      "key": "Fans",
+      "value": "3"
+    },
+    {
+      "key": "LED Lights",
+      "value": "Yes"
+    },
+    {
+      "key": "Size",
+      "value": "120 x 120 x 25 mm"
+    },
+    {
+      "key": "Noise level",
+      "value": "19.5 dBA"
+    }
+  ],
+  "inStock": 25,
+  "weight": 1.1,
+  "published": true,
+  "creationDate": "Mon Jul 22 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "b0ed65a2-723d-4651-9fe8-59c11c8d73ba",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 38010,
+    "regular": 49413,
+    "sale": 59296,
+    "earning": 14824
+  },
+  "category_id": "8e895f3c-4659-479c-97c6-12b5ee7fe086",
+  "name": "Samsung 860 QVO MZ-76Q4T0BW",
+  "uom": "PC",
+  "sku": "SAM-860-QVO-MZ-027",
+  "images": [
+    "http://localhost:3000/products/1721390207046-450774902.avif",
+    "http://localhost:3000/products/1721390207046-597196523.png",
+    "http://localhost:3000/products/1721390207046-552596975.webp"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Samsung"
+    },
+    {
+      "key": "Format",
+      "value": "2.5\""
+    },
+    {
+      "key": "DRAM",
+      "value": "4 TB"
+    },
+    {
+      "key": "Interface",
+      "value": "SATA 3"
+    },
+    {
+      "key": "Read speed",
+      "value": "550 MB/s"
+    },
+    {
+      "key": "Write speed",
+      "value": "525 MB/s"
+    }
+  ],
+  "inStock": 28,
+  "weight": 0.1,
+  "published": true,
+  "creationDate": "Fri Jul 19 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "81e6388c-e2e1-4536-aa40-085734ab782b",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 49070,
+    "regular": 63791,
+    "sale": 76549,
+    "earning": 19137
+  },
+  "category_id": "aa9a2904-6f0c-4076-a0be-b326c6c7cd67",
+  "name": "Palit GeForce RTX 4070",
+  "uom": "PC",
+  "sku": "PAL-GEF-RTX-407-014",
+  "images": [
+    "http://localhost:3000/products/1721386774314-341163843.png",
+    "http://localhost:3000/products/1721386774324-750873108.png",
+    "http://localhost:3000/products/1721386774328-761787335.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Palit"
+    },
+    {
+      "key": "Memory interface",
+      "value": "192-bit"
+    },
+    {
+      "key": "Memory type",
+      "value": "DDR6"
+    },
+    {
+      "key": "Memory size",
+      "value": "12 GB"
+    },
+    {
+      "key": "HDMI ports",
+      "value": "1"
+    },
+    {
+      "key": "VGA ports",
+      "value": "1"
+    },
+    {
+      "key": "Display ports",
+      "value": "3"
+    },
+    {
+      "key": "TDP",
+      "value": "35 W"
+    }
+  ],
+  "inStock": 20,
+  "weight": 1.1,
+  "published": true,
+  "creationDate": "Wed Jul 10 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "7173a4a5-89b8-47f1-b1ce-0d15a6b275f6",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 33330,
+    "regular": 43329,
+    "sale": 51995,
+    "earning": 12999
+  },
+  "category_id": "20d19249-70e7-474a-9c1d-e97dbda4b756",
+  "name": "Kingston FURY KF564C32RSK2-96",
+  "uom": "PC",
+  "sku": "KF564C32RSK2-96-024",
+  "images": [
+    "http://localhost:3000/products/1721389532940-955819092.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Kingston"
+    },
+    {
+      "key": "Usage",
+      "value": "Desktop"
+    },
+    {
+      "key": "Memory type",
+      "value": "DDR5"
+    },
+    {
+      "key": "Memory size",
+      "value": "96 GB"
+    },
+    {
+      "key": "Clock speed",
+      "value": "6400 MHz"
+    },
+    {
+      "key": "Packaging",
+      "value": "2 x 48 GB"
+    }
+  ],
+  "inStock": 30,
+  "weight": 0.1,
+  "published": true,
+  "creationDate": "Sun Jul 21 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "b3846fcf-e44d-4d85-ab1c-68ab669065be",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 2150,
+    "regular": 2795,
+    "sale": 3354,
+    "earning": 839
+  },
+  "category_id": "701c5b0c-4f58-4c7d-84d0-b43cee2dae09",
+  "name": "Raptor Element Black",
+  "uom": "PC",
+  "sku": "RAP-ELE-BLA-038",
+  "images": [
+    "http://localhost:3000/products/1721393084700-354102762.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Raptor"
+    },
+    {
+      "key": "Power usage",
+      "value": "750 W"
+    },
+    {
+      "key": "Efficiency",
+      "value": "80+ Gold"
+    },
+    {
+      "key": "Cables",
+      "value": "Fixed"
+    }
+  ],
+  "inStock": 18,
+  "weight": 2.1,
+  "published": true,
+  "creationDate": "Tue Jul 30 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": true
+},
+{
+  "_id": "b2218faf-b783-4e97-825c-a6ee73d74e71",
+  "category_id": "8e895f3c-4659-479c-97c6-12b5ee7fe086",
+  "name": "Gigabyte GeForce RTX 4090",
+  "uom": "pc",
+  "sku": "GB-GEF-RTX-49-049",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 23700,
+    "regular": 30810,
+    "sale": 36972,
+    "earning": 9243
+  },
+  "images": [
+    "http://localhost:3000/products/1724883797653-647034.png",
+    "http://localhost:3000/products/1724883797654-252538305.png",
+    "http://localhost:3000/products/1724883797687-525765869.png",
+    "http://localhost:3000/products/1724883797695-933488865.png",
+    "http://localhost:3000/products/1724883797697-467702284.png",
+    "http://localhost:3000/products/1724883797702-595699072.png",
+    "http://localhost:3000/products/1724883797717-485187957.png",
+    "http://localhost:3000/products/1724883797718-892943979.png",
+    "http://localhost:3000/products/1724883797718-746855993.png",
+    "http://localhost:3000/products/1724883797721-507706148.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Gigabyte"
+    },
+    {
+      "key": "Format",
+      "value": "Portable SSD"
+    },
+    {
+      "key": "DRAM",
+      "value": "960 GB"
+    },
+    {
+      "key": "Interface",
+      "value": "USB 3.2 Gen1 Type-C"
+    },
+    {
+      "key": "Read speed",
+      "value": "700 MB/s"
+    },
+    {
+      "key": "Write speed",
+      "value": "7700 MB/s"
+    }
+  ],
+  "inStock": 32,
+  "weight": 2.1,
+  "published": true,
+  "creationDate": "Thu Aug 29 2024 00:23:15 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "665fc585-058b-40b0-b2f1-5dde1a3d87c8",
+  "price": {
+    "margin": 30,
+    "purchase": 12750,
+    "regular": 16575,
+    "sale": 19890,
+    "earning": 4973,
+    "discount": {
+      "value": 25,
+      "activationDate": "Sun Jul 21 2024 19:51:58 GMT+0200 (Central European Summer Time)"
+    }
+  },
+  "category_id": "20d19249-70e7-474a-9c1d-e97dbda4b756",
+  "name": "A-DATA AX4U3600732G18I-SW50",
+  "uom": "PC",
+  "sku": "AX4U3600732G18I-SW50-025",
+  "images": [
+    "http://localhost:3000/products/1721389746537-933882706.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "A-DATA"
+    },
+    {
+      "key": "Usage",
+      "value": "Desktop"
+    },
+    {
+      "key": "Memory type",
+      "value": "DDR4"
+    },
+    {
+      "key": "Memory size",
+      "value": "32 GB"
+    },
+    {
+      "key": "Clock speed",
+      "value": "3600 MHz"
+    },
+    {
+      "key": "Packaging",
+      "value": "1 x 32 GB"
+    }
+  ],
+  "inStock": 29,
+  "weight": 0.2,
+  "published": true,
+  "creationDate": "Thu Jul 11 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "71a60879-bebb-4256-853b-4a7561720ac3",
+  "price": {
+    "margin": 30,
+    "purchase": 33820,
+    "regular": 43966,
+    "sale": 52759,
+    "earning": 13190,
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    }
+  },
+  "category_id": "8e895f3c-4659-479c-97c6-12b5ee7fe086",
+  "name": "Kingston SFYRDK",
+  "uom": "PC",
+  "sku": "KIN-SFY-RDK-028",
+  "images": [
+    "http://localhost:3000/products/1721390458225-22443302.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": ""
+    },
+    {
+      "key": "Format",
+      "value": ""
+    },
+    {
+      "key": "DRAM",
+      "value": ""
+    },
+    {
+      "key": "Interface",
+      "value": ""
+    },
+    {
+      "key": "Read speed",
+      "value": ""
+    },
+    {
+      "key": "Write speed",
+      "value": ""
+    }
+  ],
+  "inStock": 37,
+  "weight": 0.1,
+  "published": true,
+  "creationDate": "Wed Jul 24 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "3d813d71-e2d4-4e2e-a034-12e5184c4e3f",
+  "category_id": "6e221c3d-8b68-4850-956d-529d838d802f",
+  "name": "MSI MAG B650 CARBON WIFI",
+  "uom": "PC",
+  "sku": "MSI-MAG-B-650",
+  "price": {
+    "discount": {
+      "value": 40,
+      "activationDate": "Fri Aug 30 2024 11:37:50 GMT+0200 (Central European Summer Time)"
+    },
+    "margin": 30,
+    "purchase": 14850,
+    "regular": 19305,
+    "sale": 23166,
+    "earning": 5792
+  },
+  "images": [
+    "http://localhost:3000/products/1724888443220-847465578.png",
+    "http://localhost:3000/products/1724888443227-19669394.png",
+    "http://localhost:3000/products/1724888443230-685213977.png",
+    "http://localhost:3000/products/1724888443232-392961718.png",
+    "http://localhost:3000/products/1724888443248-53137991.png"
+  ],
+  "specifications": [
+    {
+      "key": "Socket",
+      "value": "Socket AM5"
+    },
+    {
+      "key": "Chipset",
+      "value": "AMD B650"
+    },
+    {
+      "key": "Memory slots",
+      "value": "4"
+    },
+    {
+      "key": "Supported memory type",
+      "value": "DDR5"
+    },
+    {
+      "key": "PCI Express",
+      "value": "2 X 16"
+    },
+    {
+      "key": "Dimensions",
+      "value": "ATX"
+    },
+    {
+      "key": "LAN",
+      "value": "2 x 10/100/1000"
+    },
+    {
+      "key": "Bluetooth",
+      "value": "5.0"
+    },
+    {
+      "key": "HDMI Outputs",
+      "value": "1"
+    },
+    {
+      "key": "Max. memory size",
+      "value": "256 GB"
+    },
+    {
+      "key": "Multi GPU support",
+      "value": "CrossFire & SLI"
+    },
+    {
+      "key": "SATA",
+      "value": "4 X SATA3 + 2X SATA2"
+    },
+    {
+      "key": "Supported memory speed",
+      "value": "7800 MHz"
+    },
+    {
+      "key": "Display ports",
+      "value": "1"
+    },
+    {
+      "key": "RAM support",
+      "value": "Quad Channel"
+    },
+    {
+      "key": "Manufacturer",
+      "value": "Microstar"
+    }
+  ],
+  "inStock": 17,
+  "weight": 1.4,
+  "published": false,
+  "creationDate": "Thu Aug 29 2024 01:40:41 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "9bb72159-a9d7-4081-adc7-da9260ac87a9",
+  "price": {
+    "discount": {
+      "value": 30,
+      "activationDate": "Mon Sep 23 2024 10:16:27 GMT+0200 (Central European Summer Time)"
+    },
+    "margin": 30,
+    "purchase": 20130,
+    "regular": 26169,
+    "sale": 31403,
+    "earning": 7851
+  },
+  "category_id": "ec6ef74f-1997-4561-a2cc-6d9408b7ab8a",
+  "name": "Asus ROG RYUO III 360 ARGB",
+  "uom": "PC",
+  "sku": "ASU-ROG-RYU-360-020",
+  "images": [
+    "http://localhost:3000/products/1721388351468-442324380.png",
+    "http://localhost:3000/products/1721388351470-812336058.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Asus"
+    },
+    {
+      "key": "Cooling type",
+      "value": "Liquid"
+    },
+    {
+      "key": "RPM(Revolution per minute)",
+      "value": "2200 RPM"
+    },
+    {
+      "key": "Fan wire diagrams",
+      "value": "3 pin"
+    },
+    {
+      "key": "Fans",
+      "value": "3"
+    },
+    {
+      "key": "LED Lights",
+      "value": "Yes"
+    },
+    {
+      "key": "Size",
+      "value": "120 x 120 x 25 mm"
+    },
+    {
+      "key": "Noise level",
+      "value": "36.5 dBA"
+    }
+  ],
+  "inStock": 19,
+  "weight": 0,
+  "published": false,
+  "creationDate": "Mon Jul 22 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "776ba453-8cdf-4fce-8fe2-4a0aaf8cf5cd",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 11650,
+    "regular": 15145,
+    "sale": 18174,
+    "earning": 4544
+  },
+  "category_id": "8e895f3c-4659-479c-97c6-12b5ee7fe086",
+  "name": "A-DATA ALEG-850L-2000GCS",
+  "uom": "PC",
+  "sku": "ADA-ALE-850-200GCS-026",
+  "images": [
+    "http://localhost:3000/products/1721389934594-928600784.png",
+    "http://localhost:3000/products/1721389934597-422701053.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "A-DATA"
+    },
+    {
+      "key": "Format",
+      "value": "M.2"
+    },
+    {
+      "key": "DRAM",
+      "value": "2 TB"
+    },
+    {
+      "key": "Interface",
+      "value": "PCI Express"
+    },
+    {
+      "key": "Read speed",
+      "value": "5000 MB/s"
+    },
+    {
+      "key": "Write speed",
+      "value": "4200 MB/s"
+    }
+  ],
+  "inStock": 27,
+  "weight": 0.1,
+  "published": true,
+  "creationDate": "Mon Jul 15 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "55b3db28-f7c7-4cfe-90bd-97dd62259ad9",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 27330,
+    "regular": 35529,
+    "sale": 42635,
+    "earning": 10659
+  },
+  "category_id": "731ee8ec-866f-4e86-adf4-e17326f6b9c9",
+  "name": "COOLER MASTER HAF 700 White Gaming (H700-WGNN-S00)",
+  "uom": "PC",
+  "sku": "COO-MAS-HAF-700-034",
+  "images": [
+    "http://localhost:3000/products/1721392107317-138152795.webp",
+    "http://localhost:3000/products/1721392107317-642707941.webp"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Cooler Master"
+    },
+    {
+      "key": "Form factor",
+      "value": "Full Tower"
+    },
+    {
+      "key": "Power supply",
+      "value": "N/A"
+    },
+    {
+      "key": "5.25\" Tray",
+      "value": "1"
+    },
+    {
+      "key": "3.5\" Tray",
+      "value": "4"
+    },
+    {
+      "key": "2.5\" Tray",
+      "value": "5"
+    },
+    {
+      "key": "2.0 USB ports",
+      "value": "4"
+    },
+    {
+      "key": "3.0 USB ports",
+      "value": "4"
+    },
+    {
+      "key": "Transparent",
+      "value": "Yes"
+    }
+  ],
+  "inStock": 39,
+  "weight": 24.7,
+  "published": true,
+  "creationDate": "Wed Jul 17 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "b274fa84-056d-40b0-8cab-f44c8c54d6d3",
+  "price": {
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    },
+    "margin": 30,
+    "purchase": 30110,
+    "regular": 39143,
+    "sale": 46972,
+    "earning": 11743
+  },
+  "category_id": "701c5b0c-4f58-4c7d-84d0-b43cee2dae09",
+  "name": "Cooler Master V1300 Platinum MPZ-D001-AFBAPV-WE",
+  "uom": "PC",
+  "sku": "COO-MAS-V13-PLA-039",
+  "images": [
+    "http://localhost:3000/products/1721393313696-659949493.png"
+  ],
+  "specifications": [
+    {
+      "key": "Manufacturer",
+      "value": "Cooler Master"
+    },
+    {
+      "key": "Power usage",
+      "value": "1300 W"
+    },
+    {
+      "key": "Efficiency",
+      "value": "80+ Platinum"
+    },
+    {
+      "key": "Cables",
+      "value": "Full modular"
+    }
+  ],
+  "inStock": 38,
+  "weight": 3.6,
+  "published": true,
+  "creationDate": "Thu Jul 25 2024 14:44:03 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "44cf4c86-a799-4168-9eef-bfd26401e404",
+  "category_id": "6e221c3d-8b68-4850-956d-529d838d802f",
+  "name": "ASRock TRX40 Taichi",
+  "uom": "PC",
+  "sku": "ASR-TRX-40-TAI",
+  "price": {
+    "margin": 30,
+    "purchase": 45780,
+    "regular": 59514,
+    "sale": 71417,
+    "earning": 17854,
+    "discount": {
+      "value": 0,
+      "activationDate": ""
+    }
+  },
+  "images": [
+    "http://localhost:3000/products/1724860127158-129149342.png",
+    "http://localhost:3000/products/1724860127159-590132028.webp"
+  ],
+  "specifications": [
+    {
+      "key": "Socket",
+      "value": "Socket sTRX4"
+    },
+    {
+      "key": "Chipset",
+      "value": "AMD TRX40"
+    },
+    {
+      "key": "Memory slots",
+      "value": "8"
+    },
+    {
+      "key": "Supported memory type",
+      "value": "DDR4"
+    },
+    {
+      "key": "PCI Express",
+      "value": "3 X 16"
+    },
+    {
+      "key": "Dimensions",
+      "value": "ATX"
+    },
+    {
+      "key": "LAN",
+      "value": "1 X 10/100/1000, 1 X 10/100/1000/2500"
+    },
+    {
+      "key": "Bluetooth",
+      "value": "5.0"
+    },
+    {
+      "key": "HDMI Outputs",
+      "value": "2"
+    },
+    {
+      "key": "Max. memory size",
+      "value": "256 GB"
+    },
+    {
+      "key": "Multi GPU support",
+      "value": "CrossFire & SLI"
+    },
+    {
+      "key": "SATA",
+      "value": "8 X SATA3"
+    },
+    {
+      "key": "Supported memory speed",
+      "value": "4733 MHz"
+    },
+    {
+      "key": "Display ports",
+      "value": "2"
+    },
+    {
+      "key": "RAM support",
+      "value": "Quad Channel"
+    },
+    {
+      "key": "Manufacturer",
+      "value": "AsRock"
+    }
+  ],
+  "inStock": 6,
+  "weight": 2.6,
+  "published": false,
+  "creationDate": "Wed Aug 28 2024 17:48:45 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+},
+{
+  "_id": "f5b248ff-e88e-4004-9bb6-85431b187772",
+  "category_id": "6e221c3d-8b68-4850-956d-529d838d802f",
+  "name": "Asus ROG MAXIMUS Z690 FORMULA",
+  "description": "Diversity to the Maximus. That’s what the latest Formula brings to the acclaimed ROG Maximus series. Its Moonlight White armor and customizable ARGB lighting elements ride alongside a hybrid VRM block designed in collaboration with EK, giving you ample freedom to express your preferred build style. And underneath, circuit pathways illuminated with PCIe® Gen 5.0 and limit-breaking DDR5 support are poised to elevate performance well into the future, driving the Maximus Z690 Formula's appeal far beyond aesthetics.\nIntelligent software solutions help ensure that your system performs at its best. The latest ASUS AI-powered enhancements span four pillars of performance, including overclocking, cooling, networking and onboard audio, making advanced tweaks and optimization accessible to new recruits and savvy PC DIY veterans alike.\nThe ROG Maximus Z690 Formula CPU VRM is comprised of 105 amp power stages that are strategically teamed to quickly cancel transients. Alongside, the ROG take on DDR5 support frees memory kits to achieve their full potential.\nAn ambition to maximize performance calls for an appropriately powerful platform. Enter the CrossChill EK III VRM block, empowering enthusiasts to break the limits of conventional voltage regulation with a hybrid cooling system that sails past the core power requirements of 12th Gen Intel Core processors while maintaining rock-steady thermals.",
+  "uom": "PC",
+  "sku": "ASU-ROG-MAX-Z69-FOR-042",
+  "price": {
+    "discount": {
+      "value": 30,
+      "activationDate": "Mon Sep 23 2024 10:16:27 GMT+0200 (Central European Summer Time)"
+    },
+    "margin": 30,
+    "purchase": 71750,
+    "regular": 93275,
+    "sale": 111930,
+    "earning": 27983
+  },
+  "images": [
+    "http://localhost:3000/products/1726590134101-748520370.jpeg",
+    "http://localhost:3000/products/1726590134102-399381563.png",
+    "http://localhost:3000/products/1726590134107-178624148.png",
+    "http://localhost:3000/products/1726590134110-614627700.png"
+  ],
+  "specifications": [
+    {
+      "key": "Socket",
+      "value": "LGA 1700"
+    },
+    {
+      "key": "Chipset",
+      "value": "Intel Z690"
+    },
+    {
+      "key": "Memory slots",
+      "value": "4"
+    },
+    {
+      "key": "Supported memory type",
+      "value": "DDR5"
+    },
+    {
+      "key": "PCI Express",
+      "value": "3 X 16"
+    },
+    {
+      "key": "Dimensions",
+      "value": "ATX"
+    },
+    {
+      "key": "LAN",
+      "value": "1 x 10/100/1000/2500/5000/10000"
+    },
+    {
+      "key": "Bluetooth",
+      "value": "5.2"
+    },
+    {
+      "key": "HDMI Outputs",
+      "value": "1"
+    },
+    {
+      "key": "Max. memory size",
+      "value": "128 GB"
+    },
+    {
+      "key": "Multi GPU support",
+      "value": "CrossFire & SLI"
+    },
+    {
+      "key": "SATA",
+      "value": "6 X SATA3"
+    },
+    {
+      "key": "Supported memory speed",
+      "value": "6400 MHz"
+    },
+    {
+      "key": "Display ports",
+      "value": "2"
+    },
+    {
+      "key": "RAM support",
+      "value": "Dual Channel"
+    },
+    {
+      "key": "Manufacturer",
+      "value": "Asus"
+    }
+  ],
+  "inStock": 27,
+  "weight": 3.4,
+  "published": true,
+  "creationDate": "Tue Sep 17 2024 18:22:12 GMT+0200 (Central European Summer Time)",
+  "includedAsRecommended": false
+}]

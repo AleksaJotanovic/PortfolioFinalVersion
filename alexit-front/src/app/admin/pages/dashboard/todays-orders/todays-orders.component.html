@@ -1,0 +1,15 @@
+<span class="row-spacebetween-center">
+    <h1>Latest orders</h1>
+    <a routerLink="/admin/orders" [queryParams]="{limit: 13, currentPile: 0, searchQuery: '', payment: 'both'}">
+        View all
+    </a>
+</span>
+<div class="column-start-stretch mini-table gap-0_8">
+    @for (order of orders; track $index) {
+    <span class="row-spacebetween-center">
+        <h5><a [routerLink]="['/admin/orders/order', order._id]">#{{order.number}}</a></h5>
+        <h5>{{order.items.length}} items</h5>
+        <h5>{{$.money(order.grandTotal)}}</h5>
+    </span>
+    }
+</div>

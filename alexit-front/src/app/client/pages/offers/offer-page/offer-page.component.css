@@ -1,0 +1,158 @@
+main {
+    height: fit-content;
+    width: var(--default-website-width);
+    max-width: 100%;
+    margin: auto;
+    gap: 3.5rem;
+    background-color: var(--main-white);
+}
+
+
+.offer-section {
+    width: 100%;
+    padding-top: 1.5rem;
+    gap: 2rem;
+}
+
+.breadcrumbs>ul {
+    gap: 0.7rem;
+}
+
+.breadcrumbs li {
+    gap: 0.7rem;
+}
+
+.breadcrumbs i {
+    font-size: 0.5rem;
+}
+
+.breadcrumbs a {
+    font-size: 0.65rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: var(--dark-light);
+}
+
+.offer-header {
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--border-grey);
+    padding-bottom: 1rem;
+}
+
+.offer-header>h1 {
+    font-weight: 200;
+    letter-spacing: 4px;
+    font-size: clamp(1.3rem, 2.1vw, 2.1rem);
+    color: var(--main-black);
+}
+
+.offer-header>div>h2 {
+    font-size: 0.925rem;
+    font-weight: 200;
+    color: var(--dark-light);
+    letter-spacing: 2px;
+}
+
+.offer-header strong {
+    color: var(--main-black);
+}
+
+.offer-header :is(strong, small) {
+    font-style: italic;
+}
+
+.offer-section>picture {
+    width: 100%;
+    aspect-ratio: 30 / 9;
+}
+
+.offer-section>picture>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.offer-text {
+    font-weight: 200;
+    color: var(--dark-light);
+    letter-spacing: 2px;
+    font-size: clamp(12px, 1vw, 0.9rem);
+    line-height: 1.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========================================================================
+============================= PRODUCTS INCLUDED ================================
+=============================================================================== */
+.products-included {
+    gap: 1.5rem;
+}
+
+.products-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.products-included>h1 {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-grey);
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: var(--main-black);
+    letter-spacing: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1430px) {
+    .offer-section {
+        padding-inline: 2rem;
+    }
+
+    .products-included {
+        padding-inline: 2rem;
+    }
+}
+
+@media only screen and (width < 1024px) {
+    .offer-section>picture {
+        aspect-ratio: 21 / 9;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .offer-section {
+        padding-inline: 1rem;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .offer-section>picture {
+        aspect-ratio: 16 / 9;
+    }
+
+    .offer-header>div {
+        gap: 2rem;
+    }
+}

@@ -1,0 +1,101 @@
+<div class="modal-main column-start-stretch relative">
+    <span class="modal-destroyer" (click)="onModalClose.emit(); registrationForm.reset(); loginForm.reset();">+</span>
+    <form #signupForm [formGroup]="registrationForm" (ngSubmit)="emitOnRegistration(registrationForm)"
+        [ngClass]="[formActive.signup === true ? 'form-active' : '']">
+        <div class="form-group user-name">
+            <div class="column-center-stretch">
+                <label for="firstname">Firstname</label>
+                <input type="text" id="firstname" placeholder="Enter your firstname" required
+                    formControlName="firstname">
+            </div>
+            <div class="column-center-stretch">
+                <label for="lastname">Lastname</label>
+                <input type="text" id="lastname" placeholder="Enter your lastname" required formControlName="lastname">
+            </div>
+        </div>
+        <div class="column-center-stretch relative">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required formControlName="email"
+                autocomplete="email">
+            @if (emailInUse) {
+            <span class="email-error">Account with this email already exists.</span>
+            }
+        </div>
+
+        <div class="form-group user-password">
+            <div class="column-center-stretch">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required
+                    formControlName="password">
+            </div>
+            <div class="column-center-stretch">
+                <label for="confirmPassword">Confirm password</label>
+                <input type="password" id="confirmPassword" placeholder="Enter your password again"
+                    formControlName="confirmPassword">
+            </div>
+        </div>
+
+
+        <div class="column-start-stretch gap-1_5" formGroupName="shippingAddress">
+            <div class="column-center-stretch">
+                <label for="phoneNum">Phone</label>
+                <input type="tel" id="phoneNum" placeholder="Enter your phone number" required formControlName="phone">
+            </div>
+
+            <div class="form-group country-city">
+                <div class="column-center-stretch">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" placeholder="Enter your country" required formControlName="country"
+                        autocomplete="country">
+                </div>
+                <div class="column-center-stretch">
+                    <label for="city">City</label>
+                    <input type="text" id="city" placeholder="Enter your city" required formControlName="city">
+                </div>
+            </div>
+            <div class="form-group street-zipcode">
+                <div class="column-center-stretch">
+                    <label for="street">Street</label>
+                    <input type="text" id="street" placeholder="Enter your street" required formControlName="street">
+                </div>
+                <div class="column-center-stretch">
+                    <label for="zip">ZIP code</label>
+                    <input type="text" id="zip" placeholder="Enter a zip code" required formControlName="zip">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-group column-center-stretch">
+            <button type="submit" [disabled]="registrationForm.invalid">REGISTER</button>
+            <a routerLink="/" class="terms-conds">
+                <small>By clicking register, you agree to accept Alexit
+                    <strong>Terms and Conditions</strong>
+                </small>
+            </a>
+        </div>
+    </form>
+    <form #signinForm [formGroup]="loginForm" (ngSubmit)="emitOnLogin(loginForm)"
+        [ngClass]="[formActive.signin === true ? 'form-active' : '']">
+        <div class="column-center-stretch">
+            <label for="emailLogin">Email</label>
+            <input type="email" id="emailLogin" placeholder="Enter your email" required formControlName="email">
+        </div>
+        <div class="column-center-stretch">
+            <label for="passwordLogin">Password</label>
+            <input type="password" id="passwordLogin" placeholder="Enter your password" required
+                formControlName="password">
+        </div>
+        <div class="form-group column-center-stretch">
+            <button type="submit" [disabled]="loginSubmitDisabled()">
+                @if (loginError) {
+                <small>The email or password is incorrect. Try again.</small>
+                }
+                LOGIN
+            </button>
+            <a class="terms-conds" routerLink="/customer/forget-password">
+                <small>Forgot your password?</small>
+            </a>
+        </div>
+    </form>
+</div>

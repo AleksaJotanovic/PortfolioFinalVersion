@@ -1,0 +1,1 @@
+export const blogsSortingTriggers = { TITLE: "title", TOPIC: "topic", COMMENTS: "comments", DATE: "date" };

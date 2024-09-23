@@ -1,0 +1,58 @@
+aside {
+    position: fixed;
+    height: 100dvh;
+    width: 270px;
+    max-width: 100vw;
+    border: 1px solid var(--border-grey);
+    background-color: var(--main-white);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.exit {
+    background-color: var(--main-black);
+    padding: 1rem;
+}
+
+.exit>h1 {
+    color: var(--main-white);
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-size: 1rem;
+}
+
+.exit>button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--main-white);
+}
+
+ul>li {
+    border-bottom: 1px solid var(--border-grey);
+    padding: 1.1rem;
+    cursor: pointer;
+}
+
+ul>li>a {
+    color: var(--dark-light);
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    transition: color 0.2s ease-in-out;
+}
+
+ul>li:hover>a {
+    color: var(--night-black);
+}
+
+
+@media only screen and (width < 1024px) {
+    aside.active {
+        transform: translateX(0px);
+    }
+}

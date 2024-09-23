@@ -1,0 +1,24 @@
+.add-user-body {
+    border: 1px solid blue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.add-user-body .form-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.add-user-body form {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.aleksin-input {
+    border: 1px solid blue;
+}

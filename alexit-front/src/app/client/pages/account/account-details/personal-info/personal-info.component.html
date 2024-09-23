@@ -1,0 +1,36 @@
+<div class="user-account-routing column-start-stretch">
+    @if (user) {
+    <div class="user-info">
+        <h1>CONTACT INFO</h1>
+        <div>
+            <span class="row-center-center"><i class="fa-thin fa-address-book"></i></span>
+            <address class="column-center-stretch">
+                <p class="lineheight-fit">{{user.firstname + ' ' + user.lastname}}</p>
+                <p class="lineheight-fit">{{user.email}}</p>
+            </address>
+        </div>
+    </div>
+    <div class="user-info">
+        <h1>SHIPPING ADDRESS</h1>
+        <div>
+            <span class="row-center-center"><i class="fa-thin fa-location-dot"></i></span>
+            <address class="column-center-stretch">
+                <p class="lineheight-fit">{{user.shippingAddress.country}}</p>
+                <p class="lineheight-fit">{{user.shippingAddress.city}}</p>
+                <p class="lineheight-fit">{{user.shippingAddress.street}}</p>
+                <p class="lineheight-fit">Phone: {{user.shippingAddress.phone}}</p>
+            </address>
+        </div>
+    </div>
+    <div class="user-info">
+        <h1>NEWSLETTER SUBSCRIPTION</h1>
+        <div>
+            <span class="row-center-center"><i class="fa-thin fa-paper-plane"></i></span>
+            <address class="column-center-stretch">
+                <p class="lineheight-fit">Not subscribed</p>
+                <button type="button">Subscribe</button>
+            </address>
+        </div>
+    </div>
+    }
+</div>

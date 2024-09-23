@@ -1,0 +1,25 @@
+span {
+    aspect-ratio: 1 / 1;
+    padding: 1.4rem;
+    border-radius: 50%;
+}
+
+span>i {
+    font-size: 1.1rem;
+}
+
+div>h1 {
+    line-height: 100%;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: 200;
+    color: var(--dark-text);
+}
+
+div>h2 {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 100%;
+    color: #7a7e93;
+}

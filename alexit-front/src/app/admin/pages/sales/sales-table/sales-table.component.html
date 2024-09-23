@@ -1,0 +1,220 @@
+<table>
+    <thead>
+        <tr>
+            <th>
+                <button type="button" #group [id]="sortTriggers.GROUP" (click)="emitOnSort($event.currentTarget)">
+                    GROUP
+                    @if (group.id === trigger) {
+                    @if (order === "") {
+                    <i class="fa-solid fa-sort"></i>
+                    }@else if (order === "asc") {
+                    <i class="fa-solid fa-caret-up"></i>
+                    }@else if (order === "desc") {
+                    <i class="fa-solid fa-caret-down"></i>
+                    }
+                    }@else {
+                    <i class="fa-solid fa-sort"></i>
+                    }
+                </button>
+            </th>
+            <th>
+                <button type="button" #uom [id]="sortTriggers.UOM" (click)="emitOnSort($event.currentTarget)">
+                    UOM
+                    @if (uom.id === trigger) {
+                    @if (order === "") {
+                    <i class="fa-solid fa-sort"></i>
+                    }@else if (order === "asc") {
+                    <i class="fa-solid fa-caret-up"></i>
+                    }@else if (order === "desc") {
+                    <i class="fa-solid fa-caret-down"></i>
+                    }
+                    }@else {
+                    <i class="fa-solid fa-sort"></i>
+                    }
+                </button>
+            </th>
+            <th>
+                <button type="button" #code [id]="sortTriggers.CODE" (click)="emitOnSort($event.currentTarget)">
+                    CODE
+                    @if (code.id === trigger) {
+                    @if (order === "") {
+                    <i class="fa-solid fa-sort"></i>
+                    }@else if (order === "asc") {
+                    <i class="fa-solid fa-caret-up"></i>
+                    }@else if (order === "desc") {
+                    <i class="fa-solid fa-caret-down"></i>
+                    }
+                    }@else {
+                    <i class="fa-solid fa-sort"></i>
+                    }
+                </button>
+            </th>
+            <th>
+                <button type="button" #name [id]="sortTriggers.NAME" (click)="emitOnSort($event.currentTarget)">
+                    NAME
+                    @if (name.id === trigger) {
+                    @if (order === "") {
+                    <i class="fa-solid fa-sort"></i>
+                    }@else if (order === "asc") {
+                    <i class="fa-solid fa-caret-up"></i>
+                    }@else if (order === "desc") {
+                    <i class="fa-solid fa-caret-down"></i>
+                    }
+                    }@else {
+                    <i class="fa-solid fa-sort"></i>
+                    }
+                </button>
+            </th>
+            <th>
+                <button type="button" #quantity [id]="sortTriggers.QUANTITY" (click)="emitOnSort($event.currentTarget)">
+                    QTY
+                    @if (quantity.id === trigger) {
+                    @if (order === "") {
+                    <i class="fa-solid fa-sort"></i>
+                    }@else if (order === "asc") {
+                    <i class="fa-solid fa-caret-up"></i>
+                    }@else if (order === "desc") {
+                    <i class="fa-solid fa-caret-down"></i>
+                    }
+                    }@else {
+                    <i class="fa-solid fa-sort"></i>
+                    }
+                </button>
+            </th>
+            <th>
+                <button type="button" #purchasePrice [id]="sortTriggers.PURCHASE_PRICE"
+                    (click)="emitOnSort($event.currentTarget)">
+                    PURCHASE PRICE
+                    @if (purchasePrice.id === trigger) {
+                    @if (order === "") {
+                    <i class="fa-solid fa-sort"></i>
+                    }@else if (order === "asc") {
+                    <i class="fa-solid fa-caret-up"></i>
+                    }@else if (order === "desc") {
+                    <i class="fa-solid fa-caret-down"></i>
+                    }
+                    }@else {
+                    <i class="fa-solid fa-sort"></i>
+                    }
+                </button>
+            </th>
+            <th>
+                <button type="button" #margin [id]="sortTriggers.MARGIN" (click)="emitOnSort($event.currentTarget)">
+                    MARGIN
+                    @if (margin.id === trigger) {
+                    @if (order === "") {
+                    <i class="fa-solid fa-sort"></i>
+                    }@else if (order === "asc") {
+                    <i class="fa-solid fa-caret-up"></i>
+                    }@else if (order === "desc") {
+                    <i class="fa-solid fa-caret-down"></i>
+                    }
+                    }@else {
+                    <i class="fa-solid fa-sort"></i>
+                    }
+                </button>
+            </th>
+            <th>
+                <button type="button" #pricePerUom [id]="sortTriggers.PRICE_PER_UOM"
+                    (click)="emitOnSort($event.currentTarget)">
+                    PRICE/UOM
+                    @if (pricePerUom.id === trigger) {
+                    @if (order === "") {
+                    <i class="fa-solid fa-sort"></i>
+                    }@else if (order === "asc") {
+                    <i class="fa-solid fa-caret-up"></i>
+                    }@else if (order === "desc") {
+                    <i class="fa-solid fa-caret-down"></i>
+                    }
+                    }@else {
+                    <i class="fa-solid fa-sort"></i>
+                    }
+                </button>
+            </th>
+            <th>
+                <button type="button" #taxBase [id]="sortTriggers.TAX_BASE" (click)="emitOnSort($event.currentTarget)">
+                    TAX BASE
+                    @if (taxBase.id === trigger) {
+                    @if (order === "") {
+                    <i class="fa-solid fa-sort"></i>
+                    }@else if (order === "asc") {
+                    <i class="fa-solid fa-caret-up"></i>
+                    }@else if (order === "desc") {
+                    <i class="fa-solid fa-caret-down"></i>
+                    }
+                    }@else {
+                    <i class="fa-solid fa-sort"></i>
+                    }
+                </button>
+            </th>
+            <th>
+                <button type="button" #vatRate [id]="sortTriggers.VAT_RATE" (click)="emitOnSort($event.currentTarget)">
+                    VAT%
+                    @if (vatRate.id === trigger) {
+                    @if (order === "") {
+                    <i class="fa-solid fa-sort"></i>
+                    }@else if (order === "asc") {
+                    <i class="fa-solid fa-caret-up"></i>
+                    }@else if (order === "desc") {
+                    <i class="fa-solid fa-caret-down"></i>
+                    }
+                    }@else {
+                    <i class="fa-solid fa-sort"></i>
+                    }
+                </button>
+            </th>
+            <th>
+                <button type="button" #vatAmount [id]="sortTriggers.VAT_AMOUNT"
+                    (click)="emitOnSort($event.currentTarget)">
+                    VAT
+                    @if (vatAmount.id === trigger) {
+                    @if (order === "") {
+                    <i class="fa-solid fa-sort"></i>
+                    }@else if (order === "asc") {
+                    <i class="fa-solid fa-caret-up"></i>
+                    }@else if (order === "desc") {
+                    <i class="fa-solid fa-caret-down"></i>
+                    }
+                    }@else {
+                    <i class="fa-solid fa-sort"></i>
+                    }
+                </button>
+            </th>
+            <th>
+                <button type="button" #saleValue [id]="sortTriggers.SALE_VALUE"
+                    (click)="emitOnSort($event.currentTarget)">
+                    SALE PRICE
+                    @if (saleValue.id === trigger) {
+                    @if (order === "") {
+                    <i class="fa-solid fa-sort"></i>
+                    }@else if (order === "asc") {
+                    <i class="fa-solid fa-caret-up"></i>
+                    }@else if (order === "desc") {
+                    <i class="fa-solid fa-caret-down"></i>
+                    }
+                    }@else {
+                    <i class="fa-solid fa-sort"></i>
+                    }
+                </button>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (sale of sales; track $index) {
+        <tr>
+            <td>{{getGroupName(sale.group_id)}}</td>
+            <td>{{sale.uom}}</td>
+            <td>{{sale.articleCode}}</td>
+            <td>{{sale.articleName}}</td>
+            <td>{{sale.quantity}}</td>
+            <td>{{$.money(sale.purchasePrice)}}</td>
+            <td>{{sale.margin}}%</td>
+            <td>{{$.money(sale.pricePerUom)}}</td>
+            <td>{{$.money(sale.taxBase)}}</td>
+            <td>{{sale.vatRate}}%</td>
+            <td>{{$.money(sale.vat)}}</td>
+            <td>{{$.money(sale.saleValue)}}</td>
+        </tr>
+        }
+    </tbody>
+</table>

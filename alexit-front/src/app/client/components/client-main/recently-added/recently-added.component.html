@@ -1,0 +1,20 @@
+<section class="recently-added-section row-center-center">
+    <div class="wrapper2">
+        <div class="carousel-title2">
+            <h1>RECENTLY ADDED</h1>
+            <div>
+                <button id="left2" type="button" class="arrow-btn" (click)="scrollLeft()">
+                    <i class="fa-light fa-chevron-left"></i>
+                </button>
+                <button id="right2" type="button" class="arrow-btn" (click)="scrollRight()">
+                    <i class="fa-light fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div #carousel class="carousel2" (scroll)="infiniteScroll()">
+            @for (product of products; track $index) {
+            <product-card [product]="product" />
+            }
+        </div>
+    </div>
+</section>

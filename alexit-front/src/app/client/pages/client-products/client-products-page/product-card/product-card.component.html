@@ -1,0 +1,47 @@
+<div #card class="product-card column-center-center">
+    @if (offerCategoryName(product._id)) {
+    <span class="offer-sticker lineheight-fit">{{offerCategoryName(product._id)}}</span>
+    }
+    <div class="favorite row-end-center">
+        <span class="lineheight-fit" (click)="emitOnAddToFavorites(product._id)">
+            <i class="fa-solid fa-heart"></i>
+        </span>
+    </div>
+    <picture class="column-start-center" [routerLink]="['/products/product', product._id, product.name]">
+        <img [src]="product.images[0]" loading="lazy" decoding="async" width="110" height="110">
+    </picture>
+    <div class="product-content column-center-center">
+        <button type="button" (click)="emitOnAddToCart()">Add To Cart</button>
+        <div class="prod-title">
+
+            <h1 [routerLink]="['/products/product', product._id, product.name]">{{product.name}}</h1>
+        </div>
+        <div class="in-stock row-center-center gap-0_5">
+            @if (product.inStock > 0) {
+            <span class="green"></span>
+            <h5>In stock</h5>
+            }@else {
+            <span class="red"></span>
+            <h5>Out of stock</h5>
+            }
+        </div>
+        <div class="prod-price row-center-center">
+            @if (product.price.discount.value > 0) {
+            <small class="lineheight-fit"><s>{{$.money(product.price.sale)}} <small>RSD</small></s></small>
+            <span class="lineheight-fit">{{$.money($.countDiscount(product.price.sale, product.price.discount.value))}}
+                <small class="lineheight-fit">RSD</small>
+            </span>
+            }@else if (product.price.discount.value === 0) {
+            <span class="lineheight-fit">{{$.money(product.price.sale)}}
+                <small class="lineheight-fit">RSD</small>
+            </span>
+            }
+        </div>
+    </div>
+    @if (configuratorMode) {
+    <button type="button" (click)="emitOnAddToConfigurator(product)"><i class="fa-light fa-plus"></i> Add To
+        Configurator</button>
+    }@else {
+    <button type="button">Buy Now</button>
+    }
+</div>

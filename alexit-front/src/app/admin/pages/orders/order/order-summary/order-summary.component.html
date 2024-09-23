@@ -1,0 +1,29 @@
+<h1>Order summary</h1>
+<div class="summary column-start-stretch gap-1">
+    <span class="row-spacebetween-center">
+        <h4>Order number</h4>
+        <strong>#{{order.number}}</strong>
+    </span>
+    <span class="row-spacebetween-center">
+        <h4>Order date</h4>
+        <strong>{{$.dateFormatNormal(order.creationTime)}}</strong>
+    </span>
+    <span class="row-spacebetween-center">
+        <h4>Paid:</h4>
+        <div class="change-paid row-center-center">
+            <button #trueBtn type="button" id="paidBtn" [ngClass]="[order.paid ? 'active' : '']"
+                (click)="emitOnChangePayment(true)">
+                <i class="fa-light fa-check"></i>
+            </button>
+            <button #falseBtn type="button" id="notPaidBtn" [ngClass]="[!order.paid ? 'active' : '']"
+                (click)="emitOnChangePayment(false)">
+                <i class="fa-light fa-xmark"></i>
+            </button>
+        </div>
+    </span>
+</div>
+<div class="adm-form-group">
+    <label for="updateMessage">Update message</label>
+    <textarea id="updateMessage" placeholder="Type update message to user"
+        (input)="emitOnStatusMessageInput($event)"></textarea>
+</div>

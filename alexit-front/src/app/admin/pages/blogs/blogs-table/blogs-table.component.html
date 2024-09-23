@@ -1,0 +1,137 @@
+<main class="column-start-stretch gap-1">
+    <span class="main-title">
+        <h1>Blogs</h1>
+        <button type="button" class="blue-btn" routerLink="blog-editor">
+            <i class="fa-light fa-plus-circle"></i>
+            <h5>Add new blog</h5>
+        </button>
+    </span>
+    <div class="table-options gap-1">
+        <div class="row-center-center gap-1">
+            <div class="adm-form-group flex-full">
+                <input #search type="text" id="search" placeholder="Search for title, topic, etc.">
+            </div>
+            <div class="adm-form-group flex-full">
+                <select #topic_id>
+                    <option value="all">All topics</option>
+                    @for (topic of blogTopics; track $index) {
+                    <option [value]="topic._id">{{topic.name}}</option>
+                    }
+                </select>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="adm-form-group flex-full">
+                <select #status>
+                    <option value="both">Both published & unpublished</option>
+                    <option [value]="true">Published</option>
+                    <option [value]="false">Unpublished</option>
+                </select>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+        </div>
+        <button type="button" class="blue-btn" (click)="updateFilters(search.value, topic_id.value, status.value)">
+            <i class="fa-light fa-magnifying-glass"></i>
+            <h5>Search</h5>
+        </button>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <button #title type="button" [id]="sortingTriggers.TITLE" (click)="sort($event.currentTarget)">
+                            TITLE
+                            @if (title.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th>
+                        <button #topic type="button" [id]="sortingTriggers.TOPIC" (click)="sort($event.currentTarget)">
+                            TOPIC
+                            @if (topic.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th>
+                        <button #comments type="button" [id]="sortingTriggers.COMMENTS"
+                            (click)="sort($event.currentTarget)">
+                            COMMENTS
+                            @if (comments.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th>
+                        <button #date type="button" [id]="sortingTriggers.DATE" (click)="sort($event.currentTarget)">
+                            DATE
+                            @if (date.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th>STATUS</th>
+                    <th>ACTIONS</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (blog of blogs; track $index) {
+                <tr>
+                    <td>{{blog.title}}</td>
+                    <td>{{topicName(blog.topic_id)}}</td>
+                    <td>{{blog.comments.length}}</td>
+                    <td>{{$.dateFormatNormal(blog.date)}}</td>
+                    <td>
+                        <span [ngClass]="[blog.published ? 'status-published' : 'status-unpublished']">{{blog.published
+                            ? "Published" : "Unpublished"}}
+                        </span>
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-sliders" [routerLink]="['blog-editor', blog._id]"></i>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+        <div class="pagination-container row-spacebetween-center">
+            <button type="button" class="row-center-center" (click)="previousPile()"><i
+                    class="fa-solid fa-caret-left"></i></button>
+            <p>Showing {{currentPile + 1}} of {{paginatedBlogs.length}}</p>
+            <button type="button" class="row-center-center" (click)="nextPile()"><i
+                    class="fa-solid fa-caret-right"></i></button>
+        </div>
+    </div>
+</main>

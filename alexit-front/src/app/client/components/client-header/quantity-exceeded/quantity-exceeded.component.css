@@ -1,0 +1,74 @@
+@keyframes modalShow {
+    from {
+        transform: translateY(-150%);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+dialog {
+    position: absolute;
+    width: fit-content;
+    max-width: 100vw;
+    max-height: 1200px;
+    background-color: var(--main-white);
+    z-index: 1;
+    border: 1px solid var(--border-grey);
+    inset: 0;
+    margin: 2.5rem auto auto auto;
+    outline: none;
+    animation: modalShow 0.3s;
+    overflow: visible;
+}
+
+dialog::backdrop {
+    background-color: rgba(51, 51, 51, 0.447);
+}
+
+dialog>div {
+    padding: 3rem 2rem;
+}
+
+dialog>div>span:first-child {
+    position: absolute;
+    height: 2px;
+    background-color: var(--yellow-light);
+    width: 100%;
+    top: 0;
+}
+
+dialog>div>span:last-child {
+    position: absolute;
+    height: 2px;
+    background-color: var(--yellow-light);
+    width: 100%;
+    bottom: 0;
+}
+
+dialog>div>button {
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: rgb(255, 157, 157);
+    transition: color 0.2s ease-in-out;
+}
+
+dialog>div>button:hover {
+    color: #ff0000;
+}
+
+dialog>div>button>i {
+    font-size: 2.2rem;
+}
+
+dialog>div>h4 {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: var(--main-black);
+}

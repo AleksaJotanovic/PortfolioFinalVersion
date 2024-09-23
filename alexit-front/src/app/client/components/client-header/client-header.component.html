@@ -1,0 +1,180 @@
+<header class="column-center-center">
+    <div class="info-nav">
+        <div class="row-spacebetween-center">
+            <div class="contact-us row-center-center">
+                <a href="#" class="row-center-center lineheight-fit">
+                    <i class="fa-solid fa-circle-phone"></i>
+                    +381 65 8891631
+                </a>
+                <a href="#" class="row-center-center lineheight-fit">
+                    <i class="fa-solid fa-circle-envelope"></i>
+                    jotanovicaleksa&#x40;gmail.com
+                </a>
+            </div>
+            <div class="info-links row-center-center">
+                <a routerLink="about-us" class="lineheight-fit">About us</a>
+                <span></span>
+                <a routerLink="blogs" [queryParams]="{topicId: 'all'}" class="lineheight-fit">Blogs</a>
+                <span></span>
+                <a routerLink="contact" class="lineheight-fit">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="secondary-nav row-spacebetween-center">
+        <button type="button" id="mobileMenuActivator" (click)="sidemenuActive = true"><i
+                class="fa-duotone fa-bars-sort"
+                style="--fa-primary-color: #000000; --fa-secondary-color: #ffce00; --fa-secondary-opacity: 1;"></i></button>
+        <div class="alexit-logo">
+            <h1>ALEX<span>IT</span></h1>
+        </div>
+
+
+
+
+        <div class="search-bar row-center-stretch flex-full relative" id="searchBar1">
+            <input type="text" id="productsExplorer" placeholder="Search for products" [(ngModel)]="searchFilter"
+                (input)="searchProducts()">
+            <button type="button"><i class="fa-light fa-magnifying-glass"></i></button>
+
+            <div #productsSearch class="products-search">
+                @for (product of searchedProducts; track $index) {
+                <div class="row-start-center gap-1">
+                    <picture><img [src]="product.images[0]" width="60" height="60"></picture>
+                    <span class="column-center-start gap-0_2">
+                        <h4 (click)="goToProduct(product)">{{product.name}}</h4>
+                        <p>{{product.description}}</p>
+                    </span>
+                    <output>{{$.money(product.price.sale)}}</output>
+                </div>
+                }
+            </div>
+        </div>
+
+
+
+
+
+        <div class="favorite-user-cart">
+            <i class="fa-thin fa-circle-user" (click)="collapseAccountDropdown(accountDropdown, registrationModal)"></i>
+            <i class="fa-thin fa-cart-shopping" (click)="cartActive = true"></i>
+            <span class="lineheight-fit">{{totalQuantity}}</span>
+            <div #accountDropdown class="user-dropdown">
+                <div class="user-container column-center-stretch">
+                    <h1>{{user ? user.firstname + ' ' + user.lastname : ''}}</h1>
+                    <ul class="column-center-stretch">
+                        <li class="lineheight-fit row-start-stretch">
+                            <span class="lineheight-fit row-center-center"><i class="fa-thin fa-circle-user"></i></span>
+                            <a routerLink="account/personal-info" class="lineheight-fit row-start-center"
+                                (click)="accountDropdown.classList.toggle('user-dropdown-active')">
+                                My account
+                            </a>
+                        </li>
+                        <li class="lineheight-fit row-start-stretch">
+                            <span class="lineheight-fit row-center-center"><i
+                                    class="fa-thin fa-pen-to-square"></i></span>
+                            <a routerLink="account/edit-account" class="lineheight-fit row-start-center"
+                                (click)="accountDropdown.classList.toggle('user-dropdown-active')">Edit account</a>
+                        </li>
+                        <li class="lineheight-fit row-start-stretch">
+                            <span class="lineheight-fit row-center-center"><i class="fa-thin fa-heart"></i></span>
+                            <a href="#" class="lineheight-fit row-start-center"
+                                (click)="accountDropdown.classList.toggle('user-dropdown-active')">Wish list</a>
+                        </li>
+                        <li class="lineheight-fit row-start-stretch">
+                            <span class="lineheight-fit row-center-center"><i class="fa-thin fa-power-off"></i></span>
+                            <a href="#" class="lineheight-fit row-start-center" (click)="signout()">Sign out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="primary-nav row-spacebetween-center">
+        <button #menuActivator type="button" id="menuActivator" [ngClass]="[categoriesMenu ? 'active' : '']"
+            (click)="categoriesMenu = !categoriesMenu; subcategoriesMenu = false"><i class="fa-regular fa-bars"></i>
+            PRODUCTS</button>
+        <ul class="row-center-center">
+            <li><a routerLink="">Home</a></li>
+            <li><a routerLink="offers" [queryParams]="{categoryId: 'all'}">Offers</a></li>
+            <li><a routerLink="configurator">Configurator</a></li>
+        </ul>
+        <div class="search-bar row-center-stretch flex-full relative">
+            <input type="text" id="productsExplorer2" placeholder="Search for products" [(ngModel)]="searchFilter"
+                (input)="searchProducts()">
+            <button type="button"><i class="fa-light fa-magnifying-glass"></i></button>
+            <div #productsSearch class="products-search">
+                @for (product of searchedProducts; track $index) {
+                <div class="row-start-center gap-1">
+                    <picture><img [src]="product.images[0]" width="60" height="60"></picture>
+                    <span class="column-center-start gap-0_2">
+                        <h4 (click)="goToProduct(product)">{{product.name}}</h4>
+                        <p>{{product.description}}</p>
+                    </span>
+                    <output>{{$.money(product.price.sale)}}</output>
+                </div>
+                }
+            </div>
+        </div>
+    </nav>
+    <div class="products-categories-dropdown"
+        (mouseleave)="subcategoriesMenu = false; categoriesMenu = !categoriesMenu">
+        <div #parentCtg class="parent-ctg" [ngClass]="[categoriesMenu ? 'active' : '']">
+            <ul class="column-start-stretch">
+                @for (category of (categories | ptIf); track $index) {
+                <li class="lineheight-fit row-spacebetween-center" (pointerenter)="openSubcategories(category._id)">
+                    {{category.name}}<i class="fa-light fa-angle-right"></i>
+                </li>
+                }
+            </ul>
+        </div>
+        <div #subCtg class="sub-ctg" [ngClass]="[subcategoriesMenu ? 'active' : '']">
+            <div class="sub-ctg-container">
+                @for (category of subcategories; track $index) {
+                <div class="column-center-center">
+                    <picture class="row-center-center"><img [src]="category.image"></picture>
+                    <a class="lineheight-fit" (click)="goToProducts(category)">{{category.name}}</a>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</header>
+
+<dialog #registrationModal class="registration-modal" close>
+    <div class="modal-header row-center-center">
+        <button type="button" class="lineheight-fit row-center-center"
+            [ngClass]="[formActive.signin ? 'btn-active' : '']"
+            (click)="this.formActive.signin = true; this.formActive.signup = false;">
+            <i class="fa-solid fa-user"></i>Sign In</button>
+        <button type="button" class="lineheight-fit row-center-center"
+            [ngClass]="[formActive.signup ? 'btn-active' : '']"
+            (click)="this.formActive.signup = true; this.formActive.signin = false;">
+            <i class="fa-solid fa-user-plus"></i>
+            Sign Up</button>
+    </div>
+    <customer-registration [formActive]="formActive" (onRegistration)="register($event)"
+        (onLogin)="login($event, loginSuccess, registrationModal);" [loginError]="loginError"
+        (onModalClose)="registrationModal.close(); formActive = {signin: true, signup: false}" />
+</dialog>
+
+<dialog #loginSuccess class="login-success">
+    <div class="column-center-stretch">
+        <span></span>
+        <div class="column-center-center flex-full gap-1_3">
+            <h5>You have successfully logged in</h5>
+            <i class="fa-light fa-loader fa-spin"></i>
+        </div>
+        <span></span>
+    </div>
+</dialog>
+
+<cart (onCartClose)="cartActive = false" [cartActive]="cartActive" [couriers]="couriers" [cart]="cart"
+    [totalPrice]="totalPrice" [totalQuantity]="totalQuantity" [products]="products"
+    (onIncrementQuantity)="incrementQuantity($event)" (onDecrementQuantity)="decrementQuantity($event)"
+    (onRemove)="removeCartItem($event)" (onCheckout)="goToCheckout()" />
+
+<sidemenu [categories]="categories" [sidemenuActive]="sidemenuActive" (onSidemenuClose)="sidemenuActive = false"
+    (onProductsSidemenuToggle)="toggleProductsSidemenu($event)"
+    (onToggleMobileSubcategories)="toggleMobileSubcategories($event)" />
+
+<quantity-exceeded />

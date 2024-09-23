@@ -1,0 +1,68 @@
+<aside class="sidemenu column-start-stretch" [ngClass]="[sidemenuActive ? 'sidemenu-active' : '']">
+    <div class="sidemenu-header row-spacebetween-center">
+        <span class="row-center-center" (click)="onSidemenuClose.emit()"><i class="fa-thin fa-xmark"></i></span>
+        <span #sidemenuGoback class="row-center-center"
+            (click)="emitOnProductsSidemenuToggle(productsSidemenu,sidemenuGoback)"><i
+                class="fa-thin fa-chevron-left"></i></span>
+    </div>
+    <div class="sidemenu-container">
+        <ul class="column-start-stretch">
+            <li class="row-spacebetween-center lineheight-fit"
+                (click)="emitOnProductsSidemenuToggle(productsSidemenu, sidemenuGoback)"><i
+                    class="fa-light fa-bars"></i><a class="lineheight-fit">PRODUCTS</a><i
+                    class="fa-light fa-chevron-right"></i>
+            </li>
+            <li class="row-center-center lineheight-fit">
+                <a routerLink="" class="lineheight-fit">Home</a>
+            </li>
+            <li class="row-center-center lineheight-fit">
+                <a routerLink="" class="lineheight-fit">Discounts</a>
+            </li>
+            <li class="row-center-center lineheight-fit">
+                <a routerLink="offers" class="lineheight-fit">Offers</a>
+            </li>
+            <li class="row-center-center lineheight-fit">
+                <a routerLink="configurator" class="lineheight-fit">Configurator</a>
+            </li>
+        </ul>
+        <div #productsSidemenu class="products-sidemenu">
+            <ul class="column-start-stretch">
+                @for (category of (categories | ptIf); track $index) {
+                <li class="row-start lineheight-fit">
+                    <button type="button" class="lineheight-fit row-spacebetween-center"
+                        (click)="emitOnToggleMobileSubcategories($event, mobileSubcategories)">
+                        {{category.name}}<i class="fa-light fa-chevron-right"></i>
+                    </button>
+                </li>
+                <div #mobileSubcategories [id]="category._id" class="subcategories-container">
+                    <div class="column-start-stretch">
+                        <ul class="column-start-stretch">
+                            @for (subctg of getMobileSubcategories(category._id); track $index) {
+                            <li class="row-start-stretch"><a
+                                    [routerLink]="['products', subctg._id, subctg.name]">{{subctg.name}}</a></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                }
+            </ul>
+        </div>
+    </div>
+    <div class="sidemenu-footer">
+        <ul>
+            <li class="row-center-center lineheight-fit">
+                <i class="fa-sharp fa-solid fa-circle-phone"></i>
+                <a href="#" class="row-center-center lineheight-fit">+381 65 8891631</a>
+            </li>
+            <li class="row-center-center lineheight-fit">
+                <i class="fa-solid fa-circle-envelope"></i>
+                <a href="#" class="row-center-center lineheight-fit">jotanovicaleksa&#x40;gmail.com</a>
+            </li>
+        </ul>
+        <div class="row-center-stretch">
+            <a class="lineheight-fit" routerLink="about-us">About</a>
+            <a class="lineheight-fit" routerLink="blogs">Blog</a>
+            <a class="lineheight-fit" routerLink="contact">Contact</a>
+        </div>
+    </div>
+</aside>

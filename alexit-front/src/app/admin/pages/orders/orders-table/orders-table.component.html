@@ -1,0 +1,149 @@
+<main class="column-start-stretch gap-1">
+    <span class="main-title">
+        <h1>Orders</h1>
+    </span>
+    <div class="table-options gap-1">
+        <div class="row-center-center gap-1">
+            <div class="adm-form-group flex-full">
+                <input #search type="text" id="search" placeholder="Search for customer, number, price, etc.">
+            </div>
+            <div class="adm-form-group flex-full relative">
+                <select #payment>
+                    <option value="both">Both paid & unpaid</option>
+                    <option [value]="true">Paid</option>
+                    <option [value]="false">Unpaid</option>
+                </select>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+        </div>
+        <button type="button" class="blue-btn" (click)="updateFilters(payment.value, search.value)">
+            <i class="fa-light fa-magnifying-glass"></i>
+            <h5>Search</h5>
+        </button>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th><button #number type="button" [id]="sortingTriggers.NUMBER"
+                            (click)="sort($event.currentTarget)">NUMBER
+                            @if (number.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th><button #customer type="button" [id]="sortingTriggers.CUSTOMER"
+                            (click)="sort($event.currentTarget)">
+                            CUSTOMER
+                            @if (customer.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th><button #purchase type="button" [id]="sortingTriggers.PURCHASE"
+                            (click)="sort($event.currentTarget)">
+                            PURCHASE
+                            @if (purchase.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th><button #address type="button" [id]="sortingTriggers.ADDRESS"
+                            (click)="sort($event.currentTarget)">
+                            ADDRESS
+                            @if (address.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th><button #date type="button" [id]="sortingTriggers.DATE" (click)="sort($event.currentTarget)">
+                            DATE
+                            @if (date.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th><button #total type="button" [id]="sortingTriggers.TOTAL" (click)="sort($event.currentTarget)">
+                            TOTAL
+                            @if (total.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th>ACTIONS</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (order of orders; track
+                $index) {
+                <tr>
+                    <td>{{'#' + order.number}}</td>
+                    <td>{{order.user.firstname + ' ' + order.user.lastname}}</td>
+                    <td>{{order.items.length}} Items</td>
+                    <td>{{order.user.country + ', ' + order.user.city}}</td>
+                    <td>{{$.dateFormatNormal(order.creationTime)}}</td>
+                    <td class="price"><span>{{$.money(order.grandTotal)}}</span></td>
+                    <td>
+                        <i class="fa-regular fa-sliders" [routerLink]="['/admin/orders/order', order._id]"></i>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+        <div class="pagination-container row-spacebetween-center">
+            <button type="button" class="row-center-center" (click)="previousPile()"><i
+                    class="fa-solid fa-caret-left"></i></button>
+            <p>Showing {{currentPile + 1}} of {{paginatedOrders.length}}</p>
+            <button type="button" class="row-center-center" (click)="nextPile()"><i
+                    class="fa-solid fa-caret-right"></i></button>
+        </div>
+    </div>
+</main>

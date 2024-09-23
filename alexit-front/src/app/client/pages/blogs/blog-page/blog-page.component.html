@@ -1,0 +1,58 @@
+<main class="column-center-stretch">
+    @if (blog) {
+    <section class="blog-header column-spacebetween-stretch"
+        [ngStyle]="{'background-image': 'url(' + blog.featuredImage + ')'}">
+        <span></span>
+        <div class="column-center-center gap-1_5">
+            <h1>{{blog.title}}</h1>
+            <ul class="row-center-center gap-1">
+                <li><a routerLink="/">Home</a></li>
+                <li><i class="fa-light fa-chevron-right"></i></li>
+                <li><a routerLink="/blogs" [queryParams]="{topicId: 'all'}">Blogs</a></li>
+                <li><i class="fa-light fa-chevron-right"></i></li>
+                <li><a [routerLink]="['/blogs/blog', blog._id, blog.title]">Blog</a></li>
+            </ul>
+        </div>
+        <span></span>
+    </section>
+    <section class="blog-section column-center-stretch">
+        @for (item of blog.content; track $index) {
+        @if (item.key === contentItemTypes.TEXT) {
+        <p class="blog-text">{{item.value[0]}}</p>
+        }@else if (item.key === contentItemTypes.HEADING) {
+        <h1 class="blot-content-title">{{item.value[0]}}</h1>
+        }@else if (item.key === contentItemTypes.IMAGE) {
+        <picture class="single-image"><img [src]="item.value[0]"></picture>
+        }@else if (item.key === contentItemTypes.GALLERY) {
+        <div class="blog-gallery">
+            <picture><img [src]="item.value[0]"></picture>
+            <picture><img [src]="item.value[1]"></picture>
+            <picture><img [src]="item.value[2]"></picture>
+        </div>
+        }
+        }
+    </section>
+    <section class="post-comment-section column-center-stretch relative"
+        [ngClass]="[!auth.isCustomerLoggedIn ? 'disabled' : '']">
+        <span class="row-center-center">
+            <h1>COMMENTS</h1>
+        </span>
+        <div class="column-start-stretch gap-1">
+            <textarea #comment rows="10" placeholder="Enter your comment here..." required ngModel></textarea>
+            <button type="button" class="post-btn" [disabled]="!comment.validity.valid"
+                (click)="postComment(comment)">POST</button>
+        </div>
+    </section>
+    @if (auth.isCustomerLoggedIn) {
+    <section class="comments-section column-start-stretch gap-2">
+        @for (comment of this.blog.comments; track $index) {
+        <div class="column-start-stretch gap-0_5">
+            <h1>{{getUserName(comment.user_id)}}</h1>
+            <p>{{comment.content}}</p>
+        </div>
+        }
+    </section>
+
+    }
+    }
+</main>

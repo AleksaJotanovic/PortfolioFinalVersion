@@ -1,0 +1,98 @@
+<aside class="cart column-start-stretch" [ngClass]="[cartActive ? 'cart-active' : '']">
+    <div class="cart-header row-spacebetween-center">
+        <span class="row-center-center"><i class="fa-thin fa-xmark" (click)="onCartClose.emit()"></i></span>
+        <span class="row-center-center"><i class="fa-thin fa-cart-shopping"></i>
+            <small class="row-center-center">{{totalQuantity}}</small>
+        </span>
+    </div>
+    <div class="cart-container column-start-stretch">
+        @if (cart.length > 0) {
+        @for (item of cart; track $index) {
+        @if (getCartProduct(item.product_id)) {
+        @if (getCartProduct(item.product_id).price.discount.value > 0) {
+        <div class="row-spacebetween-center">
+            <picture>
+                <img [src]="getCartProduct(item.product_id).images[0]">
+            </picture>
+            <div class="cart-item-content">
+                <div class="column-spacebetween-start">
+                    <h1>{{getCartProduct(item.product_id).name}}</h1>
+                    <h3>{{$.money($.countDiscount(getCartProduct(item.product_id).price.sale,
+                        getCartProduct(item.product_id).price.discount.value))}}
+                        <small>RSD</small>
+                    </h3>
+                    <div class="quantity-input row-center-stretch">
+                        <button type="button" class="row-center"
+                            (click)="emitOnIncrementQuantity(getCartProduct(item.product_id))">
+                            <i class="fa-light fa-plus"></i>
+                        </button>
+                        <span class="row-center-center">{{item.quantity}}</span>
+                        <button type="button" class="row-center-center" (click)="emitOnDecrementQuantity(item)">
+                            <i class="fa-light fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="column-spacebetween-end">
+                    <button type="button" class="row-center-center" (click)="emitOnRemove(item.id)">
+                        <i class="fa-light fa-xmark"></i>
+                    </button>
+                    <h3>{{$.money((item.quantity * $.countDiscount(getCartProduct(item.product_id).price.sale,
+                        getCartProduct(item.product_id).price.discount.value)))}} <small>RSD</small>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        }@else {
+        <div class="row-spacebetween-center">
+            <picture>
+                <img [src]="getCartProduct(item.product_id).images[0]">
+            </picture>
+            <div class="cart-item-content">
+                <div class="column-spacebetween-start">
+                    <h1>{{getCartProduct(item.product_id).name}}</h1>
+                    <h3>{{$.money(getCartProduct(item.product_id).price.sale)}}</h3>
+                    <div class="quantity-input row-center-stretch">
+                        <button type="button" class="row-center-center"
+                            (click)="emitOnIncrementQuantity(getCartProduct(item.product_id))">
+                            <i class="fa-light fa-plus"></i>
+                        </button>
+                        <span class="row-center-center">{{item.quantity}}</span>
+                        <button type="button" class="row-center-center" (click)="emitOnDecrementQuantity(item)">
+                            <i class="fa-light fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="column-spacebetween-end">
+                    <button type="button" class="row-center-center" (click)="emitOnRemove(item.id)">
+                        <i class="fa-light fa-xmark"></i>
+                    </button>
+                    <h3>{{$.money((item.quantity * getCartProduct(item.product_id).price.sale))}}
+                        <small>RSD</small>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        }
+        }
+        }
+        }@else if (cart.length === 0) {
+        <h1 class="empty-cart">Your cart is empty</h1>
+        }
+    </div>
+
+    <div class="cart-footer column-center-stretch">
+        <div class="row-spacebetween-center">
+            <h1>Subtotal</h1>
+            <span>{{$.money(totalPrice)}} <small>RSD</small></span>
+        </div>
+        <div class="row-spacebetween-center">
+            <h1>Shipping</h1>
+            <span>0 <small>RSD</small></span>
+        </div>
+        <div class="row-spacebetween-center">
+            <h1>Total</h1>
+            <span>{{$.money(totalPrice)}} <small>RSD</small></span>
+        </div>
+        <button type="button" (click)="emitOnCheckout()" [disabled]="cart.length === 0">Checkout</button>
+    </div>
+</aside>

@@ -1,0 +1,61 @@
+span>h1 {
+    font-size: 0.9rem;
+    font-size: 600;
+    letter-spacing: 1px;
+    color: var(--dark-text);
+    line-height: 100%;
+}
+
+span>a {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: var(--light-blue);
+    line-height: 100%;
+    transition: color 0.15s ease-in-out;
+}
+
+span>a:hover {
+    color: var(--dark-blue);
+}
+
+
+.mini-table {
+    padding-top: 1.125rem;
+}
+
+.mini-table>span {
+    background-color: rgba(151, 191, 255, 0.15);
+    padding: 0.6rem 1rem;
+    border-radius: var(--border-radius-sub);
+}
+
+.mini-table>span a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--good-color);
+}
+
+.mini-table>span>h5:nth-child(1) {
+    color: #3a3f56;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+    flex: 1;
+}
+
+.mini-table>span>h5:nth-child(2) {
+    color: var(--dark-text);
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+}
+
+.mini-table>span>h5:nth-child(3) {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: var(--light-blue);
+    font-weight: 500;
+    flex: 1;
+    text-align: end;
+}

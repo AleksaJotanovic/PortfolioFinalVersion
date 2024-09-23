@@ -1,0 +1,140 @@
+.logo {
+    padding-block: 1.8rem 2.4rem;
+}
+
+.logo>i {
+    font-size: 1.7rem;
+    color: var(--light-blue);
+}
+
+.logo>h1 {
+    font-family: "Bungee", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 100;
+    text-align: center;
+    color: var(--dark-text);
+    letter-spacing: 4px;
+    line-height: 100%;
+}
+
+.logo>h1>span {
+    font-weight: 100;
+    font-family: "Bungee", sans-serif;
+    color: var(--light-blue);
+    line-height: 100%;
+}
+
+.sidenav-container {
+    padding-inline: 1rem 0.6rem;
+    transition: all 0.15s ease-in-out;
+}
+
+.sidenav-container h5 {
+    color: #8c96bb;
+    font-size: 0.78rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+    line-height: 100%;
+}
+
+.sidenav-container ul i {
+    font-size: 1.125rem;
+    color: #8c96bb;
+    transition: color 0.2s ease-in-out;
+}
+
+.sidenav-container li {
+    cursor: pointer;
+    padding: 0.65rem 1rem;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.sidenav-container li.active {
+    background-color: var(--light-blue);
+    box-shadow: var(--button-shadow);
+}
+
+.sidenav-container li::before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 11px;
+    background-color: #1642c8;
+    inset: 0;
+    margin: auto auto auto -1rem;
+    transform: translateX(-50%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: all 0.15s ease-in-out;
+}
+
+.sidenav-container li.active::before {
+    height: 46px;
+}
+
+.sidenav-container li.active :where(i, h5) {
+    color: #ffffff;
+}
+
+.sidenav-container li:hover :where(i, h5) {
+    color: var(--dark-text);
+}
+
+.sidenav-container li.active:hover {
+    background-color: var(--dark-blue);
+}
+
+.sidenav-container li.active:hover :where(i, h5) {
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .sidenav-container li {
+        padding: 0.65rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidenav-container li h5 {
+        display: none;
+    }
+
+    .sidenav-container {
+        padding-inline: 0.6rem;
+    }
+
+    .logo>h1 {
+        display: none;
+    }
+
+    .logo>i {
+        font-size: 2.2rem;
+    }
+
+    .logo {
+        padding-block: 1.6rem 2.1rem;
+    }
+}

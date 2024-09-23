@@ -1,0 +1,116 @@
+<div class="header">
+    <button type="button" class="blue-btn" routerLink="/admin/blogs"
+        [queryParams]="{ limit: 13, currentPile: 0, searchQuery: '', topicId: 'all', status: 'both' }"><i
+            class="fa-light fa-arrow-left"></i></button>
+    <div class="main-settings row-center-center gap-1">
+        <div class="adm-form-group flex-full">
+            <input type="text" placeholder="Type & press enter to add topic" (keydown.enter)="addBlogTopic($event)">
+        </div>
+        <div class="adm-form-group flex-full">
+            <select [(ngModel)]="blog.topic_id">
+                <option ngValue="" selected disabled hidden>Select topic</option>
+                @for (topic of blogTopics; track $index) {
+                <option [ngValue]="topic._id">{{topic.name}}</option>
+                }
+            </select>
+            <i class="fa-solid fa-caret-down"></i>
+        </div>
+    </div>
+    <div class="row-center-center gap-1">
+        @if (id === "") {
+        <button type="button" class="outline-btn" (click)="saveDraft()">
+            <i class="fa-light fa-file-lines"></i>
+            <h5>Save draft</h5>
+        </button>
+        }
+        <button type="button" class="blue-btn" (click)="submit()">
+            <i class="fa-light fa-upload"></i>
+            <h5>{{id !== "" ? "Update" : "Publish"}}</h5>
+        </button>
+        @if (id !== "") {
+        <button type="button" class="red-btn" (click)="delete(id)">
+            <i class="fa-light fa-trash-can"></i>
+            <h5>Delete</h5>
+        </button>
+        }
+    </div>
+</div>
+<div class="main-container column-start-stretch">
+    <div>
+        <textarea #textarea rows="1" placeholder="Add title..." class="offer-title" [(ngModel)]="blog.title"
+            (input)="fitTextareaDimensions($event)"></textarea>
+    </div>
+    <div class="featured-image">
+        <input #featuredFile type="file"
+            (change)="uploadFeaturedImage($event, featuredImage); featuredPic.style.display = 'block'; uploader.classList.add('hidden')">
+        <picture #featuredPic [ngStyle]="{'display': id !== '' ? 'block' : ''}"><img #featuredImage
+                [src]="blog.featuredImage"></picture>
+        <div #uploader class="upload-input column-center-center gap-0_7" (click)="featuredFile.click();"
+            [ngClass]="[id !== '' ? 'hidden' : '']">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <h5>Click to browse a file</h5>
+        </div>
+    </div>
+
+
+
+
+
+
+    @for (item of blog.content; track $index) {
+    @if (item.key === contentItemTypes.HEADING) {
+    <textarea #textarea class="heading" rows="1" placeholder="Heading..." [(ngModel)]="item.value[0]" [id]="item._id"
+        (input)="fitTextareaDimensions($event)"></textarea>
+    }@else if (item.key === contentItemTypes.TEXT) {
+    <textarea #textarea class="paragraph" rows="1" placeholder="Text..." [(ngModel)]="item.value[0]" [id]="item._id"
+        (input)="fitTextareaDimensions($event)"></textarea>
+    }@else if (item.key === contentItemTypes.IMAGE) {
+    <div class="image" [id]="item._id">
+        <picture #contentPic [ngStyle]="{'display': id !== '' ? 'block' : ''}"><img [id]="item._id" #contentImage
+                [src]="item.value[0]"></picture>
+        <input #contentFile type="file" [id]="item._id"
+            (change)="uploadContentImage($event, contentImage); contentPic.style.display = 'block'; imageUploader.classList.add('hidden')">
+        <h1>Image</h1>
+        <div #imageUploader class="upload-input column-center-center gap-0_7" [ngClass]="[id !== '' ? 'hidden' : '']"
+            (click)="contentFile.click()">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <h5>Click to browse a file</h5>
+        </div>
+    </div>
+    }@else if (item.key === contentItemTypes.GALLERY) {
+    <div class="gallery">
+        <span class="row-center-center gap-0_5" (click)="galleryInput.click()">
+            <h6>Click here to upload multiple images</h6>
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+        </span>
+        <input #galleryInput type="file" multiple [id]="item._id"
+            (change)="uploadGallery($event, glrImage1, glrImage2, glrImage3); glrPicture1.style.display = 'block'; glrPicture2.style.display = 'block'; glrPicture3.style.display = 'block';">
+        <div class="image">
+            <picture #glrPicture1 [ngStyle]="{'display': id !== '' ? 'block' : ''}"><img [id]="item._id" #glrImage1
+                    [src]="item.value[0]"></picture>
+        </div>
+        <div class="image">
+            <picture #glrPicture2 [ngStyle]="{'display': id !== '' ? 'block' : ''}"><img [id]="item._id" #glrImage2
+                    [src]="item.value[1]"></picture>
+        </div>
+        <div class="image">
+            <picture #glrPicture3 [ngStyle]="{'display': id !== '' ? 'block' : ''}"><img [id]="item._id" #glrImage3
+                    [src]="item.value[2]"></picture>
+        </div>
+    </div>
+    }
+    }
+
+
+
+    <div class="add-content">
+        <button type="button" [id]="contentItemTypes.HEADING" (click)="addContentItem($event)"><i
+                class="fa-light fa-heading"></i></button>
+        <button type="button" [id]="contentItemTypes.TEXT" (click)="addContentItem($event)"><i
+                class="fa-light fa-paragraph"></i></button>
+        <button type="button" [id]="contentItemTypes.IMAGE" (click)="addContentItem($event)"><i
+                class="fa-light fa-image"></i></button>
+        <button type="button" [id]="contentItemTypes.GALLERY" (click)="addContentItem($event)"><i
+                class="fa-light fa-images"></i></button>
+    </div>
+</div>

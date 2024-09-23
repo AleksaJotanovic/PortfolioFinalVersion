@@ -1,0 +1,1 @@
+export const blogContentItemTypes = { IMAGE: 'image', GALLERY: 'gallery', HEADING: 'heading', TEXT: 'text' };

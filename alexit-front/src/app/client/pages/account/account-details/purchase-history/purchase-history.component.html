@@ -1,0 +1,26 @@
+<div class="user-account-routing column-start-stretch">
+    <div class="purchase-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Order number</th>
+                    <th>Date</th>
+                    <th>Total price</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (order of orders; track $index) {
+                <tr>
+                    <td>#{{order.number}}</td>
+                    <td>{{$.dateFormatNormal(order.creationTime)}}</td>
+                    <td>{{$.money(order.grandTotal)}}</td>
+                    <td>{{order.status}}</td>
+                    <td><a href="">VIEW <i class="fa-solid fa-circle-chevron-right"></i></a></td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

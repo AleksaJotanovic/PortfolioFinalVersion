@@ -1,0 +1,113 @@
+<div class="chart-header row-end-center relative gap-0_6">
+    <h1>Statistics</h1>
+    <select [(ngModel)]="yearFilter" (change)="emitOnYearFilter()">
+        <option [ngValue]="lastYear()">{{lastYear()}}</option>
+        @for (year of years; track $index) {
+        <option [ngValue]="year">{{year}}</option>
+        }
+    </select>
+    <i class="fa-solid fa-caret-down"></i>
+</div>
+<div class="chart-container">
+    <div class="amounts">
+        <h6>2000K</h6>
+        <h6>1800K</h6>
+        <h6>1600K</h6>
+        <h6>1400K</h6>
+        <h6>1200K</h6>
+        <h6>1000K</h6>
+        <h6>800K</h6>
+        <h6>600K</h6>
+        <h6>400K</h6>
+        <h6>200K</h6>
+        <h6>0</h6>
+    </div>
+    <div class="graph-display">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="graph-bars">
+            <div>
+                <span [ngStyle]="{'height': barHeight(statByMonthName('Jan').totalEarning)}">
+                    <h6>{{$.money(statByMonthName('Jan').totalEarning)}}</h6>
+                </span>
+            </div>
+            <div>
+                <span [ngStyle]="{'height': barHeight(statByMonthName('Feb').totalEarning)}">
+                    <h6>{{$.money(statByMonthName('Feb').totalEarning)}}</h6>
+                </span>
+            </div>
+            <div>
+                <span [ngStyle]="{'height': barHeight(statByMonthName('Mar').totalEarning)}">
+                    <h6>{{$.money(statByMonthName('Mar').totalEarning)}}</h6>
+                </span>
+            </div>
+            <div>
+                <span [ngStyle]="{'height': barHeight(statByMonthName('Apr').totalEarning)}">
+                    <h6>{{$.money(statByMonthName('Apr').totalEarning)}}</h6>
+                </span>
+            </div>
+            <div>
+                <span [ngStyle]="{'height': barHeight(statByMonthName('May').totalEarning)}">
+                    <h6>{{$.money(statByMonthName('May').totalEarning)}}</h6>
+                </span>
+            </div>
+            <div>
+                <span [ngStyle]="{'height': barHeight(statByMonthName('Jun').totalEarning)}">
+                    <h6>{{$.money(statByMonthName('Jun').totalEarning)}}</h6>
+                </span>
+            </div>
+            <div>
+                <span [ngStyle]="{'height': barHeight(statByMonthName('Jul').totalEarning)}">
+                    <h6>{{$.money(statByMonthName('Jul').totalEarning)}}</h6>
+                </span>
+            </div>
+            <div>
+                <span [ngStyle]="{'height': barHeight(statByMonthName('Aug').totalEarning)}">
+                    <h6>{{$.money(statByMonthName('Aug').totalEarning)}}</h6>
+                </span>
+            </div>
+            <div>
+                <span [ngStyle]="{'height': barHeight(statByMonthName('Sep').totalEarning)}">
+                    <h6>{{$.money(statByMonthName('Sep').totalEarning)}}</h6>
+                </span>
+            </div>
+            <div>
+                <span [ngStyle]="{'height': barHeight(statByMonthName('Oct').totalEarning)}">
+                    <h6>{{$.money(statByMonthName('Oct').totalEarning)}}</h6>
+                </span>
+            </div>
+            <div>
+                <span [ngStyle]="{'height': barHeight(statByMonthName('Nov').totalEarning)}">
+                    <h6>{{$.money(statByMonthName('Nov').totalEarning)}}</h6>
+                </span>
+            </div>
+            <div>
+                <span [ngStyle]="{'height': barHeight(statByMonthName('Dec').totalEarning)}">
+                    <h6>{{$.money(statByMonthName('Dec').totalEarning)}}</h6>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="months">
+        <h6>JAN</h6>
+        <h6>FEB</h6>
+        <h6>MAR</h6>
+        <h6>APR</h6>
+        <h6>MAY</h6>
+        <h6>JUN</h6>
+        <h6>JUL</h6>
+        <h6>AUG</h6>
+        <h6>SEP</h6>
+        <h6>OCT</h6>
+        <h6>NOV</h6>
+        <h6>DEC</h6>
+    </div>
+</div>

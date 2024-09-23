@@ -1,0 +1,100 @@
+.items {
+    overflow-y: auto;
+    flex: 1;
+}
+
+.items>div {
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+}
+
+.items>div>picture {
+    height: fit-content;
+    width: fit-content;
+}
+
+.prod-title {
+    align-self: stretch;
+}
+
+.prod-title>h4 {
+    letter-spacing: 1px;
+    color: var(--dark-text);
+    font-size: 0.85rem;
+}
+
+.prod-title>h5 {
+    letter-spacing: 1px;
+    color: var(--light-text);
+    font-size: 0.725rem;
+    font-weight: 500;
+}
+
+.price-counting {
+    align-self: stretch;
+    margin-left: auto;
+}
+
+.price-counting>output:nth-child(1) {
+    font-size: 0.9rem;
+    color: var(--dark-text);
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.price-counting>output:nth-child(2) {
+    font-size: 0.9rem;
+    color: var(--light-blue);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.price-counting>output:nth-child(3) {
+    font-size: 0.9rem;
+    color: var(--dark-text);
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+
+.note-total {
+    height: fit-content;
+}
+
+.note-total>span {
+    flex: 1.4;
+}
+
+.note-total>span>h4 {
+    font-size: 0.825rem;
+    color: var(--dark-text);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.note-total>span>p {
+    font-size: 0.7rem;
+    color: #333e56;
+    letter-spacing: 1px;
+}
+
+.note-total>div {
+    flex: 0.6;
+}
+
+.note-total>div>span>h5 {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: var(--dark-text);
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.note-total>div>span>b {
+    font-weight: 700;
+    color: var(--dark-text);
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    line-height: 100%;
+}

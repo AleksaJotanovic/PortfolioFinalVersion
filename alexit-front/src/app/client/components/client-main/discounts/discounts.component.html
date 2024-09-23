@@ -1,0 +1,19 @@
+<section class="discounts-section row-center-center">
+    <div class="wrapper">
+        <div class="carousel-title">
+            <h1>LATEST DISCOUNTS</h1>
+            <div>
+                <button id="left" type="button" class="arrow-btn" (click)="scrollLeft()"><i
+                        class="fa-light fa-chevron-left"></i></button>
+                <button id="right" type="button" class="arrow-btn" (click)="scrollRight()"><i
+                        class="fa-light fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div #carousel class="carousel" (scroll)="infiniteScroll()">
+            @for (product of products; track $index) {
+            <product-card [product]="product" (onAddToCart)="addToCart(product._id)"
+                (onAddToFavorites)="addToFavorites(product._id)" />
+            }
+        </div>
+    </div>
+</section>

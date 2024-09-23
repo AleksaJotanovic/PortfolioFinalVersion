@@ -1,0 +1,72 @@
+<section class="slideshow-section">
+    <div class="slider-container">
+
+        <div #slider class="slider">
+            @for (offer of offers; track $index) {
+            <div class="slide" [id]="$index">
+                <div class="content" [ngStyle]="{'background-image': 'url(' + offer.featuredImage +')'}">
+                </div>
+            </div>
+            }
+        </div>
+
+        <div class="arrows">
+            <button type="button" class="prev" (click)="slideToPreviousOffer()"><i
+                    class="fa-thin fa-angle-left"></i></button>
+            <button type="button" class="next" (click)="slideToNextOffer()"><i
+                    class="fa-thin fa-angle-right"></i></button>
+        </div>
+
+        <div #dotsContainer class="dots">
+            @for (offer of offers; track $index) {
+            <div #dot class="dot" [ngClass]="[$index === offerSlideIndex ? 'active' : '']"
+                (click)="slideToOffer($index)">
+            </div>
+            }
+        </div>
+
+        <button type="button" class="view-offer-btn" (click)="viewOffer()">View More</button>
+
+    </div>
+    <div class="discounts-ending-container">
+        <div class="expiring-title">
+            <h3>OFFER EXPIRES IN</h3>
+            <h4>
+                @if (this.stopwatch.days > 0) {
+                {{this.stopwatch.days}} : {{this.stopwatch.hours}} : {{this.stopwatch.minutes}} :
+                {{this.stopwatch.seconds}}
+                }@else {
+                {{this.stopwatch.hours}} : {{this.stopwatch.minutes}} : {{this.stopwatch.seconds}}
+                }
+            </h4>
+            <button type="button">View Product</button>
+        </div>
+        <div #slider2 class="slider2">
+            @for (product of products; track $index) {
+            <div class="slide2" [id]="$index">
+                <div class="content2">
+                    <picture><img [src]="product.images[0]" loading="lazy" decoding="async"></picture>
+                    <h1>{{product.name}}</h1>
+                    <div class="expiring-price">
+                        @if (product.price.discount.value > 0) {
+                        <h5><s>{{$.money(product.price.sale)}} <small></small></s></h5>
+                        <h4>{{$.money($.countDiscount(product.price.sale, product.price.discount.value))}}
+                            <small>RSD</small>
+                        </h4>
+                        }@else {
+                        <h4>{{$.money(product.price.sale)}}<small> RSD</small></h4>
+                        }
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+        <div class="arrows2">
+            <button type="button" class="prev2" (click)="slideToPreviousProduct()"><i
+                    class="fa-thin fa-angle-left"></i></button>
+            <button type="button" class="next2" (click)="slideToNextProduct()"><i
+                    class="fa-thin fa-angle-right"></i></button>
+        </div>
+        <button type="button" class="view-product-btn" (click)="viewProduct()">View Product</button>
+    </div>
+</section>

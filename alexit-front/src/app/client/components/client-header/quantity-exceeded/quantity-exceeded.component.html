@@ -1,0 +1,10 @@
+<dialog #alert close>
+    <div class="column-center-center gap-2_5 relative">
+        <span></span>
+        <button type="button" class="row-center-center lineheight-fit"
+            (click)="alert.close(); cartService.quantityExceeded.next(false)"><i
+                class="fa-thin fa-circle-x"></i></button>
+        <h4>Product is not available in that quantity.</h4>
+        <span></span>
+    </div>
+</dialog>

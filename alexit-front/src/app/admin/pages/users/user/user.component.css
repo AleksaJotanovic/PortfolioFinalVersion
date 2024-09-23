@@ -1,0 +1,20 @@
+.user-body {
+    border: 1px solid blue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.user-body .form-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.user-body form {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

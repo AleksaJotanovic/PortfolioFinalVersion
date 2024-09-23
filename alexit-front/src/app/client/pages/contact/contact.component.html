@@ -1,0 +1,30 @@
+<main>
+    <section class="contact-section column-center-center">
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.3546400124656!2d-117.99965080000001!3d33.6738802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd214b74036047%3A0x52a95246cbfea348!2zMzQ4IFNwcmluZ2ZpZWxkIEF2ZSwgSHVudGluZ3RvbiBCZWFjaCwgQ0EgOTI2NDgsINCh0ZjQtdC00LjRmtC10L3QtSDQlNGA0LbQsNCy0LU!5e0!3m2!1ssr!2srs!4v1718278222345!5m2!1ssr!2srs"
+                style="border:0;" allowfullscreen="false" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-title column-start-stretch">
+            <div class="column-center-center">
+                <h4>LET'S TALK</h4>
+                <h1>Contact Us!</h1>
+                <h2>
+                    We're here to help! Please use the form below to get in touch with us. Whether you have
+                    questions,
+                    feedback, or need assistance, we're just a message away.
+                </h2>
+            </div>
+            <form class="column-center-stretch" [formGroup]="contactForm" (ngSubmit)="sendContactMessage()">
+                <div class="name-input">
+                    <input type="text" required formControlName="name" placeholder="Enter your name">
+                    <input type="text" required formControlName="email" placeholder="Enter your email address">
+                </div>
+                <textarea required formControlName="message" placeholder="How can we help you? Enter your message here"
+                    rows="10"></textarea>
+                <button type="submit" [disabled]="contactForm.invalid">Send Message</button>
+            </form>
+        </div>
+    </section>
+</main>

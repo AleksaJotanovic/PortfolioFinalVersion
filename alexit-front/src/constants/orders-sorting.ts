@@ -1,0 +1,1 @@
+export const ordersSortingTriggers = { NUMBER: "number", CUSTOMER: "customer", PURCHASE: "purchase", ADDRESS: "address", DATE: "date", TOTAL: "total" };

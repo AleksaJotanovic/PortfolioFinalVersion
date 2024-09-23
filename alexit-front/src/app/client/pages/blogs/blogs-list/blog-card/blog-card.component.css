@@ -1,0 +1,120 @@
+.blog-card {
+    scroll-snap-align: start;
+    height: fit-content;
+    background: #ffffff;
+    border: 1px solid var(--border-grey);
+    height: 540px;
+    position: relative;
+}
+
+.blog-card:hover .blog-image {
+    background-color: var(--dark-light);
+    background-blend-mode: multiply;
+}
+
+.blog-card:hover .blog-content {
+    height: 80%;
+}
+
+.blog-card:hover .blog-content>p {
+    display: -webkit-box;
+}
+
+.blog-card:hover .blog-content>h1 {
+    display: block;
+}
+
+.blog-card:hover .blog-date {
+    opacity: 0;
+}
+
+.blog-image {
+    transition: all 0.3s ease-in-out;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--main-white);
+    height: 78%;
+}
+
+.blog-date {
+    align-self: flex-end;
+    background-color: var(--yellow-light);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: .725rem;
+    letter-spacing: 2px;
+    margin: 0.8rem 0.8rem auto auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.blog-image>span {
+    font-size: .8rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding: 0.4rem 1rem;
+    background-color: var(--yellow-light);
+    align-self: flex-start;
+}
+
+.blog-content {
+    padding: 1rem;
+    height: 22%;
+    background-color: var(--main-white);
+    position: absolute;
+    bottom: 0;
+    gap: 0.7rem;
+    transition: height 0.2s ease-in-out;
+}
+
+.blog-content>p {
+    display: none;
+    -webkit-line-clamp: 7;
+    line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 200;
+    font-size: 0.76rem;
+    color: var(--dark-light);
+    letter-spacing: 2px;
+    line-height: 1.7;
+}
+
+.blog-content>h1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: var(--dark-hard);
+}
+
+.blog-content>hr {
+    border: none;
+    background-color: var(--border-grey);
+    height: 1px;
+}
+
+.blog-footer {
+    margin-top: auto;
+}
+
+.blog-footer>div {
+    gap: 1rem;
+    font-size: 0.77rem;
+    color: var(--dark-light);
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.blog-footer>a {
+    color: var(--yellow-light);
+    border-bottom: 1px solid var(--yellow-light);
+    padding-bottom: 0.2rem;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+}

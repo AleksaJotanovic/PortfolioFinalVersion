@@ -1,0 +1,44 @@
+<main class="column-start-stretch gap-1">
+    @if (order) {
+    <div class="goback-title">
+        <div class="row-start-center gap-0_5">
+            <button type="button" class="circle-btn" routerLink="/admin/orders"
+                [queryParams]="{ limit: 13, currentPile: 0, searchQuery: '', payment: 'both' }">
+                <i class="fa-light fa-arrow-left"></i>
+            </button>
+            <span class="column-start-start gap-0_2">
+                <h6>Back to orders</h6>
+                <h1>Order #{{order.number}}</h1>
+            </span>
+        </div>
+        <div class="row-center-center gap-1">
+            <button type="button" class="green-btn" (click)="generateSale()"
+                [disabled]="order.saleGenerated || !order.paid">
+                @if (order.saleGenerated) {
+                <i class="fa-regular fa-check"></i>
+                <h5>Sale report is generated</h5>
+                }@else {
+                <i class="fa-light fa-circle-dollar-to-slot"></i>
+                <h5>Generate sale report</h5>
+                }
+            </button>
+            <button type="button" class="blue-btn" (click)="update()" [disabled]="!changesMade">
+                <i class="fa-light fa-circle-up"></i>
+                <h5>Update order</h5>
+            </button>
+        </div>
+    </div>
+
+    <div class="order-container">
+        <items class="content-box" [order]="order" />
+        <status class="content-box" [currentStatus]="order.status"
+            (onStatusChange)="order.status = $event.status; changesMade = true" />
+        <order-summary class="content-box" [order]="order"
+            (onChangePayment)="order.paid = $event.isPaid; changesMade = true"
+            (onStatusMessageInput)="statusMessage = $event.value" />
+        <customer-shipping class="content-box" [order]="order" (onAccountingSend)="sendAccountingPdf()"
+            (onPdfView)="viewInvoicePdf()" [buttonDisabled]="order.accountingSent" />
+    </div>
+
+    }
+</main>

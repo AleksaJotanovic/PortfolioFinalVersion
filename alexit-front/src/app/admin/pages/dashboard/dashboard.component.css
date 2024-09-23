@@ -1,0 +1,258 @@
+.dashboard-container {
+    padding: 0 1rem 1rem 1rem;
+    height: fit-content;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: transparent;
+}
+
+.main {
+    background-color: var(--light-background);
+    width: 100%;
+    height: 100%;
+}
+
+annual-income,
+monthly-income,
+weekly-income,
+daily-income,
+statistics,
+customers,
+page-views,
+total-orders,
+total-products,
+todays-orders {
+    border-radius: var(--border-radius-main);
+    box-shadow: var(--box-shadow-main);
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+annual-income {
+    height: fit-content;
+    grid-column: 1 / 3;
+    height: 160px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: var(--border-radius-main);
+    box-shadow: var(--box-shadow-main);
+    background-color: #ffffff;
+}
+
+monthly-income {
+    height: fit-content;
+    grid-column: 3 / 5;
+    height: 160px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+weekly-income {
+    height: fit-content;
+    grid-column: 5 / 7;
+    height: 160px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+daily-income {
+    height: fit-content;
+    grid-column: 7 / 9;
+    height: 160px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+statistics {
+    grid-column: 1 / 6;
+    height: 440px;
+}
+
+customers {
+    grid-column: 1 / 3;
+    height: fit-content;
+}
+
+page-views {
+    grid-column: 3 / 5;
+    height: fit-content;
+}
+
+total-orders {
+    grid-column: 5 / 7;
+    height: fit-content;
+}
+
+total-products {
+    grid-column: 7 / 9;
+    height: fit-content;
+}
+
+todays-orders {
+    grid-row: 2 / 3;
+    grid-column: 6 / 9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1280px) {
+    annual-income {
+        flex-direction: column;
+        height: 290px;
+    }
+
+    monthly-income {
+        flex-direction: column;
+        height: 290px;
+    }
+
+    weekly-income {
+        flex-direction: column;
+        height: 290px;
+    }
+
+    daily-income {
+        flex-direction: column;
+        height: 290px;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    annual-income {
+        grid-column: 1 / 5;
+        flex-direction: row;
+        height: 160px;
+    }
+
+    monthly-income {
+        grid-column: 5 / 9;
+        flex-direction: row;
+        height: 160px;
+    }
+
+    weekly-income {
+        grid-column: 1 / 5;
+        flex-direction: row;
+        height: 160px;
+    }
+
+    daily-income {
+        grid-column: 5 / 9;
+        flex-direction: row;
+        height: 160px;
+    }
+
+    statistics {
+        grid-column: 1 / 9;
+        grid-row: 3 / 4;
+    }
+
+    todays-orders {
+        grid-row: 4 / 5;
+        grid-column: 1 / 9;
+    }
+
+    customers {
+        grid-column: 1 / 5;
+        grid-row: 5 / 6;
+    }
+
+    page-views {
+        grid-column: 5 / 9;
+        grid-row: 5 / 6;
+    }
+
+    total-orders {
+        grid-column: 1 / 5;
+        grid-row: 6 / 7;
+    }
+
+    total-products {
+        grid-column: 5 / 9;
+        grid-row: 6 / 7;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .dashboard-container {
+        grid-template-columns: 100%;
+    }
+
+    annual-income {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        flex-direction: row;
+        height: 160px;
+    }
+
+    monthly-income {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        flex-direction: row;
+        height: 160px;
+    }
+
+    weekly-income {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        flex-direction: row;
+        height: 160px;
+    }
+
+    daily-income {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        flex-direction: row;
+        height: 160px;
+    }
+
+    statistics {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+        overflow-x: auto;
+    }
+
+    customers {
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+    }
+
+    page-views {
+        grid-column: 1 / 2;
+        grid-row: 8 / 9;
+    }
+
+    total-orders {
+        grid-column: 1 / 2;
+        grid-row: 9 / 10;
+    }
+
+    total-products {
+        grid-column: 1 / 2;
+        grid-row: 10 / 11;
+    }
+
+    todays-orders {
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
+}

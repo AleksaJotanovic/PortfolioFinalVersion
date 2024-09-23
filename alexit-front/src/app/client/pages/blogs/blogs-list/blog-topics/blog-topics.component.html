@@ -1,0 +1,15 @@
+<div class="blog-topics">
+    <span class="lineheight-fit row-start-center">
+        <h1 class="lineheight-fit row-center-center"><i class="fa-light fa-list"></i>TOPICS</h1>
+    </span>
+    <ul class="column-start-stretch">
+        <li routerLink="/blogs" [queryParams]="{topicId: 'all'}" routerLinkActive="active">
+            <a class="lineheight-fit">All topics</a>
+        </li>
+        @for (topic of topics; track $index) {
+        <li routerLink="/blogs" [queryParams]="{topicId: topic._id, topicName: topic.name}" routerLinkActive="active">
+            <a class="lineheight-fit">{{topic.name}}</a>
+        </li>
+        }
+    </ul>
+</div>

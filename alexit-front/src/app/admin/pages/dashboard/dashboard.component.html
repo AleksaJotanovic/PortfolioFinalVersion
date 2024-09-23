@@ -1,0 +1,22 @@
+<div class="main">
+    <main class="dashboard-container">
+        @if (sales.length > 0) {
+        <annual-income [annualIncome]="annualIncome" />
+        <monthly-income [monthlyIncome]="monthlyIncome" />
+        <weekly-income [weeklyIncome]="weeklyIncome" />
+        <daily-income [dailyIncome]="dailyIncome" />
+
+
+        <statistics class="column-start-stretch gap-0_8" [statistics]="statistics" [sales]="sales"
+            (onYearFilter)="filterByYear($event)" />
+        <todays-orders class="column-start-stretch todays-orders" [orders]="orders" />
+
+
+
+        <customers class="row-start-center gap-0_8" [totalCustomers]="totalCustomers" />
+        <page-views class="row-start-center gap-0_8" [pageViews]="pageViews" />
+        <total-orders class="row-start-center gap-0_8" [totalOrders]="totalOrders" />
+        <total-products class="row-start-center gap-0_8" [totalProducts]="totalProducts" />
+        }
+    </main>
+</div>

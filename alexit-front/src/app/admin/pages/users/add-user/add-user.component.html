@@ -1,0 +1,78 @@
+<div class="add-user-body">
+    <form [formGroup]="userForm" (ngSubmit)="save()">
+        <div class="form-div">
+            <label for="firstname">Firstname: </label>
+            <input type="text" id="firstname" formControlName="firstname">
+        </div>
+        <div class="form-div">
+            <label for="lastname">Lastname: </label>
+            <input type="text" id="lastname" formControlName="lastname">
+        </div>
+        <div class="form-div">
+            <label for="email">Email: </label>
+            <input type="email" id="email" formControlName="email">
+        </div>
+        <div class="form-div">
+            <label for="role">Role: </label>
+            <select formControlName="role" id="role">
+                <option value="" disabled selected>--select role--</option>
+                @for (role of roles; track $index) {
+                <option [ngValue]="role">{{role}}</option>
+                }
+            </select>
+        </div>
+        <h2>Customer shipping address</h2>
+        <div formGroupName="shippingAddress">
+            <div class="form-div">
+                <label for="country">Country: </label>
+                <input type="text" formControlName="country">
+            </div>
+            <div class="form-div">
+                <label for="city">City: </label>
+                <input type="text" id="city" formControlName="city">
+            </div>
+            <div class="form-div">
+                <label for="street">Street: </label>
+                <input type="text" id="street" formControlName="street">
+            </div>
+            <div class="form-div">
+                <label for="zip">Zip: </label>
+                <input type="text" id="zip" formControlName="zip">
+            </div>
+            <div class="form-div">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" formControlName="phone">
+            </div>
+        </div>
+        <button type="submit" [disabled]="!userForm.valid">Save User</button>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="form-div">
+    <label for="password">Password: </label>
+    <input type="password" id="password" formControlName="password">
+    @if (!passwordValue) {
+    <span>Please input password</span>
+    }
+    @if (passwordControl?.invalid) {
+    <span style="color: red;">{{getPasswordError()}}</span>
+    }
+</div>
+<div class="form-div">
+    <label for="confirm">Confirm password: </label>
+    <input type="password" id="confirm" formControlName="confirmPassword">
+    @if (confirmPasswordControl?.invalid) {
+    <span style="color: red;">Password do not match!</span>
+    }
+</div> -->

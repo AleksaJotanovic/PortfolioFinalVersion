@@ -1,0 +1,50 @@
+<h1>Customer & shipping</h1>
+<div class="user-address column-start-stretch gap-1_3">
+    <span class="row-spacebetween-center">
+        <h4>Firstname</h4>
+        <strong>{{order.user.firstname}}</strong>
+    </span>
+    <span class="row-spacebetween-center">
+        <h4>Lastname</h4>
+        <strong>{{order.user.lastname}}</strong>
+    </span>
+    <span class="row-spacebetween-center">
+        <h4>Email</h4>
+        <strong>{{order.user.email}}</strong>
+    </span>
+    <span class="row-spacebetween-center">
+        <h4>Country</h4>
+        <strong>{{order.user.country}}</strong>
+    </span>
+    <span class="row-spacebetween-center">
+        <h4>City</h4>
+        <strong>{{order.user.city}}</strong>
+    </span>
+    <span class="row-spacebetween-center">
+        <h4>Street</h4>
+        <strong>{{order.user.street}}</strong>
+    </span>
+    <span class="row-spacebetween-center">
+        <h4>Phone number</h4>
+        <strong>{{order.user.phone}}</strong>
+    </span>
+    <span class="row-spacebetween-center">
+        <h4>Courier selected</h4>
+        <strong>{{courierName(order.courier_id)}}</strong>
+    </span>
+</div>
+<div class="row-center-center gap-1 invoice-btns">
+    <button type="button" (click)="emitOnPdfView()">
+        <i class="fa-solid fa-eye"></i>
+        <h5>View invoice</h5>
+    </button>
+    <button type="button" (click)="emitOnAccountingSend()" [disabled]="buttonDisabled">
+        @if (buttonDisabled) {
+        <i class="fa-light fa-check-to-slot"></i>
+        <h5>Invoice is mailed to customer</h5>
+        }@else {
+        <i class="fa-solid fa-paper-plane-top"></i>
+        <h5>Mail invoice to customer</h5>
+        }
+    </button>
+</div>

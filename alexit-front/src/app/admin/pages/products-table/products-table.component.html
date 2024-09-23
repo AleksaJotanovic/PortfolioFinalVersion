@@ -1,0 +1,177 @@
+<main class="column-start-stretch gap-1">
+    <span class="main-title">
+        <h1>Inventory</h1>
+        <button type="button" class="blue-btn" routerLink="add-product">
+            <i class="fa-light fa-circle-plus"></i>
+            <h5>Add new product</h5>
+        </button>
+    </span>
+    <div class="table-options gap-1">
+        <div class="row-center-center gap-1">
+            <div class="adm-form-group flex-full">
+                <input #search type="text" id="search" placeholder="Search for category, name, code, etc.">
+            </div>
+            <div class="adm-form-group flex-full">
+                <select #category_id>
+                    <option value="all">All Categories</option>
+                    @for (category of (categories | ctgIf); track $index) {
+                    <option [value]="category._id">{{category.name}}</option>
+                    }
+                </select>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="adm-form-group flex-full">
+                <select #status>
+                    <option value="both">Published & unpublished</option>
+                    <option [value]="true">Published</option>
+                    <option [value]="false">Unpublished</option>
+                </select>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+        </div>
+        <button type="button" class="blue-btn" (click)="updateFilters(search.value, category_id.value, status.value)">
+            <i class="fa-light fa-magnifying-glass"></i>
+            <h5>Search</h5>
+        </button>
+    </div>
+    <div class="table-container column-start-stretch">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <button #name type="button" [id]="sortTriggers.NAME" (click)="sort($event.currentTarget)">
+                            Name
+                            @if (name.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th>
+                        <button #code type="button" [id]="sortTriggers.CODE" (click)="sort($event.currentTarget)">
+                            Code
+                            @if (code.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th>
+                        <button #stock type="button" [id]="sortTriggers.STOCK" (click)="sort($event.currentTarget)">
+                            Stock
+                            @if (stock.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th>
+                        <button #category type="button" [id]="sortTriggers.CATEGORY"
+                            (click)="sort($event.currentTarget)">
+                            Category
+                            @if (category.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th>
+                        <button #price type="button" [id]="sortTriggers.PRICE" (click)="sort($event.currentTarget)">
+                            Price
+                            @if (price.id === trigger) {
+                            @if (order === "") {
+                            <i class="fa-solid fa-sort"></i>
+                            }@else if (order === "asc") {
+                            <i class="fa-solid fa-caret-up"></i>
+                            }@else if (order === "desc") {
+                            <i class="fa-solid fa-caret-down"></i>
+                            }
+                            }@else {
+                            <i class="fa-solid fa-sort"></i>
+                            }
+                        </button>
+                    </th>
+                    <th>STATUS</th>
+                    <th>ACTIONS</th>
+                </tr>
+            </thead>
+
+
+
+
+
+            <tbody>
+                @for (product of products; track $index) {
+                <tr>
+                    <td>{{product.name}}</td>
+                    <td>{{product.sku}}</td>
+                    <td [ngClass]="[product.inStock > 0 ? 'in-stock' : 'out-of-stock']">
+                        {{product.inStock > 0 ? "In stock" : "Out of stock"}}
+                        <small>({{product.inStock}})</small>
+                    </td>
+                    <td>{{categoryName(product.category_id)}}</td>
+                    <td class="price"><span>{{$.money(product.price.sale)}}</span></td>
+                    <td>
+                        <span
+                            [ngClass]="[product.published ? 'status-published' : 'status-unpublished']">{{product.published
+                            ? "Published" : "Unpublished"}}
+                        </span>
+                    </td>
+                    <td>
+                        <i class="fa-regular fa-sliders"
+                            [routerLink]="['edit-product', categoryName(product.category_id) ,product._id]"></i>
+                    </td>
+                </tr>
+                }
+            </tbody>
+
+
+
+
+
+        </table>
+
+
+
+
+        <div class="pagination-container row-spacebetween-center">
+            <button type="button" class="row-center-center" (click)="previousPile()"><i
+                    class="fa-solid fa-caret-left"></i></button>
+            <p>Showing {{currentPile + 1}} of {{paginatedProducts.length}}</p>
+            <button type="button" class="row-center-center" (click)="nextPile()"><i
+                    class="fa-solid fa-caret-right"></i></button>
+        </div>
+
+
+
+
+    </div>
+</main>

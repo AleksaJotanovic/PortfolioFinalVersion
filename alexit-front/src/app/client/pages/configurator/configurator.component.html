@@ -1,0 +1,80 @@
+<main class="column-center-stretch">
+    <section class="pc-builder-section column-start-stretch gap-3">
+        <div class="pc-builder-header column-spacebetween-center">
+            <span></span>
+            <div class="column-center-center gap-1_5">
+                <h1 class="lineheight-fit">PC BUILDER</h1>
+                <ul class="row-center-center gap-1">
+                    <li class="lineheight-fit"><a routerLink="" class="lineheight-fit">Home</a></li>
+                    <li class="lineheight-fit"><i class="fa-light fa-chevron-right"></i></li>
+                    <li class="lineheight-fit"><a routerLink="" class="lineheight-fit">Pc Builder</a></li>
+                </ul>
+            </div>
+            <span></span>
+        </div>
+        <div class="pc-builder-container column-start-stretch gap-2">
+            <h1>GIVE YOUR PC BUILD A NAME</h1>
+            <div class="pc-build-name row-center-stretch">
+                <span class="lineheight-fit row-center-center"><i class="fa-solid fa-bolt-lightning"></i></span>
+                <input type="text" placeholder="PC build name" [(ngModel)]="configurator.name"
+                    (focusout)="saveConfigurationName(configurator.name)">
+                <span class="lineheight-fit row-center-center"><i class="fa-solid fa-bolt-lightning"></i></span>
+            </div>
+            <div class="pc-build-playground column-start-stretch">
+                <table>
+                    <thead>
+                        <tr>
+                            <th width="15%">Component</th>
+                            <th width="55%">Selection</th>
+                            <th width="15%">Price</th>
+                            <th width="15%">Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (field of configurator.playfield; track $index) {
+                        <tr>
+                            @if (field.product_id === "") {
+                            <td><a routerLink="">{{field.name}}</a></td>
+                            <td><button type="button" class="row-center-center gap-0_5 choose-btn"
+                                    (click)="choose(field.name)">
+                                    <i class="fa-light fa-plus"></i>Choose A {{field.name}}
+                                </button>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            }@else {
+                            @if (this.getProduct(field.product_id)) {
+                            <td><a routerLink="">{{field.name}}</a></td>
+                            <td>
+                                <div class="selected-component row-start-center gap-3">
+                                    <picture><img [src]="this.getProduct(field.product_id).images[0]"></picture>
+                                    <h3><a routerLink="">{{this.getProduct(field.product_id).name}}</a></h3>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="component-price">{{$.money(this.getProduct(field.product_id).price.sale)}}
+                                    <small>RSD</small></span>
+                            </td>
+                            <td><button type="button" class="remove-btn"
+                                    (click)="remove(field.product_id); field.product_id = ''; cfg.setConfigurator(configurator);">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                            }
+                            }
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+                <div class="pc-build-finish row-spacebetween-center gap-1">
+                    <span class="row-start-center gap-1">
+                        Total:<strong>{{$.money(totalPrice)}} <small>RSD</small></strong>
+                    </span>
+                    <div class="row-center-center gap-1">
+                        <button type="button" (click)="goToPayment()">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

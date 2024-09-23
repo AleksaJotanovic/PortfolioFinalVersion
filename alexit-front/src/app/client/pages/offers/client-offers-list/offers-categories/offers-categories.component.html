@@ -1,0 +1,16 @@
+<div class="offer-categories">
+    <span class="lineheight-fit row-start-center">
+        <h1 class="lineheight-fit row-center-center"><i class="fa-light fa-list"></i>CATEGORIES</h1>
+    </span>
+    <ul class="column-start-stretch">
+        <li routerLink="/offers" [queryParams]="{categoryId: 'all'}" routerLinkActive="active">
+            <a class="lineheight-fit">All categories</a>
+        </li>
+        @for (category of categories; track $index) {
+        <li routerLink="/offers" [queryParams]="{categoryId: category._id, categoryName: category.name}"
+            routerLinkActive="active">
+            <a class="lineheight-fit">{{category.name}}</a>
+        </li>
+        }
+    </ul>
+</div>

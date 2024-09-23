@@ -1,0 +1,1 @@
+export const stockSortTriggers = { IMAGE: "image", NAME: "name", CODE: "code", STOCK: "stock", CATEGORY: "category", PRICE: "price" };

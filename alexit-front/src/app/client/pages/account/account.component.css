@@ -1,0 +1,80 @@
+/* section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.acc-details-container {
+    background-color: rgb(136, 136, 221);
+    width: 80%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.col-1 {
+    background-color: rgb(174, 126, 219);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.col-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(181, 72, 72);
+} */
+
+
+main {
+    height: fit-content;
+    width: var(--default-website-width);
+    max-width: 100%;
+    margin: auto;
+    background-color: var(--main-white);
+    gap: 3.5rem;
+}
+
+.account-details-section {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1fr;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================= RESPONSIVE DESIGN ============================= */
+@media only screen and (max-width: 1430px) {
+    .account-details-section {
+        padding-inline: 2rem;
+    }
+}
+
+@media only screen and (width < 1024px) {
+    .account-details-section {
+        grid-template-columns: fit-content(100%) 1fr;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .account-details-section {
+        padding-inline: 1rem;
+    }
+}
