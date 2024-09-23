@@ -11,6 +11,6 @@ IMPORTANT! FOLLOW THE INSTRUCTIONS CAREFULLY:
 9) Inside "alexit-backend" run the command "npm i". Do the same in "alexit-frontend".
 10) To run my project, inside "alexit-backend" run the command: "npm start", and in "alexit-frontend" run "ng serve -o".
 11) To access the admin side of the site just add "/admin" in the url bar (http://localhost:4200/admin), and then sign in with:
-    - Email: aleksajotanovic563@gmail.com
+    - Email: matthewsanders077@gmail.com
     - Password: simplepassword
 12) Enjoy :)
