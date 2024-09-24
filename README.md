@@ -1,16 +1,72 @@
-IMPORTANT! FOLLOW THE INSTRUCTIONS CAREFULLY:
 
-1) Download & install MongoDB server: https://www.mongodb.com/try/download/community
-2) Download & install MongoDB compass (if you haven't already installed it with the monogdb server): https://www.mongodb.com/try/download/compass
-3) Before you do anything, make sure MongoDB is running in Windows Services.
-4) Create new connection in MongoDB compass with this connection string: mongodb://127.0.0.1:27017/
-5) In that connection, create a database called "alexitdb", and inside it create collections whose exported versions are located in the "collections" folder. First create a collection and then import the matching file from "collections". (eg. "alexitdb.products.json" must be imported in the newly created collection "products" and etc...)
-6) Install Angular CLI by running command prompt (not as admin) and then run this command: npm i -g @angular/cli@18.0.6
-7) Inside "alexit-backend" folder there is a file ".env" in which you have variable called "APP_PASSWORD". The value of that variable must be your App Password, which you will create here (remove spaces from the copied password): https://myaccount.google.com/apppasswords
-8) After 7th step, in same that ".env" file, you have variable APP_EMAIL in which you just have to put your gmail address. (gmail address of the google account you used to create the App Password)
-9) Inside "alexit-backend" run the command "npm i". Do the same in "alexit-frontend".
-10) To run my project, inside "alexit-backend" run the command: "npm start", and in "alexit-frontend" run "ng serve -o".
-11) To access the admin side of the site just add "/admin" in the url bar (http://localhost:4200/admin), and then sign in with:
-    - Email: matthewsanders077@gmail.com
-    - Password: simplepassword
-12) Enjoy :)
+# Alexit Portfolio
+
+## Introduction
+Welcome to **Alexit Portfolio**, a full-stack project built using Angular (frontend) and Node.js (backend) with MongoDB as the database. Follow the steps below to set up and run the project on your local machine.
+
+## Prerequisites
+- **MongoDB Server**
+- **MongoDB Compass**
+- **Node.js**
+- **Angular CLI**
+
+## Project Setup
+
+### 1. Install MongoDB
+- [Download MongoDB Community Server](https://www.mongodb.com/try/download/community) and install it.
+- [Download MongoDB Compass](https://www.mongodb.com/try/download/compass) and install it if it wasn’t included in the MongoDB Server installation.
+
+### 2. Start MongoDB Service
+Make sure MongoDB is running by checking the Windows Services.
+
+### 3. Connect to MongoDB via MongoDB Compass
+1. Open MongoDB Compass.
+2. Create a new connection using the following connection string:
+   ```
+   mongodb://127.0.0.1:27017/
+   ```
+3. In the connection, create a new database called `alexitdb`.
+
+### 4. Create and Import Collections
+Inside the `collections` folder of this project, you will find JSON files for each collection. For each collection:
+1. Create the collection in MongoDB (e.g., `products`).
+2. Import the corresponding JSON file (e.g., `alexitdb.products.json` for the `products` collection).
+
+### 5. Install Angular CLI
+Run the following command in your terminal (non-admin):
+```
+npm i -g @angular/cli@18.0.6
+```
+
+### 6. Setup Backend Configuration
+Inside the `alexit-backend` folder, open the `.env` file and configure the following:
+- `APP_PASSWORD`: Create an [App Password](https://myaccount.google.com/apppasswords) for your Gmail account and paste it here (remove any spaces from the copied password).
+- `APP_EMAIL`: Enter your Gmail address, the same account used to create the App Password.
+
+### 7. Install Dependencies
+Navigate to both `alexit-backend` and `alexit-frontend` folders, and run the following command in each:
+```
+npm i
+```
+
+### 8. Running the Project
+- To start the backend, navigate to the `alexit-backend` folder and run:
+  ```
+  npm start
+  ```
+- To start the frontend, navigate to the `alexit-frontend` folder and run:
+  ```
+  ng serve -o
+  ```
+
+### 9. Access the Admin Dashboard
+Once both the backend and frontend are running, open a browser and go to:
+```
+http://localhost:4200/admin
+```
+Use the following credentials to log in:
+- **Email:** matthewsanders077@gmail.com
+- **Password:** simplepassword
+
+Enjoy! :)
+
